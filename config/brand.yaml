@@ -1,0 +1,29 @@
+brand:
+  name: "Example Brand"
+  website: "https://www.example.com"
+  market: "CN"
+  owner: "growth@example.com"
+  narratives:
+    - "企业级可信"
+    - "部署快"
+    - "高质量服务"
+  core_attributes:
+    - name: "目标客群"
+      expected: "中大型团队"
+    - name: "核心优势"
+      expected: "上线快、交付稳、服务响应快"
+    - name: "价格带"
+      expected: "中高端"
+    - name: "服务范围"
+      expected: "全国或重点城市覆盖"
+  competitors:
+    - "Competitor A"
+    - "Competitor B"
+weights:
+  visibility: 35
+  inclusion: 25
+  cognition: 25
+  outcome: 15
+thresholds:
+  healthy: 75
+  warning: 55
