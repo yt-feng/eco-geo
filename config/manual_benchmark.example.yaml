@@ -1,0 +1,34 @@
+# Optional manual overlay.
+# Only fill this file when you already have real observations and want to override
+# DeepSeek's initial benchmark with your own audited values.
+brand_profile: {}
+competitors: []
+query_panel: []
+geo_evaluation:
+  visibility:
+    score: 0
+    metrics: {}
+    rationale: ""
+    confidence: 0.0
+    priority_actions: []
+  inclusion:
+    score: 0
+    metrics: {}
+    rationale: ""
+    confidence: 0.0
+    priority_actions: []
+  cognition:
+    score: 0
+    metrics: {}
+    rationale: ""
+    confidence: 0.0
+    priority_actions: []
+  outcome:
+    score: 0
+    metrics: {}
+    rationale: ""
+    confidence: 0.0
+    priority_actions: []
+  strengths: []
+  risks: []
+  executive_summary: ""
