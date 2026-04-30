@@ -1,0 +1,29 @@
+{
+  "brand": {
+    "name": "Kioxia",
+    "website": "https://www.kioxia.com",
+    "market": "Global",
+    "category": "NAND flash / SSD / enterprise storage"
+  },
+  "overall_score": 63.5,
+  "overall_level": "watch",
+  "generated_at": "2026-04-30 14:26:19 UTC",
+  "dimensions": {
+    "visibility": {
+      "score": 65.0,
+      "level": "watch"
+    },
+    "inclusion": {
+      "score": 70.0,
+      "level": "watch"
+    },
+    "cognition": {
+      "score": 60.0,
+      "level": "watch"
+    },
+    "outcome": {
+      "score": 55.0,
+      "level": "watch"
+    }
+  }
+}
