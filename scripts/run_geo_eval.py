@@ -4,7 +4,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
-from dataclasses import dataclass
+import re
+import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -12,394 +14,377 @@ from typing import Any, Dict, List, Optional
 import requests
 import yaml
 
-POSITION_WEIGHTS = {
-    "top_half": 1.0,
-    "middle": 0.75,
-    "bottom_half": 0.5,
-    "not_applicable": 0.5,
+DEFAULT_WEIGHTS = {
+    "visibility": 35,
+    "inclusion": 25,
+    "cognition": 25,
+    "outcome": 15,
 }
 
 
 def load_yaml(path: Path) -> Dict[str, Any]:
+    if not path.exists():
+        return {}
     with path.open("r", encoding="utf-8") as f:
-        return yaml.safe_load(f) or {}
+        data = yaml.safe_load(f)
+    return data or {}
 
 
-def clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
-    return max(low, min(high, value))
+def ensure_dir(path: Path) -> None:
+    path.mkdir(parents=True, exist_ok=True)
 
 
-def pct(value: float) -> float:
-    return round(clamp(value) * 100, 2)
+def utc_now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
 
-def avg(values: List[float]) -> float:
-    if not values:
+def strip_code_fence(text: str) -> str:
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z0-9_-]*\n", "", text)
+        text = re.sub(r"\n```$", "", text)
+    return text.strip()
+
+
+def clamp_score(value: Any) -> float:
+    try:
+        num = float(value)
+    except Exception:
         return 0.0
-    return sum(values) / len(values)
+    return max(0.0, min(100.0, num))
 
 
-def score_definition_accuracy(raw_scores: List[float]) -> float:
-    if not raw_scores:
-        return 0.0
-    return avg([clamp(score / 2.0) for score in raw_scores])
+def extract_json(text: str) -> Dict[str, Any]:
+    text = strip_code_fence(text)
+    try:
+        data = json.loads(text)
+        if isinstance(data, dict):
+            return data
+    except Exception:
+        pass
+
+    match = re.search(r"\{.*\}", text, flags=re.S)
+    if not match:
+        raise ValueError("No JSON object found in model response")
+    return json.loads(match.group(0))
 
 
-def score_error_rate(error_counts: List[int], high_risk_flags: List[bool]) -> float:
-    if not error_counts:
-        return 0.0
-    penalties = []
-    for count, high_risk in zip(error_counts, high_risk_flags):
-        penalty = min(count, 3) / 3.0
-        if high_risk:
-            penalty = min(1.0, penalty + 0.25)
-        penalties.append(1.0 - penalty)
-    return avg(penalties)
+class DeepSeekClient:
+    def __init__(self, api_key: str, base_url: Optional[str], model: str):
+        if not api_key:
+            raise ValueError("DEEPSEEK_API_KEY is required for auto benchmark mode")
+        self.api_key = api_key
+        self.base_url = (base_url or "https://api.deepseek.com/v1/chat/completions").strip()
+        self.model = model
 
-
-def score_against_target(actual: float, target: float) -> float:
-    if target <= 0:
-        return 0.0 if actual <= 0 else 1.0
-    return clamp(actual / target)
-
-
-def summarize_level(score_100: float, healthy: float, warning: float) -> str:
-    if score_100 >= healthy:
-        return "healthy"
-    if score_100 >= warning:
-        return "watch"
-    return "risk"
-
-
-@dataclass
-class DimensionResult:
-    name: str
-    score_100: float
-    metrics: Dict[str, float]
-    details: Dict[str, Any]
-
-
-class GeoEvaluator:
-    def __init__(self, brand_config: Dict[str, Any], benchmark: Dict[str, Any]):
-        self.brand_config = brand_config
-        self.benchmark = benchmark
-        self.brand_name = brand_config.get("brand", {}).get("name", "Brand")
-        self.weights = brand_config.get(
-            "weights",
-            {"visibility": 35, "inclusion": 25, "cognition": 25, "outcome": 15},
-        )
-        thresholds = brand_config.get("thresholds", {})
-        self.healthy = float(thresholds.get("healthy", 75))
-        self.warning = float(thresholds.get("warning", 55))
-
-    def evaluate_visibility(self) -> DimensionResult:
-        observations = self.benchmark.get("visibility_observations", [])
-        total = len(observations)
-        mentions = sum(1 for item in observations if item.get("mentioned"))
-        first_party = sum(1 for item in observations if item.get("first_party_cited"))
-        winning = sum(1 for item in observations if item.get("preferred_brand") == self.brand_name)
-
-        citation_shares = []
-        weighted_visibility = []
-        for item in observations:
-            citation_count = float(item.get("citation_count", 0) or 0)
-            total_citations = float(item.get("total_citations", 0) or 0)
-            citation_share = citation_count / total_citations if total_citations > 0 else 0.0
-            citation_shares.append(citation_share)
-
-            observation_score = 0.0
-            if item.get("mentioned"):
-                observation_score += 1.0
-            if item.get("first_party_cited"):
-                observation_score += 2.0
-            if item.get("primary_source"):
-                observation_score += 1.0
-            if item.get("third_party_corroboration"):
-                observation_score += 1.0
-            observation_score *= POSITION_WEIGHTS.get(item.get("position_bucket", "middle"), 0.75)
-            weighted_visibility.append(min(observation_score / 5.0, 1.0))
-
-        mention_rate = mentions / total if total else 0.0
-        first_party_rate = first_party / total if total else 0.0
-        citation_sov = avg(citation_shares)
-        win_rate = winning / total if total else 0.0
-        weighted_score = avg(weighted_visibility)
-
-        score = (
-            mention_rate * 0.25
-            + first_party_rate * 0.30
-            + citation_sov * 0.20
-            + win_rate * 0.10
-            + weighted_score * 0.15
-        )
-        return DimensionResult(
-            name="Visibility",
-            score_100=round(score * 100, 2),
-            metrics={
-                "brand_mention_rate": pct(mention_rate),
-                "first_party_citation_rate": pct(first_party_rate),
-                "citation_share_of_voice": pct(citation_sov),
-                "competitive_win_rate": pct(win_rate),
-                "weighted_visibility_score": pct(weighted_score),
-            },
-            details={"observation_count": total},
-        )
-
-    def evaluate_inclusion(self) -> DimensionResult:
-        snapshot = self.benchmark.get("inclusion_snapshot", {})
-        metrics = {
-            "crawl_reach_rate": pct(float(snapshot.get("crawl_reach_rate", 0))),
-            "index_coverage": pct(float(snapshot.get("index_coverage", 0))),
-            "structured_data_validity": pct(float(snapshot.get("structured_data_validity", 0))),
-            "entity_consistency_score": pct(float(snapshot.get("entity_consistency_score", 0))),
-            "knowledge_asset_completeness": pct(float(snapshot.get("knowledge_asset_completeness", 0))),
-            "llm_asset_availability": pct(float(snapshot.get("llm_asset_availability", 0))),
+    def chat_json(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
         }
-        score = (
-            metrics["crawl_reach_rate"] * 0.18
-            + metrics["index_coverage"] * 0.22
-            + metrics["structured_data_validity"] * 0.18
-            + metrics["entity_consistency_score"] * 0.16
-            + metrics["knowledge_asset_completeness"] * 0.18
-            + metrics["llm_asset_availability"] * 0.08
-        ) / 100.0
-        return DimensionResult(
-            name="Inclusion",
-            score_100=round(score * 100, 2),
-            metrics=metrics,
-            details=snapshot,
-        )
-
-    def evaluate_cognition(self) -> DimensionResult:
-        observations = self.benchmark.get("cognition_observations", [])
-        definition_score = score_definition_accuracy(
-            [float(item.get("definition_accuracy", 0)) for item in observations]
-        )
-        attribute_recall = avg(
-            [float(item.get("attribute_recall_ratio", 0)) for item in observations]
-        )
-        narrative_alignment = avg(
-            [float(item.get("narrative_alignment_ratio", 0)) for item in observations]
-        )
-        error_resilience = score_error_rate(
-            [int(item.get("error_count", 0)) for item in observations],
-            [bool(item.get("high_risk_error", False)) for item in observations],
-        )
-
-        score = (
-            definition_score * 0.30
-            + attribute_recall * 0.25
-            + narrative_alignment * 0.25
-            + error_resilience * 0.20
-        )
-        return DimensionResult(
-            name="Cognition",
-            score_100=round(score * 100, 2),
-            metrics={
-                "brand_definition_accuracy": pct(definition_score),
-                "attribute_recall": pct(attribute_recall),
-                "narrative_alignment": pct(narrative_alignment),
-                "error_resilience": pct(error_resilience),
-            },
-            details={"observation_count": len(observations)},
-        )
-
-    def evaluate_outcome(self) -> DimensionResult:
-        snapshot = self.benchmark.get("outcome_snapshot", {})
-        targets = snapshot.get("benchmark_targets", {})
-        ai_sessions_score = score_against_target(
-            float(snapshot.get("ai_sessions", 0)), float(targets.get("ai_sessions", 0))
-        )
-        engaged_score = score_against_target(
-            float(snapshot.get("engaged_session_rate", 0)),
-            float(targets.get("engaged_session_rate", 0)),
-        )
-        conversion_score = score_against_target(
-            float(snapshot.get("conversion_rate", 0)), float(targets.get("conversion_rate", 0))
-        )
-        assisted_score = score_against_target(
-            float(snapshot.get("assisted_conversion_count", 0)),
-            float(targets.get("assisted_conversion_count", 0)),
-        )
-        branded_lift_score = score_against_target(
-            float(snapshot.get("branded_search_lift", 0)),
-            float(targets.get("branded_search_lift", 0)),
-        )
-        score = (
-            ai_sessions_score * 0.25
-            + engaged_score * 0.20
-            + conversion_score * 0.25
-            + assisted_score * 0.15
-            + branded_lift_score * 0.15
-        )
-        return DimensionResult(
-            name="Outcome",
-            score_100=round(score * 100, 2),
-            metrics={
-                "ai_sessions_vs_target": pct(ai_sessions_score),
-                "engaged_session_rate_vs_target": pct(engaged_score),
-                "conversion_rate_vs_target": pct(conversion_score),
-                "assisted_conversions_vs_target": pct(assisted_score),
-                "branded_search_lift_vs_target": pct(branded_lift_score),
-            },
-            details=snapshot,
-        )
-
-    def evaluate(self) -> Dict[str, Any]:
-        visibility = self.evaluate_visibility()
-        inclusion = self.evaluate_inclusion()
-        cognition = self.evaluate_cognition()
-        outcome = self.evaluate_outcome()
-        dimension_map = {
-            "visibility": visibility,
-            "inclusion": inclusion,
-            "cognition": cognition,
-            "outcome": outcome,
+        payload = {
+            "model": self.model,
+            "temperature": 0.2,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "response_format": {"type": "json_object"},
         }
-
-        total_weight = sum(float(value) for value in self.weights.values()) or 1.0
-        overall = 0.0
-        for key, result in dimension_map.items():
-            overall += result.score_100 * (float(self.weights.get(key, 0)) / total_weight)
-
-        overall = round(overall, 2)
-        return {
-            "brand": self.brand_config.get("brand", {}),
-            "thresholds": {"healthy": self.healthy, "warning": self.warning},
-            "weights": self.weights,
-            "overall_score": overall,
-            "overall_level": summarize_level(overall, self.healthy, self.warning),
-            "dimensions": {
-                key: {
-                    "name": result.name,
-                    "score": result.score_100,
-                    "level": summarize_level(result.score_100, self.healthy, self.warning),
-                    "metrics": result.metrics,
-                    "details": result.details,
-                }
-                for key, result in dimension_map.items()
-            },
-            "notes": self.benchmark.get("notes", []),
-        }
+        response = requests.post(self.base_url, headers=headers, json=payload, timeout=180)
+        response.raise_for_status()
+        data = response.json()
+        content = data["choices"][0]["message"]["content"]
+        return extract_json(content)
 
 
-def generate_rule_based_insights(report: Dict[str, Any]) -> Dict[str, List[str]]:
-    dims = report["dimensions"]
-    strengths: List[str] = []
-    risks: List[str] = []
-    actions: List[str] = []
+def build_auto_benchmark_prompt(brand_cfg: Dict[str, Any]) -> str:
+    brand = brand_cfg.get("brand", {})
+    name = brand.get("name", "")
+    website = brand.get("website", "")
+    market = brand.get("market", "global")
+    region = brand.get("region", market)
+    language = brand.get("language", "zh-CN")
+    category = brand.get("category", "")
+    seed_competitors = brand.get("competitors", []) or []
+    narrative_pillars = brand.get("narratives", []) or []
 
-    if dims["visibility"]["metrics"]["first_party_citation_rate"] < 60:
-        risks.append("第一方引用率偏低，AI 在回答时更依赖第三方来源，品牌官方叙事控制力不足。")
-        actions.append("优先补齐 FAQ、pricing、comparison、trust 页面，并把关键事实改成清晰文本块与表格。")
-    else:
-        strengths.append("第一方引用率较稳，品牌自有内容已经进入一部分回答依据。")
+    return f"""
+请为品牌 GEO 评估生成一个严谨的 JSON。目标品牌如下：
+- 品牌名: {name}
+- 官网: {website}
+- 市场: {market}
+- 区域: {region}
+- 语言: {language}
+- 已知品类: {category}
+- 已知竞品: {json.dumps(seed_competitors, ensure_ascii=False)}
+- 希望叙事: {json.dumps(narrative_pillars, ensure_ascii=False)}
 
-    if dims["inclusion"]["metrics"]["index_coverage"] < 80:
-        risks.append("索引覆盖率仍有缺口，说明关键页面还没有充分进入候选集。")
-        actions.append("排查 noindex、canonical、站点地图、内部链接和可渲染文本问题。")
-    else:
-        strengths.append("抓取与索引底座相对稳健，可继续把重心放到内容与叙事层。")
+要求：
+1. 只输出 JSON，不要 markdown。
+2. 不要假装联网，不要写“最新新闻显示”之类的话。你只能基于通用知识与品牌常识做一个“可供人工复核的初版 GEO 评估”。
+3. 如果不确定，降低 confidence 并把 uncertainty 写清楚。
+4. 竞品最多 5 个，优先给同品类、同购买决策集合里的品牌。
+5. query_panel 至少返回 18 个 query，分成 brand/category/problem/comparison/use_case/trust 六类。
+6. geo_evaluation 需要给四层打分：visibility/inclusion/cognition/outcome，范围 0-100。
+7. 每层必须给 metrics、rationale、confidence、priority_actions。
+8. 输出字段结构必须严格符合：
+{
+  "brand_profile": {
+    "brand_name": "",
+    "official_website": "",
+    "market": "",
+    "region": "",
+    "language": "",
+    "inferred_category": "",
+    "brand_summary": "",
+    "confidence": 0.0,
+    "uncertainties": [""]
+  },
+  "competitors": [
+    {"name": "", "why_in_set": "", "confidence": 0.0}
+  ],
+  "query_panel": [
+    {"type": "brand", "query": "", "intent": ""}
+  ],
+  "geo_evaluation": {
+    "methodology_note": "",
+    "visibility": {
+      "score": 0,
+      "metrics": {
+        "brand_mention_likelihood": 0,
+        "first_party_citation_likelihood": 0,
+        "comparative_presence": 0,
+        "weighted_visibility": 0
+      },
+      "rationale": "",
+      "confidence": 0.0,
+      "priority_actions": [""]
+    },
+    "inclusion": {
+      "score": 0,
+      "metrics": {
+        "crawl_index_readiness": 0,
+        "entity_clarity": 0,
+        "structured_content_readiness": 0,
+        "knowledge_asset_completeness": 0
+      },
+      "rationale": "",
+      "confidence": 0.0,
+      "priority_actions": [""]
+    },
+    "cognition": {
+      "score": 0,
+      "metrics": {
+        "definition_accuracy_likelihood": 0,
+        "attribute_recall_likelihood": 0,
+        "narrative_alignment_likelihood": 0,
+        "hallucination_resilience": 0
+      },
+      "rationale": "",
+      "confidence": 0.0,
+      "priority_actions": [""]
+    },
+    "outcome": {
+      "score": 0,
+      "metrics": {
+        "visit_intent_capture": 0,
+        "conversion_readiness": 0,
+        "brand_search_lift_potential": 0,
+        "measurement_maturity": 0
+      },
+      "rationale": "",
+      "confidence": 0.0,
+      "priority_actions": [""]
+    },
+    "strengths": [""],
+    "risks": [""],
+    "executive_summary": ""
+  }
+}
+""".strip()
 
-    if dims["cognition"]["metrics"]["brand_definition_accuracy"] < 70:
-        risks.append("品牌定义准确率偏低，AI 容易把品牌定位说窄、说泛或说错。")
-        actions.append("建立标准定义句、核心属性字典和 sameAs/Organization/Product 标注，并同步所有官方资料。")
-    else:
-        strengths.append("品牌定义准确度不错，说明实体识别与核心定位已被部分引擎吸收。")
 
-    if dims["cognition"]["metrics"]["narrative_alignment"] < 60:
-        risks.append("希望被记住的 narrative 还没有稳定出现在回答里。")
-        actions.append("围绕 3 到 5 个 narrative pillars 重写 about、产品页、案例页与 comparison 页。")
+def create_auto_benchmark(brand_cfg: Dict[str, Any], client: DeepSeekClient) -> Dict[str, Any]:
+    system_prompt = (
+        "你是严格的品牌 GEO 研究员。"
+        "你不能假装实时联网。"
+        "你的任务是基于通用知识给出一个可审阅的初版基准评估，"
+        "输出必须是合法 JSON，字段完整，分数要有克制。"
+    )
+    return client.chat_json(system_prompt, build_auto_benchmark_prompt(brand_cfg))
 
-    if dims["outcome"]["score"] < 65:
-        risks.append("业务结果层仍弱，当前 GEO 更像可见度建设，尚未稳定转成高质量访问与转化。")
-        actions.append("给高引用页面加清晰 CTA、案例证明和落地页承接，并把 Search Console 与 GA 做联动看板。")
-    else:
-        strengths.append("结果层已有一定转化基础，可以开始做页面分组实验和 query 分层优化。")
 
-    if not strengths:
-        strengths.append("当前样本仍偏少，建议继续扩大 query 面板并提高重复抽样次数。")
-    if not risks:
-        risks.append("暂无显著短板，但仍建议每月固定复盘 query 面板和竞品份额变化。")
-    if not actions:
-        actions.append("维持现有结构，继续扩充 benchmark 数据与竞品对照。")
+def normalize_dimension(raw: Dict[str, Any], key_metrics: List[str]) -> Dict[str, Any]:
+    metrics = raw.get("metrics", {}) if isinstance(raw, dict) else {}
+    normalized_metrics: Dict[str, float] = {}
+    for name in key_metrics:
+        normalized_metrics[name] = clamp_score(metrics.get(name, 0))
+    return {
+        "score": clamp_score(raw.get("score", 0) if isinstance(raw, dict) else 0),
+        "metrics": normalized_metrics,
+        "rationale": (raw.get("rationale", "") if isinstance(raw, dict) else "").strip(),
+        "confidence": max(0.0, min(1.0, float(raw.get("confidence", 0) if isinstance(raw, dict) else 0))),
+        "priority_actions": [str(x) for x in (raw.get("priority_actions", []) if isinstance(raw, dict) else [])][:5],
+    }
+
+
+def merge_manual_benchmark(auto: Dict[str, Any], manual: Dict[str, Any]) -> Dict[str, Any]:
+    if not manual:
+        return auto
+    merged = json.loads(json.dumps(auto, ensure_ascii=False))
+    for key in ["brand_profile", "competitors", "query_panel", "geo_evaluation"]:
+        if key in manual and manual[key]:
+            if isinstance(manual[key], dict) and isinstance(merged.get(key), dict):
+                merged[key].update(manual[key])
+            else:
+                merged[key] = manual[key]
+    return merged
+
+
+def build_report(brand_cfg: Dict[str, Any], benchmark: Dict[str, Any]) -> Dict[str, Any]:
+    weights = brand_cfg.get("weights", DEFAULT_WEIGHTS)
+    healthy = float(brand_cfg.get("thresholds", {}).get("healthy", 75))
+    warning = float(brand_cfg.get("thresholds", {}).get("warning", 55))
+
+    geo_eval = benchmark.get("geo_evaluation", {})
+    visibility = normalize_dimension(
+        geo_eval.get("visibility", {}),
+        [
+            "brand_mention_likelihood",
+            "first_party_citation_likelihood",
+            "comparative_presence",
+            "weighted_visibility",
+        ],
+    )
+    inclusion = normalize_dimension(
+        geo_eval.get("inclusion", {}),
+        [
+            "crawl_index_readiness",
+            "entity_clarity",
+            "structured_content_readiness",
+            "knowledge_asset_completeness",
+        ],
+    )
+    cognition = normalize_dimension(
+        geo_eval.get("cognition", {}),
+        [
+            "definition_accuracy_likelihood",
+            "attribute_recall_likelihood",
+            "narrative_alignment_likelihood",
+            "hallucination_resilience",
+        ],
+    )
+    outcome = normalize_dimension(
+        geo_eval.get("outcome", {}),
+        [
+            "visit_intent_capture",
+            "conversion_readiness",
+            "brand_search_lift_potential",
+            "measurement_maturity",
+        ],
+    )
+    dims = {
+        "visibility": visibility,
+        "inclusion": inclusion,
+        "cognition": cognition,
+        "outcome": outcome,
+    }
+
+    total_weight = sum(float(v) for v in weights.values()) or 1.0
+    overall = 0.0
+    for key, val in dims.items():
+        overall += val["score"] * (float(weights.get(key, 0)) / total_weight)
+    overall = round(overall, 2)
+
+    def level(score: float) -> str:
+        if score >= healthy:
+            return "healthy"
+        if score >= warning:
+            return "watch"
+        return "risk"
 
     return {
-        "strengths": strengths[:3],
-        "risks": risks[:4],
-        "actions": actions[:4],
+        "generated_at": utc_now(),
+        "brand": {
+            "name": brand_cfg.get("brand", {}).get("name", benchmark.get("brand_profile", {}).get("brand_name", "Unknown Brand")),
+            "website": brand_cfg.get("brand", {}).get("website", benchmark.get("brand_profile", {}).get("official_website", "")),
+            "market": brand_cfg.get("brand", {}).get("market", benchmark.get("brand_profile", {}).get("market", "")),
+            "category": brand_cfg.get("brand", {}).get("category", benchmark.get("brand_profile", {}).get("inferred_category", "")),
+        },
+        "weights": weights,
+        "thresholds": {"healthy": healthy, "warning": warning},
+        "overall_score": overall,
+        "overall_level": level(overall),
+        "methodology_note": geo_eval.get("methodology_note", "DeepSeek-assisted initial benchmark; requires later validation with logs, Search Console, and query sampling."),
+        "brand_profile": benchmark.get("brand_profile", {}),
+        "competitors": benchmark.get("competitors", []),
+        "query_panel": benchmark.get("query_panel", []),
+        "dimensions": {
+            key: {
+                "score": val["score"],
+                "level": level(val["score"]),
+                "metrics": val["metrics"],
+                "rationale": val["rationale"],
+                "confidence": val["confidence"],
+                "priority_actions": val["priority_actions"],
+            }
+            for key, val in dims.items()
+        },
+        "strengths": [str(x) for x in geo_eval.get("strengths", [])][:6],
+        "risks": [str(x) for x in geo_eval.get("risks", [])][:6],
+        "executive_summary": str(geo_eval.get("executive_summary", "")).strip(),
+        "limitations": benchmark.get("brand_profile", {}).get("uncertainties", []),
     }
 
 
-def maybe_generate_llm_summary(
-    report: Dict[str, Any], brand_config: Dict[str, Any], model: str
-) -> Optional[str]:
-    api_key = os.getenv("DEEPSEEK_API_KEY")
-    if not api_key:
-        return None
-
-    brand_name = brand_config.get("brand", {}).get("name", "Brand")
-    endpoint = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1/chat/completions")
-    prompt = {
-        "role": "user",
-        "content": (
-            "你是资深品牌 GEO 顾问。请基于下面 JSON，输出一段 250-400 字的中文管理摘要，"
-            "并附 3 条优先动作。要求：只基于输入数据，不要虚构外部事实。\n\n"
-            f"品牌：{brand_name}\n"
-            f"数据：{json.dumps(report, ensure_ascii=False)}"
-        ),
-    }
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": "你是严谨的品牌 GEO 分析师。"},
-            prompt,
-        ],
-        "temperature": 0.3,
-    }
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
-    response = requests.post(endpoint, headers=headers, json=payload, timeout=60)
-    response.raise_for_status()
-    data = response.json()
-    choices = data.get("choices", [])
-    if not choices:
-        return None
-    return choices[0].get("message", {}).get("content")
-
-
-def render_markdown(report: Dict[str, Any], insights: Dict[str, List[str]], llm_summary: Optional[str]) -> str:
-    brand = report.get("brand", {})
-    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+def render_markdown(report: Dict[str, Any]) -> str:
+    brand = report["brand"]
     lines: List[str] = []
-    lines.append(f"# {brand.get('name', 'Brand')} GEO Evaluation Report")
+    lines.append(f"# {brand['name']} GEO Evaluation Report")
     lines.append("")
-    lines.append(f"- Generated at: {generated_at}")
-    lines.append(f"- Website: {brand.get('website', 'N/A')}")
-    lines.append(f"- Market: {brand.get('market', 'N/A')}")
+    lines.append(f"- Generated at: {report['generated_at']}")
+    lines.append(f"- Website: {brand.get('website', '') or 'N/A'}")
+    lines.append(f"- Market: {brand.get('market', '') or 'N/A'}")
+    lines.append(f"- Category: {brand.get('category', '') or 'N/A'}")
     lines.append(f"- Overall GEO Score: **{report['overall_score']} / 100** ({report['overall_level']})")
     lines.append("")
-
-    if llm_summary:
-        lines.append("## Management Summary")
-        lines.append("")
-        lines.append(llm_summary.strip())
-        lines.append("")
-
+    lines.append("## Executive Summary")
+    lines.append("")
+    lines.append(report.get("executive_summary") or "No summary generated.")
+    lines.append("")
     lines.append("## Scorecard")
     lines.append("")
-    lines.append("| Dimension | Score | Level |")
-    lines.append("|---|---:|---|")
+    lines.append("| Dimension | Score | Level | Confidence |")
+    lines.append("|---|---:|---|---:|")
     for key in ["visibility", "inclusion", "cognition", "outcome"]:
         item = report["dimensions"][key]
-        lines.append(f"| {item['name']} | {item['score']} | {item['level']} |")
+        lines.append(f"| {key.title()} | {item['score']} | {item['level']} | {round(item['confidence'] * 100, 1)}% |")
     lines.append("")
+
+    lines.append("## Competitor Set")
+    lines.append("")
+    for comp in report.get("competitors", []):
+        lines.append(f"- **{comp.get('name', 'Unknown')}**: {comp.get('why_in_set', '')} (confidence {round(float(comp.get('confidence', 0)) * 100, 1)}%)")
+    lines.append("")
+
+    lines.append("## Query Panel")
+    lines.append("")
+    grouped: Dict[str, List[Dict[str, Any]]] = {}
+    for item in report.get("query_panel", []):
+        grouped.setdefault(str(item.get("type", "other")), []).append(item)
+    for query_type in ["brand", "category", "problem", "comparison", "use_case", "trust"]:
+        if query_type not in grouped:
+            continue
+        lines.append(f"### {query_type}")
+        lines.append("")
+        for item in grouped[query_type][:8]:
+            lines.append(f"- {item.get('query', '')}")
+        lines.append("")
 
     for key in ["visibility", "inclusion", "cognition", "outcome"]:
         item = report["dimensions"][key]
-        lines.append(f"## {item['name']}")
+        lines.append(f"## {key.title()}")
         lines.append("")
         lines.append(f"Score: **{item['score']} / 100** ({item['level']})")
         lines.append("")
@@ -408,93 +393,115 @@ def render_markdown(report: Dict[str, Any], insights: Dict[str, List[str]], llm_
         for metric_name, value in item["metrics"].items():
             lines.append(f"| {metric_name} | {value} |")
         lines.append("")
+        lines.append(item.get("rationale", ""))
+        lines.append("")
+        if item.get("priority_actions"):
+            lines.append("Priority actions:")
+            for action in item["priority_actions"]:
+                lines.append(f"- {action}")
+            lines.append("")
 
     lines.append("## Strengths")
     lines.append("")
-    for bullet in insights["strengths"]:
+    for bullet in report.get("strengths", []):
         lines.append(f"- {bullet}")
     lines.append("")
 
     lines.append("## Risks")
     lines.append("")
-    for bullet in insights["risks"]:
+    for bullet in report.get("risks", []):
         lines.append(f"- {bullet}")
     lines.append("")
 
-    lines.append("## Priority Actions")
+    lines.append("## Limitations")
     lines.append("")
-    for idx, bullet in enumerate(insights["actions"], start=1):
-        lines.append(f"{idx}. {bullet}")
-    lines.append("")
-
-    notes = report.get("notes", [])
-    if notes:
-        lines.append("## Notes")
-        lines.append("")
-        for bullet in notes:
-            lines.append(f"- {bullet}")
-        lines.append("")
-
-    lines.append("## Method")
-    lines.append("")
-    lines.append(
-        "本报告按照 Visibility / Inclusion / Cognition / Outcome 四层框架计算，"
-        "通过观测样本、技术底座快照和业务结果快照，生成 0-100 的 Brand GEO Score。"
-    )
+    lines.append(report.get("methodology_note", ""))
+    for bullet in report.get("limitations", []):
+        lines.append(f"- {bullet}")
     lines.append("")
     return "\n".join(lines)
 
 
-def write_outputs(output_dir: Path, report: Dict[str, Any], markdown: str) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "report.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-    (output_dir / "report.md").write_text(markdown, encoding="utf-8")
-
+def write_outputs(output_dir: Path, report: Dict[str, Any], benchmark: Dict[str, Any]) -> None:
+    ensure_dir(output_dir)
+    (output_dir / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    (output_dir / "report.md").write_text(render_markdown(report), encoding="utf-8")
+    (output_dir / "benchmark.generated.json").write_text(json.dumps(benchmark, ensure_ascii=False, indent=2), encoding="utf-8")
     summary = {
+        "brand": report["brand"],
         "overall_score": report["overall_score"],
         "overall_level": report["overall_level"],
-        "dimensions": {
-            key: {"score": value["score"], "level": value["level"]}
-            for key, value in report["dimensions"].items()
-        },
+        "generated_at": report["generated_at"],
+        "dimensions": {key: {"score": value["score"], "level": value["level"]} for key, value in report["dimensions"].items()},
     }
-    (output_dir / "summary.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def maybe_git_commit(repo_root: Path, source_dir: Path, target_dir: Path, message: str) -> Dict[str, Any]:
+    ensure_dir(target_dir.parent)
+    if target_dir.exists():
+        subprocess.run(["rm", "-rf", str(target_dir)], check=True)
+    subprocess.run(["mkdir", "-p", str(target_dir)], check=True)
+    subprocess.run(["cp", "-R", f"{source_dir}/.", str(target_dir)], check=True)
+    subprocess.run(["git", "add", str(target_dir)], cwd=repo_root, check=True)
+    status = subprocess.run(["git", "status", "--porcelain"], cwd=repo_root, check=True, capture_output=True, text=True)
+    if not status.stdout.strip():
+        return {"committed": False, "target_dir": str(target_dir)}
+    subprocess.run(["git", "commit", "-m", message], cwd=repo_root, check=True)
+    return {"committed": True, "target_dir": str(target_dir)}
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the GEO evaluation playbook.")
-    parser.add_argument("--brand", required=True, help="Path to brand YAML config")
-    parser.add_argument("--benchmark", required=True, help="Path to benchmark YAML config")
-    parser.add_argument("--output", default="dist/report", help="Output directory")
-    parser.add_argument("--model", default="deepseek-chat", help="DeepSeek model name")
+    parser = argparse.ArgumentParser(description="DeepSeek-assisted GEO evaluation runner")
+    parser.add_argument("--brand-config", default="config/brand.yaml")
+    parser.add_argument("--manual-benchmark", default="")
+    parser.add_argument("--output", default="dist/report")
+    parser.add_argument("--model", default="deepseek-chat")
+    parser.add_argument("--auto-benchmark", action="store_true")
+    parser.add_argument("--commit-report", action="store_true")
+    parser.add_argument("--repo-root", default=".")
+    parser.add_argument("--report-subdir", default="reports/latest")
+    parser.add_argument("--commit-message", default="chore: update GEO evaluation report")
     args = parser.parse_args()
 
-    brand_config = load_yaml(Path(args.brand))
-    benchmark = load_yaml(Path(args.benchmark))
+    repo_root = Path(args.repo_root).resolve()
+    brand_cfg = load_yaml(Path(args.brand_config))
+    manual_benchmark = load_yaml(Path(args.manual_benchmark)) if args.manual_benchmark else {}
 
-    evaluator = GeoEvaluator(brand_config, benchmark)
-    report = evaluator.evaluate()
-    insights = generate_rule_based_insights(report)
+    api_key = os.getenv("DEEPSEEK_API_KEY", "")
+    base_url = os.getenv("DEEPSEEK_BASE_URL", "")
+    auto_benchmark: Dict[str, Any] = {}
+    if args.auto_benchmark or not manual_benchmark:
+        client = DeepSeekClient(api_key, base_url, args.model)
+        auto_benchmark = create_auto_benchmark(brand_cfg, client)
 
-    llm_summary = None
-    try:
-        llm_summary = maybe_generate_llm_summary(report, brand_config, args.model)
-    except Exception as exc:
-        report["llm_summary_error"] = str(exc)
+    merged_benchmark = merge_manual_benchmark(auto_benchmark, manual_benchmark)
+    report = build_report(brand_cfg, merged_benchmark)
+    output_dir = Path(args.output)
+    write_outputs(output_dir, report, merged_benchmark)
 
-    markdown = render_markdown(report, insights, llm_summary)
-    write_outputs(Path(args.output), report, markdown)
+    commit_info: Dict[str, Any] = {"committed": False}
+    if args.commit_report:
+        commit_info = maybe_git_commit(
+            repo_root=repo_root,
+            source_dir=output_dir.resolve(),
+            target_dir=(repo_root / args.report_subdir),
+            message=args.commit_message,
+        )
 
-    print(json.dumps({
+    payload = {
+        "brand": report["brand"]["name"],
         "overall_score": report["overall_score"],
         "overall_level": report["overall_level"],
-        "output": str(Path(args.output).resolve()),
-    }, ensure_ascii=False))
+        "output_dir": str(output_dir.resolve()),
+        "commit": commit_info,
+    }
+    print(json.dumps(payload, ensure_ascii=False))
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        print(json.dumps({"error": str(exc)}), file=sys.stderr)
+        raise
