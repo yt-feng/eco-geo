@@ -1,0 +1,20 @@
+brand:
+  name: "Kioxia"
+  website: "https://www.kioxia.com"
+  market: "Global"
+  region: "Global"
+  language: "zh-CN"
+  category: "NAND flash / SSD / enterprise storage"
+  narratives:
+    - "存储技术领导者"
+    - "企业级与数据中心可靠性"
+    - "面向 OEM / 数据中心 / 终端设备厂商"
+  competitors: []
+weights:
+  visibility: 35
+  inclusion: 25
+  cognition: 25
+  outcome: 15
+thresholds:
+  healthy: 75
+  warning: 55
