@@ -1,0 +1,88 @@
+name: Run GEO Evaluation
+
+on:
+  workflow_dispatch:
+    inputs:
+      brand_config_path:
+        description: Path to brand config YAML
+        required: true
+        default: config/brand.yaml
+      manual_benchmark_path:
+        description: Optional path to manual benchmark overlay YAML
+        required: false
+        default: ""
+      report_subdir:
+        description: Repo path to commit generated report into
+        required: true
+        default: reports/latest
+      deepseek_model:
+        description: DeepSeek model name
+        required: true
+        default: deepseek-chat
+
+permissions:
+  contents: write
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run GEO evaluation and commit report
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
+        run: |
+          python scripts/run_geo_eval.py \
+            --brand-config "${{ github.event.inputs.brand_config_path }}" \
+            --manual-benchmark "${{ github.event.inputs.manual_benchmark_path }}" \
+            --output dist/report \
+            --model "${{ github.event.inputs.deepseek_model }}" \
+            --repo-root . \
+            --report-subdir "${{ github.event.inputs.report_subdir }}" \
+            --commit-message "chore: update GEO report" \
+            --commit-report \
+            --auto-benchmark
+
+      - name: Push report commit
+        run: |
+          if [ -n "$(git log --oneline origin/${GITHUB_REF_NAME}..HEAD)" ]; then
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo "No new report commit to push."
+          fi
+
+      - name: Add job summary
+        run: |
+          if [ -f "${{ github.event.inputs.report_subdir }}/report.md" ]; then
+            echo "## GEO report committed" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat "${{ github.event.inputs.report_subdir }}/report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-report
+          path: |
+            dist/report
+            ${{ github.event.inputs.report_subdir }}
