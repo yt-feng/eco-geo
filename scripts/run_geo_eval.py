@@ -109,100 +109,103 @@ def build_auto_benchmark_prompt(brand_cfg: Dict[str, Any]) -> str:
     seed_competitors = brand.get("competitors", []) or []
     narrative_pillars = brand.get("narratives", []) or []
 
-    return f"""
-请为品牌 GEO 评估生成一个严谨的 JSON。目标品牌如下：
-- 品牌名: {name}
-- 官网: {website}
-- 市场: {market}
-- 区域: {region}
-- 语言: {language}
-- 已知品类: {category}
-- 已知竞品: {json.dumps(seed_competitors, ensure_ascii=False)}
-- 希望叙事: {json.dumps(narrative_pillars, ensure_ascii=False)}
+    output_schema = {
+        "brand_profile": {
+            "brand_name": "",
+            "official_website": "",
+            "market": "",
+            "region": "",
+            "language": "",
+            "inferred_category": "",
+            "brand_summary": "",
+            "confidence": 0.0,
+            "uncertainties": [""],
+        },
+        "competitors": [
+            {"name": "", "why_in_set": "", "confidence": 0.0}
+        ],
+        "query_panel": [
+            {"type": "brand", "query": "", "intent": ""}
+        ],
+        "geo_evaluation": {
+            "methodology_note": "",
+            "visibility": {
+                "score": 0,
+                "metrics": {
+                    "brand_mention_likelihood": 0,
+                    "first_party_citation_likelihood": 0,
+                    "comparative_presence": 0,
+                    "weighted_visibility": 0,
+                },
+                "rationale": "",
+                "confidence": 0.0,
+                "priority_actions": [""],
+            },
+            "inclusion": {
+                "score": 0,
+                "metrics": {
+                    "crawl_index_readiness": 0,
+                    "entity_clarity": 0,
+                    "structured_content_readiness": 0,
+                    "knowledge_asset_completeness": 0,
+                },
+                "rationale": "",
+                "confidence": 0.0,
+                "priority_actions": [""],
+            },
+            "cognition": {
+                "score": 0,
+                "metrics": {
+                    "definition_accuracy_likelihood": 0,
+                    "attribute_recall_likelihood": 0,
+                    "narrative_alignment_likelihood": 0,
+                    "hallucination_resilience": 0,
+                },
+                "rationale": "",
+                "confidence": 0.0,
+                "priority_actions": [""],
+            },
+            "outcome": {
+                "score": 0,
+                "metrics": {
+                    "visit_intent_capture": 0,
+                    "conversion_readiness": 0,
+                    "brand_search_lift_potential": 0,
+                    "measurement_maturity": 0,
+                },
+                "rationale": "",
+                "confidence": 0.0,
+                "priority_actions": [""],
+            },
+            "strengths": [""],
+            "risks": [""],
+            "executive_summary": "",
+        },
+    }
 
-要求：
-1. 只输出 JSON，不要 markdown。
-2. 不要假装联网，不要写“最新新闻显示”之类的话。你只能基于通用知识与品牌常识做一个“可供人工复核的初版 GEO 评估”。
-3. 如果不确定，降低 confidence 并把 uncertainty 写清楚。
-4. 竞品最多 5 个，优先给同品类、同购买决策集合里的品牌。
-5. query_panel 至少返回 18 个 query，分成 brand/category/problem/comparison/use_case/trust 六类。
-6. geo_evaluation 需要给四层打分：visibility/inclusion/cognition/outcome，范围 0-100。
-7. 每层必须给 metrics、rationale、confidence、priority_actions。
-8. 输出字段结构必须严格符合：
-{
-  "brand_profile": {
-    "brand_name": "",
-    "official_website": "",
-    "market": "",
-    "region": "",
-    "language": "",
-    "inferred_category": "",
-    "brand_summary": "",
-    "confidence": 0.0,
-    "uncertainties": [""]
-  },
-  "competitors": [
-    {"name": "", "why_in_set": "", "confidence": 0.0}
-  ],
-  "query_panel": [
-    {"type": "brand", "query": "", "intent": ""}
-  ],
-  "geo_evaluation": {
-    "methodology_note": "",
-    "visibility": {
-      "score": 0,
-      "metrics": {
-        "brand_mention_likelihood": 0,
-        "first_party_citation_likelihood": 0,
-        "comparative_presence": 0,
-        "weighted_visibility": 0
-      },
-      "rationale": "",
-      "confidence": 0.0,
-      "priority_actions": [""]
-    },
-    "inclusion": {
-      "score": 0,
-      "metrics": {
-        "crawl_index_readiness": 0,
-        "entity_clarity": 0,
-        "structured_content_readiness": 0,
-        "knowledge_asset_completeness": 0
-      },
-      "rationale": "",
-      "confidence": 0.0,
-      "priority_actions": [""]
-    },
-    "cognition": {
-      "score": 0,
-      "metrics": {
-        "definition_accuracy_likelihood": 0,
-        "attribute_recall_likelihood": 0,
-        "narrative_alignment_likelihood": 0,
-        "hallucination_resilience": 0
-      },
-      "rationale": "",
-      "confidence": 0.0,
-      "priority_actions": [""]
-    },
-    "outcome": {
-      "score": 0,
-      "metrics": {
-        "visit_intent_capture": 0,
-        "conversion_readiness": 0,
-        "brand_search_lift_potential": 0,
-        "measurement_maturity": 0
-      },
-      "rationale": "",
-      "confidence": 0.0,
-      "priority_actions": [""]
-    },
-    "strengths": [""],
-    "risks": [""],
-    "executive_summary": ""
-  }
-}
-""".strip()
+    prompt_lines = [
+        "请为品牌 GEO 评估生成一个严谨的 JSON。目标品牌如下：",
+        f"- 品牌名: {name}",
+        f"- 官网: {website}",
+        f"- 市场: {market}",
+        f"- 区域: {region}",
+        f"- 语言: {language}",
+        f"- 已知品类: {category}",
+        f"- 已知竞品: {json.dumps(seed_competitors, ensure_ascii=False)}",
+        f"- 希望叙事: {json.dumps(narrative_pillars, ensure_ascii=False)}",
+        "",
+        "要求：",
+        "1. 只输出 JSON，不要 markdown。",
+        "2. 不要假装联网，不要写‘最新新闻显示’之类的话。你只能基于通用知识与品牌常识做一个‘可供人工复核的初版 GEO 评估’。",
+        "3. 如果不确定，降低 confidence 并把 uncertainty 写清楚。",
+        "4. 竞品最多 5 个，优先给同品类、同购买决策集合里的品牌。",
+        "5. query_panel 至少返回 18 个 query，分成 brand/category/problem/comparison/use_case/trust 六类。",
+        "6. geo_evaluation 需要给四层打分：visibility/inclusion/cognition/outcome，范围 0-100。",
+        "7. 每层必须给 metrics、rationale、confidence、priority_actions。",
+        "8. 输出字段结构必须严格符合下面这个 JSON schema 示例：",
+        json.dumps(output_schema, ensure_ascii=False, indent=2),
+    ]
+    return "\n".join(prompt_lines)
 
 
 def create_auto_benchmark(brand_cfg: Dict[str, Any], client: DeepSeekClient) -> Dict[str, Any]:
