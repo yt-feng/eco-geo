@@ -11,13 +11,14 @@
 - 生成 `report.json`
 - 生成 `summary.json`
 - 生成 `benchmark.generated.json`
+- 生成 `dashboard.html`
 - **把报告直接 commit 回 repo 的 `reports/` 目录**
 
 ## 目录
 
 - `config/brand.yaml`：品牌配置
 - `config/manual_benchmark.example.yaml`：可选的人工 benchmark 覆盖模板
-- `scripts/run_geo_eval.py`：DeepSeek 辅助评估与报告生成脚本
+- `scripts/run_geo_eval.py`：DeepSeek 辅助评估与 dashboard 生成脚本
 - `.github/workflows/run-geo-eval.yml`：一键运行的 GitHub Actions
 
 ## 先做什么
@@ -48,25 +49,38 @@
 
 默认会：
 - 读取 `config/brand.yaml`
-- 用 DeepSeek 生成初版竞品集合、query panel 和四层 GEO 评分
+- 用 DeepSeek 生成初版竞品集合、query panel、evidence map、journey gap matrix 和四层 GEO 评分
 - 把结果 commit 到 `reports/latest`
 
 ## 产物说明
 
+### `reports/latest/dashboard.html`
+可直接给客户或内部业务团队看的 dashboard 版输出，包含：
+- competitive leaderboard
+- competitive pressure
+- evidence map
+- query universe
+- journey gap matrix
+- dimension decomposition
+- competitor cards
+
 ### `reports/latest/report.md`
-管理层可直接看的报告。
+管理层可直接看的文本报告。
 
 ### `reports/latest/report.json`
 结构化评分结果。
 
 ### `reports/latest/summary.json`
-适合接 dashboard。
+适合接 dashboard 摘要或历史归档。
 
 ### `reports/latest/benchmark.generated.json`
 DeepSeek 自动生成的基线：
 - brand profile
 - competitor set
 - query panel
+- evidence map
+- market pressure
+- journey gap matrix
 - geo evaluation
 
 ## 关于 benchmark 的现实做法
@@ -77,6 +91,7 @@ DeepSeek 自动生成的基线：
 用于快速起盘：
 - 谁是竞品
 - 应该监控哪些 query
+- 竞品的 GEO 成熟度谁高谁低
 - 这个品牌在四层框架里大概会落在哪里
 - 哪些动作最值得先做
 
@@ -106,10 +121,11 @@ DeepSeek 自动生成的基线：
 DeepSeek 会先产出：
 - 它推断的竞品集合
 - 一组 query panel
+- evidence map 和 market pressure
 - 初始 visibility / inclusion / cognition / outcome 分数
 - 优先动作建议
 
-这不是“真实线上观测结果”，但它是一个**可以立即落地的第一版评估框架与基线**。
+这不是“真实线上观测结果”，但它是一个**可以立即落地的第一版评估框架、竞争压力图谱和基线 dashboard**。
 
 ## 后面适合继续扩展的方向
 
