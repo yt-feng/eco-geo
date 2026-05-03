@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30 14:26:19 UTC",
+  "generated_at": "2026-05-03 15:29:58 UTC",
   "brand": {
     "name": "Kioxia",
     "website": "https://www.kioxia.com",
@@ -16,223 +16,489 @@
     "healthy": 75.0,
     "warning": 55.0
   },
-  "overall_score": 63.5,
-  "overall_level": "watch",
-  "methodology_note": "This is a preliminary assessment based on general knowledge of the brand and market. Scores are estimated with moderate confidence and should be validated with actual search data and analytics.",
+  "overall_score": 51.0,
+  "overall_level": "risk",
+  "confidence_avg": 67.5,
   "brand_profile": {
     "brand_name": "Kioxia",
     "official_website": "https://www.kioxia.com",
     "market": "Global",
     "region": "Global",
     "language": "zh-CN",
-    "inferred_category": "NAND Flash / SSD / Enterprise Storage",
-    "brand_summary": "Kioxia is a global leader in NAND flash memory and solid-state drives (SSDs), spun off from Toshiba Memory in 2019. It focuses on enterprise and data center storage solutions, serving OEMs, data centers, and device manufacturers.",
-    "confidence": 0.9,
+    "inferred_category": "NAND flash / SSD / enterprise storage",
+    "brand_summary": "Kioxia is a leading provider of NAND flash memory and solid-state drives (SSDs), spun off from Toshiba Memory. It focuses on enterprise and data center storage solutions, serving OEMs, data centers, and device manufacturers. The brand emphasizes reliability, innovation, and performance in storage technology.",
+    "confidence": 0.85,
     "uncertainties": [
-      "Exact market share in specific regions may vary; brand awareness in consumer segment is lower compared to competitors like Samsung."
+      "Exact market share in enterprise SSD segment",
+      "Specific GEO investment level in Chinese-language content",
+      "Recent changes in brand messaging strategy"
     ]
+  },
+  "methodology_note": "Scores are based on inferred GEO maturity from publicly available content, structured data, and search presence relative to peers. Scores are on a 0-100 scale, with 100 being best-in-class.",
+  "dimensions": {
+    "visibility": {
+      "score": 55.0,
+      "level": "watch",
+      "metrics": {
+        "brand_mention_likelihood": 60.0,
+        "first_party_citation_likelihood": 50.0,
+        "comparative_presence": 40.0,
+        "weighted_visibility": 55.0
+      },
+      "rationale": "Kioxia has decent brand recognition but appears less frequently in generic category searches compared to Samsung and WD. Limited presence in comparison articles and review sites.",
+      "confidence": 0.75,
+      "priority_actions": [
+        "Increase PR and media outreach to boost brand mentions in industry publications",
+        "Develop comparison pages and benchmark content to appear in competitive queries",
+        "Optimize for non-brand keywords like 'enterprise SSD' and 'NAND flash supplier'"
+      ]
+    },
+    "inclusion": {
+      "score": 50.0,
+      "level": "risk",
+      "metrics": {
+        "crawl_index_readiness": 60.0,
+        "entity_clarity": 50.0,
+        "structured_content_readiness": 45.0,
+        "knowledge_asset_completeness": 45.0
+      },
+      "rationale": "Website structure is reasonable but lacks comprehensive schema markup and entity clarity. Product pages are not fully optimized for knowledge graph inclusion.",
+      "confidence": 0.7,
+      "priority_actions": [
+        "Implement structured data (Product, Organization, FAQ) across all pages",
+        "Create a knowledge panel strategy with Wikipedia and Wikidata entries",
+        "Improve internal linking and site architecture for better crawlability"
+      ]
+    },
+    "cognition": {
+      "score": 50.0,
+      "level": "risk",
+      "metrics": {
+        "definition_accuracy_likelihood": 55.0,
+        "attribute_recall_likelihood": 50.0,
+        "narrative_alignment_likelihood": 50.0,
+        "hallucination_resilience": 45.0
+      },
+      "rationale": "Brand narrative is clear but not consistently reinforced across all content. AI models may have mixed understanding of Kioxia's positioning vs competitors.",
+      "confidence": 0.65,
+      "priority_actions": [
+        "Develop a consistent brand messaging framework and apply it to all content",
+        "Create authoritative content (whitepapers, technical guides) to shape AI training data",
+        "Monitor and correct any misinformation in AI-generated summaries"
+      ]
+    },
+    "outcome": {
+      "score": 45.0,
+      "level": "risk",
+      "metrics": {
+        "visit_intent_capture": 50.0,
+        "conversion_readiness": 40.0,
+        "brand_search_lift_potential": 45.0,
+        "measurement_maturity": 45.0
+      },
+      "rationale": "Conversion paths are unclear; lack of clear CTAs and pricing information. Brand search volume is moderate but could be improved with better visibility.",
+      "confidence": 0.6,
+      "priority_actions": [
+        "Add clear calls-to-action (request quote, contact sales) on product pages",
+        "Develop case studies and ROI calculators to support decision-making",
+        "Implement analytics to track GEO-driven conversions and brand lift"
+      ]
+    }
   },
   "competitors": [
     {
       "name": "Samsung Semiconductor",
-      "why_in_set": "Direct competitor in NAND flash and enterprise SSDs, with strong brand recognition and market share.",
-      "confidence": 0.95
+      "why_in_set": "Dominant player in NAND flash and SSD market with strong brand recognition and extensive GEO presence.",
+      "confidence": 0.95,
+      "geo_maturity_stage": "Advanced",
+      "overall_score_estimate": 85.0,
+      "dimension_scores": {
+        "visibility": 90.0,
+        "inclusion": 85.0,
+        "cognition": 80.0,
+        "outcome": 85.0
+      },
+      "strengths": [
+        "High brand search volume and media mentions",
+        "Comprehensive product pages with detailed specs and comparisons",
+        "Strong structured data implementation (schema.org)",
+        "Active content marketing with whitepapers and case studies"
+      ],
+      "evidence_signals": [
+        "Appears in top 3 for 'enterprise SSD' and 'NAND flash' queries",
+        "Rich snippets in search results for product pages",
+        "Multiple language versions with localized content"
+      ]
+    },
+    {
+      "name": "Western Digital",
+      "why_in_set": "Major competitor with broad portfolio including WD, SanDisk, and Ultrastar brands; strong in both consumer and enterprise.",
+      "confidence": 0.9,
+      "geo_maturity_stage": "Advanced",
+      "overall_score_estimate": 80.0,
+      "dimension_scores": {
+        "visibility": 85.0,
+        "inclusion": 80.0,
+        "cognition": 75.0,
+        "outcome": 80.0
+      },
+      "strengths": [
+        "Strong brand portfolio covering multiple segments",
+        "Extensive technical documentation and support resources",
+        "Active community forums and knowledge base",
+        "Good presence in comparison and review sites"
+      ],
+      "evidence_signals": [
+        "High ranking for 'data center SSD' and 'enterprise storage'",
+        "Featured snippets for technical specifications",
+        "Regularly cited in industry reports and benchmarks"
+      ]
     },
     {
       "name": "Micron Technology",
-      "why_in_set": "Competes in NAND flash and SSDs, particularly in enterprise and data center segments.",
-      "confidence": 0.9
-    },
-    {
-      "name": "Western Digital / SanDisk",
-      "why_in_set": "Major player in NAND flash and SSDs, with overlapping product lines for enterprise and consumer.",
-      "confidence": 0.9
+      "why_in_set": "Key player in memory and storage with strong focus on enterprise and data center solutions.",
+      "confidence": 0.85,
+      "geo_maturity_stage": "Intermediate",
+      "overall_score_estimate": 70.0,
+      "dimension_scores": {
+        "visibility": 75.0,
+        "inclusion": 70.0,
+        "cognition": 65.0,
+        "outcome": 70.0
+      },
+      "strengths": [
+        "Clear product categorization and technical depth",
+        "Good use of schema markup for products",
+        "Active in industry events and publications"
+      ],
+      "evidence_signals": [
+        "Appears in top 5 for 'NAND flash supplier' queries",
+        "Product pages with detailed specs and compatibility info",
+        "Presence in tech news and analysis"
+      ]
     },
     {
       "name": "SK hynix",
-      "why_in_set": "Competitor in NAND flash memory and SSDs, with growing enterprise storage portfolio.",
-      "confidence": 0.85
-    },
-    {
-      "name": "Intel (Optane / SSD)",
-      "why_in_set": "Historical competitor in enterprise SSDs, though Intel has exited some segments; still relevant for comparison.",
-      "confidence": 0.7
+      "why_in_set": "Major NAND flash producer with growing enterprise SSD presence; less GEO mature than Samsung.",
+      "confidence": 0.8,
+      "geo_maturity_stage": "Intermediate",
+      "overall_score_estimate": 65.0,
+      "dimension_scores": {
+        "visibility": 70.0,
+        "inclusion": 65.0,
+        "cognition": 60.0,
+        "outcome": 65.0
+      },
+      "strengths": [
+        "Strong in DRAM and NAND, leveraging cross-selling",
+        "Increasing investment in content and SEO",
+        "Partnerships with major OEMs"
+      ],
+      "evidence_signals": [
+        "Growing presence in 'enterprise SSD' search results",
+        "Improved website structure and navigation",
+        "More frequent press releases and technical blogs"
+      ]
     }
   ],
+  "top_peer": {
+    "name": "Samsung Semiconductor",
+    "why_in_set": "Dominant player in NAND flash and SSD market with strong brand recognition and extensive GEO presence.",
+    "confidence": 0.95,
+    "geo_maturity_stage": "Advanced",
+    "overall_score_estimate": 85.0,
+    "dimension_scores": {
+      "visibility": 90.0,
+      "inclusion": 85.0,
+      "cognition": 80.0,
+      "outcome": 85.0
+    },
+    "strengths": [
+      "High brand search volume and media mentions",
+      "Comprehensive product pages with detailed specs and comparisons",
+      "Strong structured data implementation (schema.org)",
+      "Active content marketing with whitepapers and case studies"
+    ],
+    "evidence_signals": [
+      "Appears in top 3 for 'enterprise SSD' and 'NAND flash' queries",
+      "Rich snippets in search results for product pages",
+      "Multiple language versions with localized content"
+    ]
+  },
+  "peer_average_score": 75.0,
+  "competitive_gap": 34.0,
   "query_panel": [
     {
       "type": "brand",
       "query": "Kioxia",
-      "intent": "Brand awareness and direct search"
+      "intent": "Brand search",
+      "funnel_stage": "Awareness",
+      "importance": 10.0
     },
     {
       "type": "brand",
-      "query": "Kioxia 铠侠",
-      "intent": "Brand search in Chinese"
+      "query": "Kioxia SSD",
+      "intent": "Product search",
+      "funnel_stage": "Consider",
+      "importance": 9.0
     },
     {
       "type": "brand",
-      "query": "Kioxia 官网",
-      "intent": "Official site discovery"
-    },
-    {
-      "type": "category",
-      "query": "NAND flash 供应商",
-      "intent": "Category research for suppliers"
-    },
-    {
-      "type": "category",
-      "query": "企业级 SSD 品牌",
-      "intent": "Enterprise SSD brand comparison"
-    },
-    {
-      "type": "category",
-      "query": "数据中心存储解决方案",
-      "intent": "Data center storage solutions"
-    },
-    {
-      "type": "problem",
-      "query": "NAND flash 可靠性 对比",
-      "intent": "Reliability concerns in NAND flash"
-    },
-    {
-      "type": "problem",
-      "query": "SSD 寿命 企业级",
-      "intent": "Enterprise SSD endurance issues"
-    },
-    {
-      "type": "problem",
-      "query": "数据中心存储 性能瓶颈",
-      "intent": "Performance bottlenecks in data center storage"
-    },
-    {
-      "type": "comparison",
       "query": "Kioxia vs Samsung SSD",
-      "intent": "Direct brand comparison"
+      "intent": "Comparison",
+      "funnel_stage": "Consider",
+      "importance": 8.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia enterprise SSD",
+      "intent": "Segment search",
+      "funnel_stage": "Consider",
+      "importance": 9.0
+    },
+    {
+      "type": "category",
+      "query": "NAND flash memory",
+      "intent": "Category research",
+      "funnel_stage": "Awareness",
+      "importance": 8.0
+    },
+    {
+      "type": "category",
+      "query": "enterprise SSD",
+      "intent": "Category research",
+      "funnel_stage": "Consider",
+      "importance": 9.0
+    },
+    {
+      "type": "category",
+      "query": "data center storage",
+      "intent": "Category research",
+      "funnel_stage": "Consider",
+      "importance": 8.0
+    },
+    {
+      "type": "category",
+      "query": "NVMe SSD",
+      "intent": "Technology search",
+      "funnel_stage": "Consider",
+      "importance": 7.0
+    },
+    {
+      "type": "problem",
+      "query": "high performance storage for AI",
+      "intent": "Solution search",
+      "funnel_stage": "Consider",
+      "importance": 8.0
+    },
+    {
+      "type": "problem",
+      "query": "reliable storage for data centers",
+      "intent": "Trust building",
+      "funnel_stage": "Consider",
+      "importance": 7.0
+    },
+    {
+      "type": "problem",
+      "query": "low latency SSD for databases",
+      "intent": "Technical requirement",
+      "funnel_stage": "Consider",
+      "importance": 7.0
+    },
+    {
+      "type": "problem",
+      "query": "SSD endurance for enterprise",
+      "intent": "Technical requirement",
+      "funnel_stage": "Consider",
+      "importance": 6.0
     },
     {
       "type": "comparison",
-      "query": "铠侠 与 西部数据 对比",
-      "intent": "Comparison in Chinese"
+      "query": "Kioxia vs Samsung enterprise SSD",
+      "intent": "Competitive evaluation",
+      "funnel_stage": "Decision",
+      "importance": 9.0
     },
     {
       "type": "comparison",
-      "query": "企业级 SSD 推荐 2024",
-      "intent": "Enterprise SSD recommendations"
+      "query": "best SSD for data center 2024",
+      "intent": "Purchase decision",
+      "funnel_stage": "Decision",
+      "importance": 8.0
+    },
+    {
+      "type": "comparison",
+      "query": "Kioxia CM7 vs PM9A3",
+      "intent": "Product comparison",
+      "funnel_stage": "Decision",
+      "importance": 7.0
+    },
+    {
+      "type": "comparison",
+      "query": "enterprise SSD benchmark",
+      "intent": "Performance evaluation",
+      "funnel_stage": "Decision",
+      "importance": 8.0
     },
     {
       "type": "use_case",
-      "query": "Kioxia SSD 数据中心 部署",
-      "intent": "Use case for data center deployment"
+      "query": "SSD for AI training",
+      "intent": "Use case exploration",
+      "funnel_stage": "Consider",
+      "importance": 8.0
     },
     {
       "type": "use_case",
-      "query": "铠侠 存储 服务器 OEM",
-      "intent": "OEM use case"
+      "query": "storage for hyperconverged infrastructure",
+      "intent": "Use case exploration",
+      "funnel_stage": "Consider",
+      "importance": 7.0
     },
     {
       "type": "use_case",
-      "query": "NAND flash 在 AI 训练中的应用",
-      "intent": "AI training storage use case"
+      "query": "SSD for video surveillance",
+      "intent": "Use case exploration",
+      "funnel_stage": "Consider",
+      "importance": 6.0
+    },
+    {
+      "type": "use_case",
+      "query": "enterprise storage for cloud providers",
+      "intent": "Use case exploration",
+      "funnel_stage": "Consider",
+      "importance": 7.0
     },
     {
       "type": "trust",
-      "query": "Kioxia 质量 口碑",
-      "intent": "Trust signals and reputation"
+      "query": "Kioxia reliability",
+      "intent": "Trust signal",
+      "funnel_stage": "Decision",
+      "importance": 8.0
     },
     {
       "type": "trust",
-      "query": "铠侠 售后 服务",
-      "intent": "After-sales service trust"
+      "query": "Kioxia warranty enterprise SSD",
+      "intent": "Trust signal",
+      "funnel_stage": "Decision",
+      "importance": 7.0
     },
     {
       "type": "trust",
-      "query": "企业级 SSD 认证 标准",
-      "intent": "Certification and standards trust"
+      "query": "Kioxia customer reviews",
+      "intent": "Social proof",
+      "funnel_stage": "Decision",
+      "importance": 7.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia data center case study",
+      "intent": "Proof point",
+      "funnel_stage": "Decision",
+      "importance": 8.0
     }
   ],
-  "dimensions": {
-    "visibility": {
-      "score": 65.0,
-      "level": "watch",
-      "metrics": {
-        "brand_mention_likelihood": 60.0,
-        "first_party_citation_likelihood": 70.0,
-        "comparative_presence": 55.0,
-        "weighted_visibility": 65.0
-      },
-      "rationale": "Kioxia has moderate brand visibility in enterprise circles but lower consumer awareness. Official website and press releases are cited, but comparative presence against Samsung is weaker.",
-      "confidence": 0.7,
-      "priority_actions": [
-        "Increase PR and thought leadership content in Chinese tech media",
-        "Optimize official website for SEO with localized content",
-        "Engage in industry comparisons and benchmark reports"
-      ]
+  "query_summary": {
+    "total_queries": 24,
+    "types": {
+      "brand": 4,
+      "category": 4,
+      "problem": 4,
+      "comparison": 4,
+      "use_case": 4,
+      "trust": 4
     },
-    "inclusion": {
-      "score": 70.0,
-      "level": "watch",
-      "metrics": {
-        "crawl_index_readiness": 75.0,
-        "entity_clarity": 70.0,
-        "structured_content_readiness": 65.0,
-        "knowledge_asset_completeness": 70.0
-      },
-      "rationale": "Kioxia's website is well-structured but may lack deep technical content in Chinese. Entity clarity is good but could improve with more structured data markup.",
-      "confidence": 0.7,
-      "priority_actions": [
-        "Implement schema.org markup for products and organization",
-        "Create comprehensive knowledge base articles in Chinese",
-        "Ensure all product pages have clear, unique descriptions"
-      ]
+    "funnel_stages": {
+      "Awareness": 2,
+      "Consider": 14,
+      "Decision": 8
     },
-    "cognition": {
-      "score": 60.0,
-      "level": "watch",
-      "metrics": {
-        "definition_accuracy_likelihood": 65.0,
-        "attribute_recall_likelihood": 60.0,
-        "narrative_alignment_likelihood": 55.0,
-        "hallucination_resilience": 60.0
-      },
-      "rationale": "Kioxia's narrative as a storage technology leader is partially recognized, but confusion with Toshiba may persist. Attribute recall for enterprise reliability is moderate.",
-      "confidence": 0.6,
-      "priority_actions": [
-        "Reinforce brand identity separate from Toshiba in all communications",
-        "Publish case studies highlighting enterprise reliability",
-        "Monitor and correct misinformation in online forums"
-      ]
-    },
-    "outcome": {
-      "score": 55.0,
-      "level": "watch",
-      "metrics": {
-        "visit_intent_capture": 60.0,
-        "conversion_readiness": 50.0,
-        "brand_search_lift_potential": 55.0,
-        "measurement_maturity": 55.0
-      },
-      "rationale": "Conversion paths are not fully optimized; brand search lift potential exists but measurement maturity is low due to limited analytics visibility.",
-      "confidence": 0.5,
-      "priority_actions": [
-        "Implement conversion tracking and attribution models",
-        "Optimize landing pages for key use cases (data center, OEM)",
-        "Run targeted campaigns to increase branded search volume"
-      ]
-    }
+    "avg_importance": 7.75
   },
+  "evidence_map": {
+    "owned_surface_strength": 55.0,
+    "entity_clarity": 50.0,
+    "content_modularity": 45.0,
+    "trust_signal_density": 40.0,
+    "comparison_page_readiness": 30.0,
+    "faq_readiness": 35.0,
+    "documentation_readiness": 60.0,
+    "pricing_transparency": 20.0,
+    "schema_readiness": 40.0,
+    "narrative_control": 50.0
+  },
+  "market_pressure": {
+    "peer_activation_index": 75.0,
+    "benchmark_percentile": 30.0,
+    "urgency_score": 70.0,
+    "gap_to_leading_peer": 35.0,
+    "narrative_disadvantage": 25.0
+  },
+  "journey_gap_matrix": [
+    {
+      "stage": "Discover",
+      "current_strength": 50.0,
+      "competitor_pressure": 80.0,
+      "opportunity": 30.0,
+      "notes": "Kioxia has moderate brand awareness but is overshadowed by Samsung and WD in generic category searches. Need to improve visibility for non-brand queries."
+    },
+    {
+      "stage": "Consider",
+      "current_strength": 45.0,
+      "competitor_pressure": 75.0,
+      "opportunity": 30.0,
+      "notes": "Lack of comparison pages and detailed product information vs competitors. Weak in technical content that aids evaluation."
+    },
+    {
+      "stage": "Validate",
+      "current_strength": 0.0,
+      "competitor_pressure": 0.0,
+      "opportunity": 0.0,
+      "notes": ""
+    },
+    {
+      "stage": "Select",
+      "current_strength": 0.0,
+      "competitor_pressure": 0.0,
+      "opportunity": 0.0,
+      "notes": ""
+    },
+    {
+      "stage": "Expand",
+      "current_strength": 0.0,
+      "competitor_pressure": 0.0,
+      "opportunity": 0.0,
+      "notes": ""
+    },
+    {
+      "stage": "Decision",
+      "current_strength": 40.0,
+      "competitor_pressure": 70.0,
+      "opportunity": 30.0,
+      "notes": "Limited trust signals (case studies, reviews, benchmarks) and no pricing transparency. Competitors provide more decision-support content."
+    },
+    {
+      "stage": "Advocacy",
+      "current_strength": 35.0,
+      "competitor_pressure": 65.0,
+      "opportunity": 30.0,
+      "notes": "Few customer success stories or community engagement. Competitors have active forums and user groups."
+    }
+  ],
   "strengths": [
-    "Strong technical heritage from Toshiba",
-    "Comprehensive product portfolio for enterprise and data center",
-    "Global presence with localized support"
+    "Strong technical documentation and datasheets",
+    "Clear brand heritage from Toshiba Memory",
+    "Good product portfolio breadth"
   ],
   "risks": [
-    "Lower brand awareness compared to Samsung and Western Digital",
-    "Potential confusion with former parent company Toshiba",
-    "Limited consumer market presence may affect overall brand equity"
+    "Low visibility in comparison and review content",
+    "Insufficient structured data and schema markup",
+    "Weak trust signals (case studies, testimonials)",
+    "Limited content in Chinese language for target market"
   ],
-  "executive_summary": "Kioxia is a credible player in NAND flash and enterprise storage, but its GEO performance is moderate. Visibility and cognition scores indicate room for improvement in brand differentiation and content optimization. Priority actions include strengthening SEO, creating authoritative content, and enhancing conversion paths to capture intent.",
+  "executive_summary": "Kioxia has a solid foundation as a NAND flash and enterprise SSD provider but lags behind peers like Samsung and Western Digital in GEO maturity. The brand suffers from low visibility in generic category searches, insufficient structured data, and a lack of decision-stage content such as comparisons and case studies. Urgent actions are needed to improve inclusion in knowledge graphs, enhance content for AI cognition, and build trust signals to capture conversion intent. With targeted investment in SEO, content marketing, and schema implementation, Kioxia can close the gap and strengthen its position as a storage technology leader.",
   "limitations": [
-    "Exact market share in specific regions may vary; brand awareness in consumer segment is lower compared to competitors like Samsung."
+    "Exact market share in enterprise SSD segment",
+    "Specific GEO investment level in Chinese-language content",
+    "Recent changes in brand messaging strategy"
   ]
 }
