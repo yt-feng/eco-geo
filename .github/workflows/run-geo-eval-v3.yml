@@ -51,12 +51,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Run v3 GEO research pipeline
+      - name: Run rich v3 GEO research dashboard
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
         run: |
-          python scripts/run_geo_eval_v3.py \
+          python scripts/run_geo_eval_v3_rich.py \
             --brand-name "${{ github.event.inputs.brand_name }}" \
             --brand-brief "${{ github.event.inputs.brand_brief }}" \
             --website "${{ github.event.inputs.website }}" \
@@ -64,7 +64,7 @@ jobs:
             --model "${{ github.event.inputs.deepseek_model }}" \
             --repo-root . \
             --report-subdir "${{ github.event.inputs.report_subdir }}" \
-            --commit-message "chore: update GEO v3 research dashboard" \
+            --commit-message "chore: update GEO v3 rich research dashboard" \
             --commit-report
 
       - name: Push report commit
@@ -77,7 +77,7 @@ jobs:
 
       - name: Add job summary
         run: |
-          echo "## GEO v3 dashboard generated" >> "$GITHUB_STEP_SUMMARY"
+          echo "## GEO v3 rich dashboard generated" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           if [ -f "${{ github.event.inputs.report_subdir }}/summary.json" ]; then
             cat "${{ github.event.inputs.report_subdir }}/summary.json" >> "$GITHUB_STEP_SUMMARY"
@@ -86,7 +86,7 @@ jobs:
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
         with:
-          name: geo-v3-report
+          name: geo-v3-rich-report
           path: |
             dist/report
             ${{ github.event.inputs.report_subdir }}
