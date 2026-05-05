@@ -1,147 +1,265 @@
-# Internal GEO Audit - Kioxia
-
-This file is for operator review. Do not share as the client dashboard.
-
-## Monitoring Footprint
-
-- deepseek_api_calls: 13
-- answer_probe_calls: 12
-- private_query_candidates: 33
-- site_pages_attempted: 25
-- site_pages_successful: 23
-
-## DeepSeek API Calls
-
-| # | Label | Model | Status | Prompt Hash | Response Chars |
-|---:|---|---|---:|---|---:|
-| 1 | benchmark_generation | deepseek-chat | 200 | c51a2d5a9ac9 | 15120 |
-| 2 | answer_probe_01 | deepseek-chat | 200 | 846fc71c9269 | 411 |
-| 3 | answer_probe_02 | deepseek-chat | 200 | 8db6b75b2733 | 431 |
-| 4 | answer_probe_03 | deepseek-chat | 200 | 14f9745a108a | 328 |
-| 5 | answer_probe_04 | deepseek-chat | 200 | a7e294326667 | 497 |
-| 6 | answer_probe_05 | deepseek-chat | 200 | c1782403144b | 601 |
-| 7 | answer_probe_06 | deepseek-chat | 200 | 835ae2ff3989 | 217 |
-| 8 | answer_probe_07 | deepseek-chat | 200 | 77bbdbe880af | 289 |
-| 9 | answer_probe_08 | deepseek-chat | 200 | 55dd7b17aac8 | 312 |
-| 10 | answer_probe_09 | deepseek-chat | 200 | 2703fa487683 | 400 |
-| 11 | answer_probe_10 | deepseek-chat | 200 | 45051b7aa35c | 544 |
-| 12 | answer_probe_11 | deepseek-chat | 200 | 810f5dfd7f3f | 353 |
-| 13 | answer_probe_12 | deepseek-chat | 200 | c9a97ff269fd | 464 |
-
-## Keyword Taxonomy
-### brand_terms
-Kioxia, 铠侠, Kioxia 官网, Kioxia 存储, Kioxia 企业级 SSD, Kioxia 数据中心, Kioxia 固态硬盘, Kioxia 铠侠 怎么样
-### competitor_terms
-Samsung SSD, 三星 固态硬盘, Micron 企业级, 美光 存储, Western Digital SSD, 西数 固态硬盘, SK hynix, 海力士 SSD
-### category_terms
-NAND flash, 企业级 SSD, 固态硬盘, 数据中心存储, 3D NAND, SSD 控制器, NVMe SSD, SATA SSD
-### industry_terms
-存储技术, 企业存储, 数据中心 存储 解决方案, OEM 存储, 闪存 市场, 存储 趋势, 存储 性能, 存储 可靠性
-### problem_terms
-SSD 寿命, 企业级 SSD 可靠性, 存储 性能瓶颈, NAND 磨损, SSD 数据安全, 存储 成本 优化, 数据中心 存储 挑战, SSD 故障
-
-## Private Query Panel
-### brand
-- [Awareness; importance 10.0] Kioxia — Brand awareness
-- [Awareness; importance 9.0] Kioxia 铠侠 — Brand awareness (Chinese name)
-- [Consideration; importance 8.0] Kioxia 官网 — Official site access
-- [Consideration; importance 7.0] Kioxia 存储 — Brand + category
-- [Consideration; importance 8.0] Kioxia 企业级 SSD — Product line search
-- [Consideration; importance 7.0] Kioxia 数据中心 — Use case search
-- [Consideration; importance 7.0] Kioxia 固态硬盘 — Product category
-### category
-- [Consideration; importance 8.0] NAND flash 排名 — Market landscape
-- [Consideration; importance 9.0] 企业级 SSD 推荐 — Purchase consideration
-- [Consideration; importance 8.0] 数据中心存储解决方案 — Solution search
-- [Decision; importance 9.0] 固态硬盘 品牌 对比 — Comparison shopping
-- [Awareness; importance 6.0] NAND flash 技术趋势 — Technology research
-- [Consideration; importance 6.0] 3D NAND 技术 — Technology deep dive
-### problem
-- [Consideration; importance 7.0] SSD 寿命 多久 — Product reliability
-- [Consideration; importance 8.0] 企业级 SSD 可靠性 — Trust building
-- [Awareness; importance 7.0] 数据中心存储 性能瓶颈 — Pain point
-- [Consideration; importance 6.0] NAND flash 磨损 — Technical concern
-- [Consideration; importance 8.0] SSD 数据安全 — Security concern
-- [Consideration; importance 7.0] 存储成本 优化 — Cost concern
-### comparison
-- [Decision; importance 9.0] Kioxia vs Samsung SSD — Brand comparison
-- [Decision; importance 8.0] Kioxia vs Micron 企业级 — Competitive comparison
-- [Decision; importance 8.0] Kioxia 铠侠 怎么样 — Review search
-- [Decision; importance 8.0] 企业级 SSD 性价比 对比 — Value comparison
-- [Decision; importance 7.0] Kioxia 和 西数 哪个好 — Brand comparison
-### use_case
-- [Consideration; importance 8.0] Kioxia 数据中心 案例 — Proof points
-- [Consideration; importance 7.0] Kioxia 企业级 应用 — Use case exploration
-- [Consideration; importance 7.0] Kioxia 服务器 SSD — Product application
-- [Awareness; importance 5.0] Kioxia 自动驾驶 存储 — Emerging use case
-### trust
-- [Decision; importance 8.0] Kioxia 质量 可靠吗 — Trust verification
-- [Decision; importance 7.0] Kioxia 售后 服务 — Support inquiry
-- [Decision; importance 7.0] Kioxia 保修 政策 — Warranty check
-- [Consideration; importance 6.0] Kioxia 认证 合作伙伴 — Ecosystem trust
-- [Consideration; importance 6.0] Kioxia 行业 奖项 — Social proof
-
-## DeepSeek Answer Probes
-- Q: Kioxia
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 1.0
-  - summary: Kioxia is a major player in the NAND flash memory market, competing with Samsung Semiconductor, Western Digital, Micron Technology, and SK hynix.
-- Q: Kioxia 铠侠
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.95
-  - summary: Kioxia, formerly Toshiba Memory, is a major NAND flash memory manufacturer. Key competitors include Samsung Semiconductor, Western Digital, Micron Technology, and SK hynix.
-- Q: 企业级 SSD 推荐
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: 对于企业级SSD，推荐考虑三星、西部数据、美光、SK海力士和铠侠等品牌，具体选择需根据性能、容量和可靠性需求评估。
-- Q: 固态硬盘 品牌 对比
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: Kioxia, formerly Toshiba Memory, competes in the SSD market with Samsung, Western Digital, Micron, and SK hynix. Samsung leads in performance and market share, while Kioxia focuses on value and reliability.
-- Q: Kioxia vs Samsung SSD
-  - target mentioned: True | competitors: ['Samsung Semiconductor'] | confidence: 0.9
-  - summary: Kioxia and Samsung are both leading SSD manufacturers, with Samsung generally holding a stronger market position due to its advanced V-NAND technology and broader product range. Kioxia, formerly Toshiba Memory, competes with BiCS FLASH 3D NAND but lags in performance and brand recognition. Samsung dominates in consumer and enterprise SSDs, while Kioxia focuses on value and OEM segments.
-- Q: Kioxia 官网
-  - target mentioned: True | competitors: [] | confidence: 0.9
-  - summary: Kioxia 官网是 Kioxia 公司的官方网站，提供 NAND 闪存和 SSD 产品信息。
-- Q: Kioxia 企业级 SSD
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: Kioxia 企业级 SSD 在市场中与三星半导体、西部数据、美光科技和SK海力士等竞争对手展开竞争。
-- Q: NAND flash 排名
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: 2024年NAND闪存市场排名：三星第一，SK海力士第二，西部数据第三，美光第四，铠侠第五。
-- Q: 数据中心存储解决方案
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: Kioxia competes in data center storage solutions with Samsung, Western Digital, Micron, and SK hynix, focusing on NAND flash and SSDs.
-- Q: 企业级 SSD 可靠性
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: Kioxia's enterprise SSDs offer high reliability with features like Power Loss Protection and End-to-End Data Protection, competing with Samsung's PM9A3, Western Digital's Ultrastar DC SN840, Micron's 7450 Pro, and SK hynix's PE8000 series.
-- Q: SSD 数据安全
-  - target mentioned: True | competitors: ['Samsung Semiconductor', 'Western Digital', 'Micron Technology', 'SK hynix'] | confidence: 0.9
-  - summary: Kioxia 在 SSD 数据安全方面提供硬件加密、端到端数据保护和断电保护功能，与三星、西部数据、美光、SK海力士等竞争对手类似，但各厂商在安全技术实现上存在差异。
-- Q: Kioxia vs Micron 企业级
-  - target mentioned: True | competitors: ['Micron Technology'] | confidence: 0.85
-  - summary: Kioxia and Micron compete in enterprise NAND flash, with Kioxia focusing on BiCS FLASH and Micron on 3D NAND. Kioxia has a slight edge in cost per bit, while Micron leads in performance and reliability.
-
-## Crawled Pages
-- 200 https://www.kioxia.com | title: KIOXIA Corporation Home | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/ja-jp/top.sitemap.xml | title:  | surfaces: 
-- 200 https://www.kioxia.com/en-jp/top.sitemap.xml | title:  | surfaces: 
-- 200 https://www.kioxia.com/en-jp/contact.html | title: Contact Us (KIOXIA Corporation / Product Information) | KIOXIA - Japan (English) | surfaces: product, support
-- 200 https://www.kioxia.com/ja-jp/top.html | title: ã­ãªã¯ã·ã¢æ ªå¼ä¼ç¤¾ ãã¼ã  | KIOXIA - Japan (æ¥æ¬èª) | surfaces: 
-- 200 https://www.kioxia.com/en-jp/top.html | title: KIOXIA Corporation Home | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business.html | title: Business Products | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/memory.html | title: Memory | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/memory/bics.html | title: 3D Flash Memory âBiCS FLASHâ¢â | KIOXIA - Japan (English) | surfaces: about, product
-- 200 https://www.kioxia.com/en-jp/business/memory/mlc-nand.html | title: UFS & e-MMC for Consumer & Industrial | KIOXIA - Japan (English) | surfaces: product, support
-- 200 https://www.kioxia.com/en-jp/business/memory/automotive.html | title: UFS for Automotive | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/memory/slc-nand.html | title: SLC NAND Flash Memory | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/memory/xlflash.html | title: XL-FLASH | Storage Class Memory (SCM) | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/ssd.html | title: SSD for Business | KIOXIA - Japan (English) | surfaces: product, enterprise
-- 200 https://www.kioxia.com/en-jp/business/ssd/enterprise-ssd.html | title: Enterprise SSD | KIOXIA - Japan (English) | surfaces: product, enterprise
-- 200 https://www.kioxia.com/en-jp/business/ssd/data-center-ssd.html | title: Data Center SSD | KIOXIA - Japan (English) | surfaces: product, enterprise
-- 200 https://www.kioxia.com/en-jp/business/ssd/client-ssd.html | title: Client SSD | KIOXIA - Japan (English) | surfaces: product, trust
-- 200 https://www.kioxia.com/en-jp/business/ssd/document.html | title: Download SSD Documents | KIOXIA - Japan (English) | surfaces: product, support, docs
-- 200 https://www.kioxia.com/en-jp/business/application.html | title: Applications | KIOXIA - Japan (English) | surfaces: product, enterprise
-- 200 https://www.kioxia.com/en-jp/business/application/enterprise-storage.html | title: Enterprise Storage Applications | KIOXIA - Japan (English) | surfaces: product, enterprise
-- 200 https://www.kioxia.com/en-jp/business/application/data-center-storage.html | title: Data Center Storage Applications | KIOXIA - Japan (English) | surfaces: product, enterprise, support
-- 200 https://www.kioxia.com/en-jp/business/application/client-computing.html | title: Client Computing Applications | KIOXIA - Japan (English) | surfaces: 
-- 200 https://www.kioxia.com/en-jp/business/application/mobile.html | title: Mobile Applications | KIOXIA - Japan (English) | surfaces: product
-- 200 https://www.kioxia.com/en-jp/business/application/automotive.html | title: Automotive Applications | KIOXIA - Japan (English) | surfaces: product, support
-- 200 https://www.kioxia.com/en-jp/business/application/consumer.html | title: Consumer Applications | KIOXIA - Japan (English) | surfaces: product
+{
+  "term_buckets": {
+    "brand_terms": [
+      "Kioxia",
+      "Kioxia SSD",
+      "Kioxia NAND",
+      "Kioxia BiCS FLASH",
+      "Kioxia EXCERIA",
+      "Kioxia data center SSD"
+    ],
+    "competitor_terms": [
+      "Samsung SSD",
+      "Samsung NAND",
+      "Western Digital SSD",
+      "SanDisk SSD",
+      "Micron SSD",
+      "Micron NAND",
+      "SK hynix SSD",
+      "Solidigm SSD",
+      "Seagate SSD",
+      "Intel SSD"
+    ],
+    "industry_terms": [
+      "NAND flash memory",
+      "3D NAND",
+      "SSD",
+      "solid state drive",
+      "NVMe",
+      "PCIe Gen4",
+      "PCIe Gen5",
+      "data center storage",
+      "enterprise storage",
+      "cloud storage"
+    ],
+    "category_terms": [
+      "client SSD",
+      "enterprise SSD",
+      "data center SSD",
+      "embedded storage",
+      "eMMC",
+      "UFS",
+      "memory card",
+      "USB drive",
+      "flash storage",
+      "storage solution"
+    ],
+    "problem_terms": [
+      "storage performance",
+      "storage endurance",
+      "data center latency",
+      "AI storage bottleneck",
+      "storage reliability",
+      "storage capacity",
+      "storage cost",
+      "data center power consumption"
+    ],
+    "trust_terms": [
+      "reliable storage",
+      "high endurance SSD",
+      "enterprise-grade",
+      "data integrity",
+      "proven technology",
+      "industry leader",
+      "innovation in storage",
+      "quality NAND"
+    ]
+  },
+  "question_families": [
+    {
+      "family": "Brand Awareness",
+      "purpose": "Capture top-of-funnel queries about Kioxia brand, technology, and product lines.",
+      "query_count": 24,
+      "representative_queries": [
+        "Kioxia SSD review",
+        "Kioxia BiCS FLASH technology",
+        "Kioxia EXCERIA series",
+        "Kioxia data center SSD",
+        "Kioxia NAND flash reliability",
+        "Kioxia enterprise SSD endurance",
+        "Kioxia SSD for AI workloads",
+        "Kioxia SSD for data center",
+        "Kioxia SSD for gaming",
+        "Kioxia embedded storage solutions",
+        "Kioxia memory cards",
+        "Kioxia USB drives",
+        "Kioxia PCIe Gen4 SSD",
+        "Kioxia PCIe Gen5 SSD",
+        "Kioxia NVMe SSD",
+        "Kioxia SATA SSD",
+        "Kioxia 3D NAND",
+        "Kioxia storage solutions",
+        "Kioxia vs Samsung SSD",
+        "Kioxia vs Western Digital SSD",
+        "Kioxia vs Micron SSD",
+        "Kioxia vs SK hynix SSD",
+        "Kioxia vs Seagate SSD",
+        "Kioxia vs Solidigm SSD"
+      ],
+      "recommended_engine_runs": 24
+    },
+    {
+      "family": "Competitive Intelligence",
+      "purpose": "Monitor competitor products, reviews, and comparisons to inform positioning.",
+      "query_count": 24,
+      "representative_queries": [
+        "Samsung SSD review",
+        "Samsung NAND flash technology",
+        "Western Digital SSD review",
+        "SanDisk SSD review",
+        "Micron SSD review",
+        "Micron NAND flash",
+        "SK hynix SSD review",
+        "Solidigm SSD review",
+        "Seagate SSD review",
+        "Intel SSD review",
+        "Samsung vs Western Digital SSD",
+        "Samsung vs Micron SSD",
+        "Western Digital vs Seagate SSD",
+        "SK hynix vs Solidigm SSD",
+        "Samsung enterprise SSD",
+        "Western Digital enterprise SSD",
+        "Micron enterprise SSD",
+        "SK hynix enterprise SSD",
+        "Solidigm enterprise SSD",
+        "Seagate enterprise SSD",
+        "Samsung SSD for AI",
+        "Western Digital SSD for data center",
+        "Micron SSD for gaming",
+        "SK hynix SSD for AI"
+      ],
+      "recommended_engine_runs": 24
+    },
+    {
+      "family": "Industry & Category Trends",
+      "purpose": "Understand market trends, technology comparisons, and category-specific queries.",
+      "query_count": 24,
+      "representative_queries": [
+        "NAND flash memory market trends 2025",
+        "3D NAND technology explained",
+        "SSD vs HDD for data center",
+        "NVMe vs SATA SSD",
+        "PCIe Gen4 vs Gen5 SSD",
+        "Data center storage solutions",
+        "Enterprise storage trends",
+        "Cloud storage infrastructure",
+        "AI storage requirements",
+        "Storage for machine learning",
+        "NAND flash vs DRAM",
+        "SSD endurance ratings",
+        "Data center power consumption storage",
+        "Storage latency optimization",
+        "Best client SSD 2025",
+        "Best enterprise SSD 2025",
+        "Best data center SSD",
+        "Embedded storage solutions",
+        "eMMC vs UFS",
+        "Flash storage vs HDD",
+        "NVMe SSD for gaming",
+        "SATA SSD for laptop",
+        "Memory card speed classes",
+        "USB drive for backup"
+      ],
+      "recommended_engine_runs": 24
+    },
+    {
+      "family": "Problem & Use Case",
+      "purpose": "Identify pain points and specific use cases to tailor content and solutions.",
+      "query_count": 24,
+      "representative_queries": [
+        "Storage performance bottleneck",
+        "SSD endurance issues",
+        "Data center latency problems",
+        "AI storage bottleneck solutions",
+        "Storage reliability concerns",
+        "Storage capacity planning",
+        "Data center storage cost optimization",
+        "Power consumption in data center storage",
+        "Kioxia vs Samsung SSD performance",
+        "Kioxia vs Western Digital SSD endurance",
+        "Kioxia vs Micron SSD price",
+        "Kioxia vs SK hynix SSD reliability",
+        "Kioxia vs Seagate SSD for data center",
+        "Kioxia vs Solidigm SSD for AI",
+        "Samsung vs Western Digital SSD for enterprise",
+        "Micron vs SK hynix SSD performance",
+        "NVMe vs SATA SSD for gaming",
+        "PCIe Gen4 vs Gen5 SSD for data center",
+        "Best SSD for AI training",
+        "Best SSD for data center virtualization",
+        "Best SSD for gaming PC",
+        "Best SSD for video editing",
+        "Enterprise SSD for database workloads",
+        "SSD for cloud storage infrastructure"
+      ],
+      "recommended_engine_runs": 24
+    },
+    {
+      "family": "Trust & Reliability",
+      "purpose": "Build credibility by addressing trust signals and reliability concerns.",
+      "query_count": 12,
+      "representative_queries": [
+        "Most reliable SSD brand",
+        "High endurance SSD for enterprise",
+        "Enterprise-grade storage solutions",
+        "Data integrity in NAND flash",
+        "Proven NAND flash technology",
+        "Industry leader in storage innovation",
+        "Quality NAND flash memory",
+        "SSD warranty comparison",
+        "Storage brand reputation",
+        "NAND flash manufacturer ranking",
+        "Embedded storage for IoT",
+        "Memory card for 4K video"
+      ],
+      "recommended_engine_runs": 12
+    }
+  ],
+  "deepseek_runs": [
+    {
+      "stage": "01_profile_deep_dive",
+      "model": "deepseek-chat",
+      "timestamp": "2026-05-05 11:36:07 UTC",
+      "prompt_tokens": 263,
+      "completion_tokens": 648,
+      "total_tokens": 911,
+      "response_chars": 2573
+    },
+    {
+      "stage": "02_keyword_taxonomy",
+      "model": "deepseek-chat",
+      "timestamp": "2026-05-05 11:36:27 UTC",
+      "prompt_tokens": 897,
+      "completion_tokens": 1404,
+      "total_tokens": 2301,
+      "response_chars": 5052
+    },
+    {
+      "stage": "03_private_question_universe",
+      "model": "deepseek-chat",
+      "timestamp": "2026-05-05 11:38:12 UTC",
+      "prompt_tokens": 2509,
+      "completion_tokens": 7676,
+      "total_tokens": 10185,
+      "response_chars": 28155
+    },
+    {
+      "stage": "04_competitive_benchmark",
+      "model": "deepseek-chat",
+      "timestamp": "2026-05-05 11:38:33 UTC",
+      "prompt_tokens": 2696,
+      "completion_tokens": 1466,
+      "total_tokens": 4162,
+      "response_chars": 6065
+    },
+    {
+      "stage": "05_final_scorecard",
+      "model": "deepseek-chat",
+      "timestamp": "2026-05-05 11:38:53 UTC",
+      "prompt_tokens": 3438,
+      "completion_tokens": 1332,
+      "total_tokens": 4770,
+      "response_chars": 5633
+    }
+  ]
+}
