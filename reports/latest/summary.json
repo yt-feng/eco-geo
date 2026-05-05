@@ -5,27 +5,8 @@
     "market": "Global",
     "category": "NAND flash / SSD / enterprise storage"
   },
-  "overall_score": 51.0,
-  "overall_level": "risk",
-  "generated_at": "2026-05-03 15:29:58 UTC",
-  "competitive_gap": 34.0,
-  "top_peer": "Samsung Semiconductor",
-  "dimensions": {
-    "visibility": {
-      "score": 55.0,
-      "level": "watch"
-    },
-    "inclusion": {
-      "score": 50.0,
-      "level": "risk"
-    },
-    "cognition": {
-      "score": 50.0,
-      "level": "risk"
-    },
-    "outcome": {
-      "score": 45.0,
-      "level": "risk"
-    }
-  }
+  "overall_score": 43.65,
+  "competitive_gap": 41.35,
+  "deepseek_api_calls": 13,
+  "generated_at": "2026-05-05 09:25:50 UTC"
 }

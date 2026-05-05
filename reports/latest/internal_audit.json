@@ -1,0 +1,1148 @@
+{
+  "api_calls": [
+    {
+      "label": "benchmark_generation",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:24:12 UTC",
+      "status_code": 200,
+      "prompt_hash": "c51a2d5a9ac9",
+      "response_chars": 15120
+    },
+    {
+      "label": "answer_probe_01",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:20 UTC",
+      "status_code": 200,
+      "prompt_hash": "846fc71c9269",
+      "response_chars": 411
+    },
+    {
+      "label": "answer_probe_02",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:22 UTC",
+      "status_code": 200,
+      "prompt_hash": "8db6b75b2733",
+      "response_chars": 431
+    },
+    {
+      "label": "answer_probe_03",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:25 UTC",
+      "status_code": 200,
+      "prompt_hash": "14f9745a108a",
+      "response_chars": 328
+    },
+    {
+      "label": "answer_probe_04",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:27 UTC",
+      "status_code": 200,
+      "prompt_hash": "a7e294326667",
+      "response_chars": 497
+    },
+    {
+      "label": "answer_probe_05",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:30 UTC",
+      "status_code": 200,
+      "prompt_hash": "c1782403144b",
+      "response_chars": 601
+    },
+    {
+      "label": "answer_probe_06",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:33 UTC",
+      "status_code": 200,
+      "prompt_hash": "835ae2ff3989",
+      "response_chars": 217
+    },
+    {
+      "label": "answer_probe_07",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:35 UTC",
+      "status_code": 200,
+      "prompt_hash": "77bbdbe880af",
+      "response_chars": 289
+    },
+    {
+      "label": "answer_probe_08",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:37 UTC",
+      "status_code": 200,
+      "prompt_hash": "55dd7b17aac8",
+      "response_chars": 312
+    },
+    {
+      "label": "answer_probe_09",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:39 UTC",
+      "status_code": 200,
+      "prompt_hash": "2703fa487683",
+      "response_chars": 400
+    },
+    {
+      "label": "answer_probe_10",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:42 UTC",
+      "status_code": 200,
+      "prompt_hash": "45051b7aa35c",
+      "response_chars": 544
+    },
+    {
+      "label": "answer_probe_11",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:44 UTC",
+      "status_code": 200,
+      "prompt_hash": "810f5dfd7f3f",
+      "response_chars": 353
+    },
+    {
+      "label": "answer_probe_12",
+      "model": "deepseek-chat",
+      "started_at": "2026-05-05 09:25:47 UTC",
+      "status_code": 200,
+      "prompt_hash": "c9a97ff269fd",
+      "response_chars": 464
+    }
+  ],
+  "query_panel": [
+    {
+      "type": "brand",
+      "query": "Kioxia",
+      "intent": "Brand awareness",
+      "funnel_stage": "Awareness",
+      "importance": 10.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 铠侠",
+      "intent": "Brand awareness (Chinese name)",
+      "funnel_stage": "Awareness",
+      "importance": 9.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 官网",
+      "intent": "Official site access",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 存储",
+      "intent": "Brand + category",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 企业级 SSD",
+      "intent": "Product line search",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 数据中心",
+      "intent": "Use case search",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "brand",
+      "query": "Kioxia 固态硬盘",
+      "intent": "Product category",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "category",
+      "query": "NAND flash 排名",
+      "intent": "Market landscape",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "category",
+      "query": "企业级 SSD 推荐",
+      "intent": "Purchase consideration",
+      "funnel_stage": "Consideration",
+      "importance": 9.0
+    },
+    {
+      "type": "category",
+      "query": "数据中心存储解决方案",
+      "intent": "Solution search",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "category",
+      "query": "固态硬盘 品牌 对比",
+      "intent": "Comparison shopping",
+      "funnel_stage": "Decision",
+      "importance": 9.0
+    },
+    {
+      "type": "category",
+      "query": "NAND flash 技术趋势",
+      "intent": "Technology research",
+      "funnel_stage": "Awareness",
+      "importance": 6.0
+    },
+    {
+      "type": "category",
+      "query": "3D NAND 技术",
+      "intent": "Technology deep dive",
+      "funnel_stage": "Consideration",
+      "importance": 6.0
+    },
+    {
+      "type": "problem",
+      "query": "SSD 寿命 多久",
+      "intent": "Product reliability",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "problem",
+      "query": "企业级 SSD 可靠性",
+      "intent": "Trust building",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "problem",
+      "query": "数据中心存储 性能瓶颈",
+      "intent": "Pain point",
+      "funnel_stage": "Awareness",
+      "importance": 7.0
+    },
+    {
+      "type": "problem",
+      "query": "NAND flash 磨损",
+      "intent": "Technical concern",
+      "funnel_stage": "Consideration",
+      "importance": 6.0
+    },
+    {
+      "type": "problem",
+      "query": "SSD 数据安全",
+      "intent": "Security concern",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "problem",
+      "query": "存储成本 优化",
+      "intent": "Cost concern",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "comparison",
+      "query": "Kioxia vs Samsung SSD",
+      "intent": "Brand comparison",
+      "funnel_stage": "Decision",
+      "importance": 9.0
+    },
+    {
+      "type": "comparison",
+      "query": "Kioxia vs Micron 企业级",
+      "intent": "Competitive comparison",
+      "funnel_stage": "Decision",
+      "importance": 8.0
+    },
+    {
+      "type": "comparison",
+      "query": "Kioxia 铠侠 怎么样",
+      "intent": "Review search",
+      "funnel_stage": "Decision",
+      "importance": 8.0
+    },
+    {
+      "type": "comparison",
+      "query": "企业级 SSD 性价比 对比",
+      "intent": "Value comparison",
+      "funnel_stage": "Decision",
+      "importance": 8.0
+    },
+    {
+      "type": "comparison",
+      "query": "Kioxia 和 西数 哪个好",
+      "intent": "Brand comparison",
+      "funnel_stage": "Decision",
+      "importance": 7.0
+    },
+    {
+      "type": "use_case",
+      "query": "Kioxia 数据中心 案例",
+      "intent": "Proof points",
+      "funnel_stage": "Consideration",
+      "importance": 8.0
+    },
+    {
+      "type": "use_case",
+      "query": "Kioxia 企业级 应用",
+      "intent": "Use case exploration",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "use_case",
+      "query": "Kioxia 服务器 SSD",
+      "intent": "Product application",
+      "funnel_stage": "Consideration",
+      "importance": 7.0
+    },
+    {
+      "type": "use_case",
+      "query": "Kioxia 自动驾驶 存储",
+      "intent": "Emerging use case",
+      "funnel_stage": "Awareness",
+      "importance": 5.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia 质量 可靠吗",
+      "intent": "Trust verification",
+      "funnel_stage": "Decision",
+      "importance": 8.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia 售后 服务",
+      "intent": "Support inquiry",
+      "funnel_stage": "Decision",
+      "importance": 7.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia 保修 政策",
+      "intent": "Warranty check",
+      "funnel_stage": "Decision",
+      "importance": 7.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia 认证 合作伙伴",
+      "intent": "Ecosystem trust",
+      "funnel_stage": "Consideration",
+      "importance": 6.0
+    },
+    {
+      "type": "trust",
+      "query": "Kioxia 行业 奖项",
+      "intent": "Social proof",
+      "funnel_stage": "Consideration",
+      "importance": 6.0
+    }
+  ],
+  "keyword_taxonomy": {
+    "brand_terms": [
+      "Kioxia",
+      "铠侠",
+      "Kioxia 官网",
+      "Kioxia 存储",
+      "Kioxia 企业级 SSD",
+      "Kioxia 数据中心",
+      "Kioxia 固态硬盘",
+      "Kioxia 铠侠 怎么样"
+    ],
+    "competitor_terms": [
+      "Samsung SSD",
+      "三星 固态硬盘",
+      "Micron 企业级",
+      "美光 存储",
+      "Western Digital SSD",
+      "西数 固态硬盘",
+      "SK hynix",
+      "海力士 SSD"
+    ],
+    "category_terms": [
+      "NAND flash",
+      "企业级 SSD",
+      "固态硬盘",
+      "数据中心存储",
+      "3D NAND",
+      "SSD 控制器",
+      "NVMe SSD",
+      "SATA SSD"
+    ],
+    "industry_terms": [
+      "存储技术",
+      "企业存储",
+      "数据中心 存储 解决方案",
+      "OEM 存储",
+      "闪存 市场",
+      "存储 趋势",
+      "存储 性能",
+      "存储 可靠性"
+    ],
+    "problem_terms": [
+      "SSD 寿命",
+      "企业级 SSD 可靠性",
+      "存储 性能瓶颈",
+      "NAND 磨损",
+      "SSD 数据安全",
+      "存储 成本 优化",
+      "数据中心 存储 挑战",
+      "SSD 故障"
+    ]
+  },
+  "answer_probes": {
+    "enabled": true,
+    "probe_limit": 12,
+    "total_probes": 12,
+    "target_mention_rate": 100.0,
+    "competitor_mentions": {
+      "Samsung Semiconductor": 10,
+      "Western Digital": 9,
+      "Micron Technology": 10,
+      "SK hynix": 9
+    },
+    "narrative_terms": {
+      "NAND flash memory": 2,
+      "market": 1,
+      "manufacturer": 1,
+      "企业级SSD": 1,
+      "推荐": 1,
+      "性能": 1,
+      "容量": 1,
+      "可靠性": 1,
+      "performance": 2,
+      "market share": 1,
+      "value": 1,
+      "reliability": 3,
+      "V-NAND": 1,
+      "BiCS FLASH": 2,
+      "3D NAND": 2,
+      "OEM": 1,
+      "官网": 1,
+      "NAND 闪存": 1,
+      "SSD": 1,
+      "企业级 SSD": 1,
+      "竞争": 1,
+      "NAND闪存": 1,
+      "排名": 1,
+      "data center storage": 1,
+      "NAND flash": 1,
+      "SSDs": 1,
+      "Power Loss Protection": 1,
+      "End-to-End Data Protection": 1,
+      "数据安全": 1,
+      "硬件加密": 1,
+      "端到端数据保护": 1,
+      "断电保护": 1,
+      "enterprise NAND flash": 1,
+      "cost per bit": 1
+    },
+    "results": [
+      {
+        "query": {
+          "type": "brand",
+          "query": "Kioxia",
+          "intent": "Brand awareness",
+          "funnel_stage": "Awareness",
+          "importance": 10.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia is a major player in the NAND flash memory market, competing with Samsung Semiconductor, Western Digital, Micron Technology, and SK hynix.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "NAND flash memory",
+            "market"
+          ],
+          "confidence": 1.0
+        }
+      },
+      {
+        "query": {
+          "type": "brand",
+          "query": "Kioxia 铠侠",
+          "intent": "Brand awareness (Chinese name)",
+          "funnel_stage": "Awareness",
+          "importance": 9.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia, formerly Toshiba Memory, is a major NAND flash memory manufacturer. Key competitors include Samsung Semiconductor, Western Digital, Micron Technology, and SK hynix.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "NAND flash memory",
+            "manufacturer"
+          ],
+          "confidence": 0.95
+        }
+      },
+      {
+        "query": {
+          "type": "category",
+          "query": "企业级 SSD 推荐",
+          "intent": "Purchase consideration",
+          "funnel_stage": "Consideration",
+          "importance": 9.0
+        },
+        "probe": {
+          "answer_summary": "对于企业级SSD，推荐考虑三星、西部数据、美光、SK海力士和铠侠等品牌，具体选择需根据性能、容量和可靠性需求评估。",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Samsung Semiconductor",
+          "narrative_terms": [
+            "企业级SSD",
+            "推荐",
+            "性能",
+            "容量",
+            "可靠性"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "category",
+          "query": "固态硬盘 品牌 对比",
+          "intent": "Comparison shopping",
+          "funnel_stage": "Decision",
+          "importance": 9.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia, formerly Toshiba Memory, competes in the SSD market with Samsung, Western Digital, Micron, and SK hynix. Samsung leads in performance and market share, while Kioxia focuses on value and reliability.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Samsung Semiconductor",
+          "narrative_terms": [
+            "performance",
+            "market share",
+            "value",
+            "reliability"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "comparison",
+          "query": "Kioxia vs Samsung SSD",
+          "intent": "Brand comparison",
+          "funnel_stage": "Decision",
+          "importance": 9.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia and Samsung are both leading SSD manufacturers, with Samsung generally holding a stronger market position due to its advanced V-NAND technology and broader product range. Kioxia, formerly Toshiba Memory, competes with BiCS FLASH 3D NAND but lags in performance and brand recognition. Samsung dominates in consumer and enterprise SSDs, while Kioxia focuses on value and OEM segments.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor"
+          ],
+          "dominant_entity": "Samsung",
+          "narrative_terms": [
+            "V-NAND",
+            "BiCS FLASH",
+            "3D NAND",
+            "OEM"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "brand",
+          "query": "Kioxia 官网",
+          "intent": "Official site access",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia 官网是 Kioxia 公司的官方网站，提供 NAND 闪存和 SSD 产品信息。",
+          "mentioned_target": true,
+          "mentioned_competitors": [],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "官网",
+            "NAND 闪存",
+            "SSD"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "brand",
+          "query": "Kioxia 企业级 SSD",
+          "intent": "Product line search",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia 企业级 SSD 在市场中与三星半导体、西部数据、美光科技和SK海力士等竞争对手展开竞争。",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "企业级 SSD",
+            "竞争"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "category",
+          "query": "NAND flash 排名",
+          "intent": "Market landscape",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "2024年NAND闪存市场排名：三星第一，SK海力士第二，西部数据第三，美光第四，铠侠第五。",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Samsung Semiconductor",
+          "narrative_terms": [
+            "NAND闪存",
+            "排名"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "category",
+          "query": "数据中心存储解决方案",
+          "intent": "Solution search",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia competes in data center storage solutions with Samsung, Western Digital, Micron, and SK hynix, focusing on NAND flash and SSDs.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "data center storage",
+            "NAND flash",
+            "SSDs"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "problem",
+          "query": "企业级 SSD 可靠性",
+          "intent": "Trust building",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia's enterprise SSDs offer high reliability with features like Power Loss Protection and End-to-End Data Protection, competing with Samsung's PM9A3, Western Digital's Ultrastar DC SN840, Micron's 7450 Pro, and SK hynix's PE8000 series.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "reliability",
+            "Power Loss Protection",
+            "End-to-End Data Protection"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "problem",
+          "query": "SSD 数据安全",
+          "intent": "Security concern",
+          "funnel_stage": "Consideration",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia 在 SSD 数据安全方面提供硬件加密、端到端数据保护和断电保护功能，与三星、西部数据、美光、SK海力士等竞争对手类似，但各厂商在安全技术实现上存在差异。",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Samsung Semiconductor",
+            "Western Digital",
+            "Micron Technology",
+            "SK hynix"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "数据安全",
+            "硬件加密",
+            "端到端数据保护",
+            "断电保护"
+          ],
+          "confidence": 0.9
+        }
+      },
+      {
+        "query": {
+          "type": "comparison",
+          "query": "Kioxia vs Micron 企业级",
+          "intent": "Competitive comparison",
+          "funnel_stage": "Decision",
+          "importance": 8.0
+        },
+        "probe": {
+          "answer_summary": "Kioxia and Micron compete in enterprise NAND flash, with Kioxia focusing on BiCS FLASH and Micron on 3D NAND. Kioxia has a slight edge in cost per bit, while Micron leads in performance and reliability.",
+          "mentioned_target": true,
+          "mentioned_competitors": [
+            "Micron Technology"
+          ],
+          "dominant_entity": "Kioxia",
+          "narrative_terms": [
+            "enterprise NAND flash",
+            "BiCS FLASH",
+            "3D NAND",
+            "cost per bit",
+            "performance",
+            "reliability"
+          ],
+          "confidence": 0.85
+        }
+      }
+    ]
+  },
+  "site_pages": [
+    {
+      "url": "https://www.kioxia.com",
+      "status": 200,
+      "title": "KIOXIA Corporation Home | KIOXIA - Japan (English)",
+      "h1": [
+        "KIOXIA Corporation"
+      ],
+      "meta_description": "KIOXIA will build on its history as a world leader in memory solutions to not only meet the memory demands of the future, but to also fulfill our mission to uplift the world with memory.",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/top.html?refloc=10",
+      "word_count": 942,
+      "internal_link_count": 104
+    },
+    {
+      "url": "https://www.kioxia.com/ja-jp/top.sitemap.xml",
+      "status": 200,
+      "title": "",
+      "h1": [],
+      "meta_description": "",
+      "schema_types": [],
+      "surfaces": [],
+      "final_url": "https://www.kioxia.com/ja-jp/top.sitemap.xml"
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/top.sitemap.xml",
+      "status": 200,
+      "title": "",
+      "h1": [],
+      "meta_description": "",
+      "schema_types": [],
+      "surfaces": [],
+      "final_url": "https://www.kioxia.com/en-jp/top.sitemap.xml"
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/contact.html",
+      "status": 200,
+      "title": "Contact Us (KIOXIA Corporation / Product Information) | KIOXIA - Japan (English)",
+      "h1": [
+        "Contact Us (KIOXIA Corporation / Product Information)"
+      ],
+      "meta_description": "KIOXIA will build on its history as a world leader in memory solutions to not only meet the memory demands of the future, but to also fulfill our mission to uplift the world with memory.",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "support"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/contact.html",
+      "word_count": 836,
+      "internal_link_count": 96
+    },
+    {
+      "url": "https://www.kioxia.com/ja-jp/top.html",
+      "status": 200,
+      "title": "ã­ãªã¯ã·ã¢æ ªå¼ä¼ç¤¾ ãã¼ã  | KIOXIA - Japan (æ¥æ¬èª)",
+      "h1": [
+        "ã­ãªã¯ã·ã¢æ ªå¼ä¼ç¤¾"
+      ],
+      "meta_description": "æ±èã¡ã¢ãªæ ªå¼ä¼ç¤¾ã¯2019å¹´10æ1æ¥ã«ã­ãªã¯ã·ã¢æ ªå¼ä¼ç¤¾ã¸ç¤¾åãå¤æ´ãã¾ãããããè¨æ¶ãã§ä¸çãããããããããã¨ããããã·ã§ã³ã®ãã¨ãä»ã¨æªæ¥ãã¤ãªãæ°ããä¾¡å¤ãåµé ããä¸çãå",
+      "schema_types": [],
+      "surfaces": [],
+      "final_url": "https://www.kioxia.com/ja-jp/top.html",
+      "word_count": 778,
+      "internal_link_count": 171
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/top.html",
+      "status": 200,
+      "title": "KIOXIA Corporation Home | KIOXIA - Japan (English)",
+      "h1": [
+        "KIOXIA Corporation"
+      ],
+      "meta_description": "KIOXIA will build on its history as a world leader in memory solutions to not only meet the memory demands of the future, but to also fulfill our mission to uplift the world with memory.",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/top.html",
+      "word_count": 942,
+      "internal_link_count": 104
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business.html",
+      "status": 200,
+      "title": "Business Products | KIOXIA - Japan (English)",
+      "h1": [
+        "KIOXIA Business Products"
+      ],
+      "meta_description": "KIOXIA Corporation is a leading worldwide supplier of flash memory and solid state drives (SSDs). From the invention of flash memory to todayâs breakthrough BiCS FLASHâ¢ 3D technology, KIOXIA continues to lead innovation and move the industry forward.",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business.html",
+      "word_count": 1097,
+      "internal_link_count": 105
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory.html",
+      "status": 200,
+      "title": "Memory | KIOXIA - Japan (English)",
+      "h1": [
+        ""
+      ],
+      "meta_description": "In 1987, the worldâs first NAND flash memory was invented. Then, in 2007, we pioneered the development of 3D flash memory technology which enables us to increase the capacity of flash memory. And today, this technology is playing an important role in changin",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory.html",
+      "word_count": 1285,
+      "internal_link_count": 129
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory/bics.html",
+      "status": 200,
+      "title": "3D Flash Memory âBiCS FLASHâ¢â | KIOXIA - Japan (English)",
+      "h1": [
+        "KIOXIA BiCS FLASHâ¢ 3D Flash Memory"
+      ],
+      "meta_description": "Having invented NAND flash memory over 35 years ago, KIOXIA is today one of the industryâs leading flash memory suppliers â and continues to move the technology forward. The launch of KIOXIA BiCS FLASHâ¢ 3D flash memory in 2007 strengthened the companyâ",
+      "schema_types": [],
+      "surfaces": [
+        "about",
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory/bics.html",
+      "word_count": 1569,
+      "internal_link_count": 115
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory/mlc-nand.html",
+      "status": 200,
+      "title": "UFS & e-MMC for Consumer & Industrial | KIOXIA - Japan (English)",
+      "h1": [
+        "UFS & e-MMC for Consumer & Industrial"
+      ],
+      "meta_description": "The KIOXIA family of high-capacity embedded flash memory devices, consisting of UFS (Universal Flash Storage) and e-MMC, integrate KIOXIA memory solutions and a controller into a single package. KIOXIA's managed flash memory solutions help customers simplify s",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "support"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory/mlc-nand.html",
+      "word_count": 1230,
+      "internal_link_count": 111
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory/automotive.html",
+      "status": 200,
+      "title": "UFS for Automotive | KIOXIA - Japan (English)",
+      "h1": [
+        "UFS for Automotive"
+      ],
+      "meta_description": "KIOXIA launched Automotive UFS 4.0 to power the next generation infotainment and ADAS (advanced driver-assistance system). Automotive UFS 4.0 offers a fast interface speed of up to 46.4Gbps per storage device, enabling faster load time required by automotive a",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory/automotive.html",
+      "word_count": 1828,
+      "internal_link_count": 111
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory/slc-nand.html",
+      "status": 200,
+      "title": "SLC NAND Flash Memory | KIOXIA - Japan (English)",
+      "h1": [
+        "SLC NAND Flash Memory"
+      ],
+      "meta_description": "SLC (single-level cell) NAND flash memory remains an integral part of the overall flash memory market.  Its high endurance makes it ideally suited for a variety of consumer and industrial applications where reliability and longevity of supply is important.",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory/slc-nand.html",
+      "word_count": 1104,
+      "internal_link_count": 109
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/memory/xlflash.html",
+      "status": 200,
+      "title": "XL-FLASH | Storage Class Memory (SCM) | KIOXIA - Japan (English)",
+      "h1": [
+        "XL-FLASH | Storage Class Memory (SCM)"
+      ],
+      "meta_description": "Recognizing the growing demand for a flexible and affordable Storage Class Memory (SCM) solution, KIOXIA developed XL-FLASH, an extremely low-latency, high-performance flash memory. XL-FLASH is designed to address the performance gap that currently exists betw",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/memory/xlflash.html",
+      "word_count": 1294,
+      "internal_link_count": 112
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/ssd.html",
+      "status": 200,
+      "title": "SSD for Business | KIOXIA - Japan (English)",
+      "h1": [
+        ""
+      ],
+      "meta_description": "With Kioxia Solid State Drive portfolio, KIOXIA provides optimal SSD product and solutions of various Client SSDs, Data Center SSDs and Enterprise SSDs for datacenters, PCs and laptops.",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/ssd.html",
+      "word_count": 1301,
+      "internal_link_count": 134
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/ssd/enterprise-ssd.html",
+      "status": 200,
+      "title": "Enterprise SSD | KIOXIA - Japan (English)",
+      "h1": [
+        "Enterprise SSD"
+      ],
+      "meta_description": "Enterprise SSDs that equipped KIOXIA original flash memory and controller offer high performance, reliability, data protection, which suitable for high-performance computing, server and storage systems",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/ssd/enterprise-ssd.html",
+      "word_count": 2945,
+      "internal_link_count": 155
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/ssd/data-center-ssd.html",
+      "status": 200,
+      "title": "Data Center SSD | KIOXIA - Japan (English)",
+      "h1": [
+        "Data Center SSD"
+      ],
+      "meta_description": "Data Center SSDs that equipped KIOXIA original flash memory and controller offer high performance, reliability, low power comsumption, which suitable for low end computing, server and cloud data center systems",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/ssd/data-center-ssd.html",
+      "word_count": 2196,
+      "internal_link_count": 138
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/ssd/client-ssd.html",
+      "status": 200,
+      "title": "Client SSD | KIOXIA - Japan (English)",
+      "h1": [
+        "Client SSD"
+      ],
+      "meta_description": "Featuring compactness and low power consumption, the KIOXIA line-up of client SSDs can be applied to ultra-thin and high-end PCs, including security-required applications with SED models.",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "trust"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/ssd/client-ssd.html",
+      "word_count": 1489,
+      "internal_link_count": 115
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/ssd/document.html",
+      "status": 200,
+      "title": "Download SSD Documents | KIOXIA - Japan (English)",
+      "h1": [
+        "Download SSD Product Documents"
+      ],
+      "meta_description": "",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "support",
+        "docs"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/ssd/document.html",
+      "word_count": 966,
+      "internal_link_count": 121
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application.html",
+      "status": 200,
+      "title": "Applications | KIOXIA - Japan (English)",
+      "h1": [
+        ""
+      ],
+      "meta_description": "Whether itâs automotive applications or compact high performance-oriented PCs or cloud server and hyperscale data center deployments, by delivering advanced high performance, high density, low power, low latency, reliability and moreâKIOXIA memory and stor",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application.html",
+      "word_count": 1357,
+      "internal_link_count": 126
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/enterprise-storage.html",
+      "status": 200,
+      "title": "Enterprise Storage Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Enterprise Storage Applications"
+      ],
+      "meta_description": "The enterprise data center needs non-stop storage with high levels of performance and reliability.   It requires continuous innovations to keep applications running effectively and efficiently, delivering more value with each generation of SAS and NVMeâ¢ tech",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/enterprise-storage.html",
+      "word_count": 1581,
+      "internal_link_count": 117
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/data-center-storage.html",
+      "status": 200,
+      "title": "Data Center Storage Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Data Center Storage Applications"
+      ],
+      "meta_description": "Data center class SSDs helps cloud and hyperscale deployments providing storage that delivers consistent performance with predictable response times. Built on PCIeÂ® and NVMeâ¢ technology, data center SSDs  provide a balance of performance, power and latency,",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "enterprise",
+        "support"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/data-center-storage.html",
+      "word_count": 1328,
+      "internal_link_count": 114
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/client-computing.html",
+      "status": 200,
+      "title": "Client Computing Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Client Computing Applications"
+      ],
+      "meta_description": "Whether editing a video clip for social media, writing a book report for school, or generating 3D renderings for a feature film, client applications are pervasive in our personal and professional lives. This vast market segment requires a solution base that ca",
+      "schema_types": [],
+      "surfaces": [],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/client-computing.html",
+      "word_count": 1704,
+      "internal_link_count": 120
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/mobile.html",
+      "status": 200,
+      "title": "Mobile Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Mobile Applications"
+      ],
+      "meta_description": "Smartphones, tablets, and other mobile devices are demanding significantly more storage capability to handle the larger file sizes associated with the high-resolution images and videos needed to make next-generation applications like 5G networks possible. With",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/mobile.html",
+      "word_count": 1507,
+      "internal_link_count": 117
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/automotive.html",
+      "status": 200,
+      "title": "Automotive Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Automotive Applications"
+      ],
+      "meta_description": "Next-gen automotive systems are hungry for more. More advanced automotive infotainment and ADAS (Advanced Driver Assistance Systems). More storage for driving event data recording. Support for more 3D mapping. Entirely new applications and capabilities to take",
+      "schema_types": [],
+      "surfaces": [
+        "product",
+        "support"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/automotive.html",
+      "word_count": 1507,
+      "internal_link_count": 112
+    },
+    {
+      "url": "https://www.kioxia.com/en-jp/business/application/consumer.html",
+      "status": 200,
+      "title": "Consumer Applications | KIOXIA - Japan (English)",
+      "h1": [
+        "Consumer Applications"
+      ],
+      "meta_description": "Since its invention in 1987, NAND flash memory has been at the center of the digital revolution and has been widely used in consumer devices such as cell phones, digital cameras, tablets, printers and more.",
+      "schema_types": [],
+      "surfaces": [
+        "product"
+      ],
+      "final_url": "https://www.kioxia.com/en-jp/business/application/consumer.html",
+      "word_count": 1465,
+      "internal_link_count": 128
+    }
+  ]
+}
