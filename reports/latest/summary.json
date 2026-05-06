@@ -1,23 +1,14 @@
 {
-  "brand": {
-    "name": "Kioxia",
-    "website": "https://www.kioxia.com",
-    "market": "Global",
-    "region": "Global",
-    "language": "zh-CN",
-    "category": "NAND flash / SSD / enterprise storage",
-    "narratives": [
-      "存储技术领导者",
-      "企业级与数据中心可靠性",
-      "面向 OEM / 数据中心 / 终端设备厂商"
-    ],
-    "competitors": [],
-    "brief": "NAND flash, SSD, and enterprise storage brand"
-  },
-  "generated_at": "2026-05-06 02:37:51 UTC",
-  "pipeline_calls": 5,
-  "private_query_count": 80,
-  "question_family_count": 8,
-  "competitor_count": 5,
-  "website_pages_scanned": 18
+  "brand": "Kioxia",
+  "generated_at": "2026-05-06 06:03:31 UTC",
+  "total_deepseek_calls": 62,
+  "monitoring_probes": 60,
+  "brand_mention_rate": 63.33,
+  "brand_recommendation_rate": 10.0,
+  "dimension_scores": {
+    "visibility": 37.77,
+    "inclusion": 21.29,
+    "cognition": 20.03,
+    "outcome": 19.49
+  }
 }

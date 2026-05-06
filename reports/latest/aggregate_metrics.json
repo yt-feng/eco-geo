@@ -1,0 +1,101 @@
+{
+  "brand_name": "Kioxia",
+  "monitoring_questions_planned": 60,
+  "monitoring_calls_successful": 60,
+  "monitoring_calls_failed": 0,
+  "brand_mention_rate": 63.33,
+  "brand_recommendation_rate": 10.0,
+  "first_party_source_needed_rate": 26.67,
+  "avg_citation_likelihood": 2.19,
+  "avg_answer_confidence": 8.78,
+  "factual_risk_flag_count": 14,
+  "query_type_distribution": {
+    "brand": 10,
+    "competitor": 10,
+    "industry": 10,
+    "category": 10,
+    "problem": 10,
+    "trust": 10
+  },
+  "funnel_stage_distribution": {
+    "Awareness": 15,
+    "Consideration": 35,
+    "Purchase": 1,
+    "Post-purchase": 9
+  },
+  "competitor_mention_counts": {
+    "Samsung": 41,
+    "Western Digital": 36,
+    "SK hynix": 27,
+    "Micron": 24,
+    "Intel": 19,
+    "Solidigm": 2,
+    "Kioxia": 1,
+    "SanDisk": 1,
+    "Crucial": 1
+  },
+  "recommended_brand_counts": {
+    "Samsung": 22,
+    "Western Digital": 19,
+    "SK hynix": 7,
+    "Kioxia": 7,
+    "Micron": 3,
+    "Solidigm": 2,
+    "Crucial": 2,
+    "Intel": 1,
+    "Seagate": 1,
+    "SanDisk": 1,
+    "EaseUS": 1,
+    "Recuva": 1,
+    "R-Studio": 1,
+    "DriveSavers": 1,
+    "Secure Data Recovery": 1
+  },
+  "sentiment_distribution": {
+    "neutral": 27,
+    "positive": 10,
+    "not_mentioned": 22,
+    "negative": 1
+  },
+  "best_answer_owner_distribution": {
+    "Samsung": 14,
+    "Kioxia": 12,
+    "": 10,
+    "general knowledge": 5,
+    "Western Digital": 3,
+    "general consensus": 2,
+    "neutral": 2,
+    "Industry analyst": 2,
+    "generic": 2,
+    "third_party": 1,
+    "general tech community": 1,
+    "general": 1,
+    "general_tech_community": 1,
+    "Tom's Hardware": 1,
+    "User review aggregators": 1,
+    "Industry analyst reports and tech media": 1,
+    "TechReviewSite": 1
+  },
+  "dimension_scores": {
+    "visibility": 37.77,
+    "inclusion": 21.29,
+    "cognition": 20.03,
+    "outcome": 19.49
+  },
+  "risk_flag_samples": [
+    "warranty terms may vary by product and region",
+    "mixed consumer feedback",
+    "No specific Kioxia recovery guidance",
+    "generic advice may not apply to all brands",
+    "mixed user reviews",
+    "limited enterprise support",
+    "warranty terms may vary by region and product",
+    "Outdated review data",
+    "Sample bias",
+    "Endurance ratings may vary by model and firmware version",
+    "generalization without specific data",
+    "unsubstantiated claims about reliability",
+    "Financial instability concerns",
+    "Market share decline"
+  ]
+}

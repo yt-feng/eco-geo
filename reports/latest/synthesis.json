@@ -1,0 +1,32 @@
+{
+  "executive_summary": "Kioxia has moderate visibility (37.77%) in AI-generated search results but is often overshadowed by competitors like Samsung and Western Digital. Brand recommendation rate is low (10%), and Kioxia is rarely the top recommended brand. Competitor pressure is high, with Samsung and Western Digital dominating comparisons. Kioxia's narrative control is weak, as it is frequently compared but not preferred. Trust signals are mixed, with some positive mentions but also risk flags around warranty, support, and mixed reviews. Priority actions include improving brand recommendation through stronger value propositions, addressing trust gaps with first-party content, and increasing visibility in enterprise and consumer segments.",
+  "dimension_scores": {
+    "visibility": 37.77,
+    "inclusion": 21.29,
+    "cognition": 20.03,
+    "outcome": 19.49
+  },
+  "evidence_map": {
+    "answer_visibility": 37.77,
+    "competitor_pressure": 63.33,
+    "first_party_citation_need": 26.67,
+    "narrative_control": 20.0,
+    "trust_signal_gap": 23.33,
+    "recommendation_strength": 10.0
+  },
+  "top_findings": [
+    "Kioxia is mentioned in 63.33% of queries but recommended in only 10%.",
+    "Samsung and Western Digital are the dominant recommended brands, appearing in 22 and 19 recommendations respectively.",
+    "Kioxia's best answer owner share is 20%, but it is often compared unfavorably to competitors.",
+    "14 factual risk flags were identified, including warranty variability and mixed consumer feedback.",
+    "First-party source needed in 26.67% of queries, indicating reliance on third-party information."
+  ],
+  "priority_actions": [
+    "Increase brand recommendation rate by highlighting unique advantages (e.g., BiCS FLASH technology, value pricing).",
+    "Develop and promote first-party content (e.g., detailed warranty pages, support guides) to reduce reliance on third-party sources.",
+    "Target enterprise SSD segment with case studies and performance benchmarks to compete with Samsung and Western Digital.",
+    "Address trust gaps by improving online presence for customer support and reliability data.",
+    "Monitor and mitigate negative sentiment and risk flags through proactive PR and customer engagement."
+  ],
+  "methodology_note": "Analysis based on 60 AI-generated responses from DeepSeek API, covering 10 query types across 6 categories. Sampling was weekly for high-importance queries (importance >=8) and monthly for others. Metrics include brand mention rate, recommendation rate, sentiment, citation likelihood, and competitor mentions. Dimension scores are normalized to 0-100 scale."
+}

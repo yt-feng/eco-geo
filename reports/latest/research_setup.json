@@ -1,0 +1,730 @@
+{
+  "brand_profile": {
+    "brand_name": "Kioxia",
+    "brief": "NAND flash, SSD, and enterprise storage brand",
+    "official_website": "",
+    "category": "Storage",
+    "market": "Global",
+    "positioning_summary": "Kioxia is a leading provider of NAND flash memory and solid-state drives (SSDs), spun off from Toshiba Memory, focusing on high-performance, reliable storage solutions for data centers, enterprises, and consumers."
+  },
+  "term_buckets": {
+    "brand_terms": [
+      "Kioxia",
+      "Kioxia SSD",
+      "Kioxia NAND",
+      "Kioxia enterprise storage",
+      "Kioxia vs",
+      "Kioxia review",
+      "Kioxia warranty",
+      "Kioxia support",
+      "Kioxia price",
+      "Kioxia reliability"
+    ],
+    "competitor_terms": [
+      "Samsung SSD",
+      "Western Digital SSD",
+      "Micron SSD",
+      "SK hynix SSD",
+      "Intel SSD",
+      "Seagate SSD",
+      "Kingston SSD",
+      "Crucial SSD",
+      "SanDisk SSD",
+      "Solidigm SSD"
+    ],
+    "industry_terms": [
+      "NAND flash market",
+      "SSD market trends",
+      "enterprise storage solutions",
+      "data center storage",
+      "flash memory technology",
+      "3D NAND",
+      "PCIe Gen4 SSD",
+      "NVMe SSD",
+      "QLC NAND",
+      "TLC NAND"
+    ],
+    "category_terms": [
+      "best SSD for gaming",
+      "best SSD for laptop",
+      "best enterprise SSD",
+      "internal SSD",
+      "external SSD",
+      "M.2 SSD",
+      "SATA SSD",
+      "U.2 SSD",
+      "E1.S SSD",
+      "high endurance SSD"
+    ],
+    "problem_terms": [
+      "SSD failure",
+      "SSD data recovery",
+      "SSD slow performance",
+      "SSD compatibility issues",
+      "SSD overheating",
+      "SSD firmware update",
+      "SSD not detected",
+      "SSD lifespan",
+      "SSD vs HDD",
+      "NAND flash shortage"
+    ],
+    "trust_terms": [
+      "Kioxia reliability",
+      "Kioxia warranty",
+      "Kioxia customer support",
+      "Kioxia reviews",
+      "Kioxia rating",
+      "Kioxia security",
+      "Kioxia data integrity",
+      "Kioxia endurance",
+      "Kioxia quality",
+      "Kioxia reputation"
+    ]
+  },
+  "topic_cloud": [
+    {
+      "term": "Kioxia SSD",
+      "weight": 10
+    },
+    {
+      "term": "Samsung SSD",
+      "weight": 9
+    },
+    {
+      "term": "best SSD",
+      "weight": 8
+    },
+    {
+      "term": "NVMe SSD",
+      "weight": 7
+    },
+    {
+      "term": "enterprise storage",
+      "weight": 6
+    },
+    {
+      "term": "NAND flash",
+      "weight": 6
+    },
+    {
+      "term": "SSD reliability",
+      "weight": 5
+    },
+    {
+      "term": "SSD performance",
+      "weight": 5
+    },
+    {
+      "term": "Kioxia vs Samsung",
+      "weight": 4
+    },
+    {
+      "term": "data center SSD",
+      "weight": 4
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Samsung",
+      "why_in_set": "Market leader in NAND flash and SSDs, direct competitor across consumer and enterprise segments.",
+      "expected_geo_strength": 9,
+      "likely_advantages": [
+        "Brand recognition",
+        "Product range",
+        "Marketing spend",
+        "R&D investment"
+      ],
+      "confidence": 9
+    },
+    {
+      "name": "Western Digital",
+      "why_in_set": "Major player in HDD and SSD markets, strong in both consumer and enterprise storage.",
+      "expected_geo_strength": 8,
+      "likely_advantages": [
+        "Brand heritage",
+        "Distribution network",
+        "Product diversity"
+      ],
+      "confidence": 8
+    },
+    {
+      "name": "Micron",
+      "why_in_set": "Leading NAND flash manufacturer with Crucial brand for consumer SSDs.",
+      "expected_geo_strength": 7,
+      "likely_advantages": [
+        "Vertical integration",
+        "Technology leadership",
+        "Competitive pricing"
+      ],
+      "confidence": 7
+    },
+    {
+      "name": "SK hynix",
+      "why_in_set": "Major NAND producer, expanding SSD market presence with Solidigm acquisition.",
+      "expected_geo_strength": 6,
+      "likely_advantages": [
+        "Manufacturing scale",
+        "Enterprise focus",
+        "Innovation"
+      ],
+      "confidence": 6
+    },
+    {
+      "name": "Intel",
+      "why_in_set": "Historically strong in enterprise SSDs, now partnered with SK hynix (Solidigm).",
+      "expected_geo_strength": 5,
+      "likely_advantages": [
+        "Enterprise trust",
+        "Performance reputation",
+        "Optane technology"
+      ],
+      "confidence": 5
+    }
+  ],
+  "query_plan": [
+    {
+      "query_id": "q001",
+      "type": "brand",
+      "funnel_stage": "Awareness",
+      "question": "Kioxia",
+      "intent": "Brand awareness",
+      "importance": 10,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q002",
+      "type": "brand",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia SSD review",
+      "intent": "Product evaluation",
+      "importance": 9,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q003",
+      "type": "brand",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia vs Samsung SSD",
+      "intent": "Comparison shopping",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q004",
+      "type": "brand",
+      "funnel_stage": "Purchase",
+      "question": "Kioxia SSD price",
+      "intent": "Price check",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q005",
+      "type": "brand",
+      "funnel_stage": "Post-purchase",
+      "question": "Kioxia warranty",
+      "intent": "Support inquiry",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q006",
+      "type": "brand",
+      "funnel_stage": "Awareness",
+      "question": "Kioxia NAND flash",
+      "intent": "Technology awareness",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q007",
+      "type": "brand",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia enterprise SSD",
+      "intent": "Product research",
+      "importance": 8,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q008",
+      "type": "brand",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia reliability",
+      "intent": "Trust assessment",
+      "importance": 9,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q009",
+      "type": "brand",
+      "funnel_stage": "Post-purchase",
+      "question": "Kioxia support",
+      "intent": "Customer service",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q010",
+      "type": "brand",
+      "funnel_stage": "Awareness",
+      "question": "Kioxia history",
+      "intent": "Brand background",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q011",
+      "type": "competitor",
+      "funnel_stage": "Consideration",
+      "question": "Samsung SSD vs Kioxia",
+      "intent": "Competitive comparison",
+      "importance": 9,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q012",
+      "type": "competitor",
+      "funnel_stage": "Consideration",
+      "question": "Western Digital SSD vs Kioxia",
+      "intent": "Competitive comparison",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q013",
+      "type": "competitor",
+      "funnel_stage": "Consideration",
+      "question": "Micron SSD vs Kioxia",
+      "intent": "Competitive comparison",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q014",
+      "type": "competitor",
+      "funnel_stage": "Consideration",
+      "question": "SK hynix SSD vs Kioxia",
+      "intent": "Competitive comparison",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q015",
+      "type": "competitor",
+      "funnel_stage": "Consideration",
+      "question": "Intel SSD vs Kioxia",
+      "intent": "Competitive comparison",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q016",
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "Samsung SSD",
+      "intent": "Competitor awareness",
+      "importance": 8,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q017",
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "Western Digital SSD",
+      "intent": "Competitor awareness",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q018",
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "Micron SSD",
+      "intent": "Competitor awareness",
+      "importance": 6,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q019",
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "SK hynix SSD",
+      "intent": "Competitor awareness",
+      "importance": 5,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q020",
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "Intel SSD",
+      "intent": "Competitor awareness",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q021",
+      "type": "industry",
+      "funnel_stage": "Awareness",
+      "question": "NAND flash market trends 2025",
+      "intent": "Industry insight",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q022",
+      "type": "industry",
+      "funnel_stage": "Awareness",
+      "question": "SSD market growth",
+      "intent": "Industry insight",
+      "importance": 6,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q023",
+      "type": "industry",
+      "funnel_stage": "Consideration",
+      "question": "enterprise storage solutions 2025",
+      "intent": "Solution research",
+      "importance": 8,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q024",
+      "type": "industry",
+      "funnel_stage": "Consideration",
+      "question": "data center SSD requirements",
+      "intent": "Technical research",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q025",
+      "type": "industry",
+      "funnel_stage": "Awareness",
+      "question": "3D NAND technology",
+      "intent": "Technology awareness",
+      "importance": 5,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q026",
+      "type": "industry",
+      "funnel_stage": "Consideration",
+      "question": "PCIe Gen4 SSD benefits",
+      "intent": "Feature evaluation",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q027",
+      "type": "industry",
+      "funnel_stage": "Consideration",
+      "question": "NVMe vs SATA SSD",
+      "intent": "Comparison",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q028",
+      "type": "industry",
+      "funnel_stage": "Awareness",
+      "question": "QLC NAND vs TLC NAND",
+      "intent": "Technology comparison",
+      "importance": 5,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q029",
+      "type": "industry",
+      "funnel_stage": "Consideration",
+      "question": "best SSD for data center",
+      "intent": "Product research",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q030",
+      "type": "industry",
+      "funnel_stage": "Awareness",
+      "question": "flash memory shortage impact",
+      "intent": "Industry news",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q031",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best SSD for gaming 2025",
+      "intent": "Product recommendation",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q032",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best SSD for laptop",
+      "intent": "Product recommendation",
+      "importance": 7,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q033",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best enterprise SSD",
+      "intent": "Product recommendation",
+      "importance": 9,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q034",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best external SSD",
+      "intent": "Product recommendation",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q035",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "M.2 SSD vs SATA SSD",
+      "intent": "Comparison",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q036",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "U.2 SSD vs M.2 SSD",
+      "intent": "Comparison",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q037",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "high endurance SSD for surveillance",
+      "intent": "Use case research",
+      "importance": 4,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q038",
+      "type": "category",
+      "funnel_stage": "Awareness",
+      "question": "internal SSD vs external SSD",
+      "intent": "Category awareness",
+      "importance": 3,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q039",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best NVMe SSD",
+      "intent": "Product recommendation",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q040",
+      "type": "category",
+      "funnel_stage": "Consideration",
+      "question": "best SATA SSD",
+      "intent": "Product recommendation",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q041",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD failure symptoms",
+      "intent": "Troubleshooting",
+      "importance": 7,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q042",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD data recovery",
+      "intent": "Problem solving",
+      "importance": 6,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q043",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD slow performance fix",
+      "intent": "Troubleshooting",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q044",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD not detected BIOS",
+      "intent": "Troubleshooting",
+      "importance": 6,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q045",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD overheating causes",
+      "intent": "Troubleshooting",
+      "importance": 4,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q046",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD firmware update guide",
+      "intent": "Maintenance",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q047",
+      "type": "problem",
+      "funnel_stage": "Consideration",
+      "question": "SSD lifespan how long",
+      "intent": "Product research",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q048",
+      "type": "problem",
+      "funnel_stage": "Consideration",
+      "question": "SSD vs HDD for gaming",
+      "intent": "Comparison",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q049",
+      "type": "problem",
+      "funnel_stage": "Awareness",
+      "question": "NAND flash shortage 2025",
+      "intent": "Industry problem",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q050",
+      "type": "problem",
+      "funnel_stage": "Post-purchase",
+      "question": "SSD compatibility check",
+      "intent": "Troubleshooting",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q051",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia SSD reliability review",
+      "intent": "Trust assessment",
+      "importance": 9,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q052",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia warranty details",
+      "intent": "Trust assessment",
+      "importance": 8,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q053",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia customer support rating",
+      "intent": "Trust assessment",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q054",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia data integrity features",
+      "intent": "Trust assessment",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q055",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia endurance rating",
+      "intent": "Trust assessment",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q056",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia security features",
+      "intent": "Trust assessment",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q057",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia vs Samsung reliability",
+      "intent": "Comparative trust",
+      "importance": 9,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q058",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia quality control",
+      "intent": "Trust assessment",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q059",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia reputation 2025",
+      "intent": "Brand perception",
+      "importance": 8,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q060",
+      "type": "trust",
+      "funnel_stage": "Consideration",
+      "question": "Kioxia SSD user reviews",
+      "intent": "Social proof",
+      "importance": 9,
+      "risk_level": "high"
+    }
+  ],
+  "monitoring_method": {
+    "planned_deepseek_calls": 60,
+    "sampling_logic": "Each query will be executed via DeepSeek API to retrieve search results and SERP features. Sampling will be done weekly for high-importance queries (importance >= 8) and monthly for others. Results will be aggregated to track brand visibility, sentiment, and competitive positioning."
+  }
+}
