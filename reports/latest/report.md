@@ -16,9 +16,10 @@
     "competitors": [],
     "brief": "NAND flash, SSD, and enterprise storage brand"
   },
-  "generated_at": "2026-05-05 11:38:53 UTC",
-  "actual_deepseek_pipeline_calls": 5,
-  "private_query_count": 109,
-  "question_family_count": 5,
-  "competitor_count": 5
+  "generated_at": "2026-05-06 02:37:51 UTC",
+  "pipeline_calls": 5,
+  "private_query_count": 80,
+  "question_family_count": 8,
+  "competitor_count": 5,
+  "website_pages_scanned": 18
 }

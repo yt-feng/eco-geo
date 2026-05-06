@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05 11:38:53 UTC",
+  "generated_at": "2026-05-06 02:37:51 UTC",
   "brand_input": {
     "name": "Kioxia",
     "website": "https://www.kioxia.com",
@@ -22,67 +22,68 @@
     "category": "Semiconductors & Storage",
     "market": "Global",
     "language": "English",
-    "positioning_summary": "Kioxia is a leading provider of NAND flash memory and solid-state drives (SSDs), serving data centers, enterprise, and consumer markets with high-performance, reliable storage solutions.",
+    "positioning_summary": "Kioxia is a leading provider of NAND flash memory and solid-state drives (SSDs), serving both consumer and enterprise markets with high-performance, reliable storage solutions.",
     "icp": [
-      "Data center operators and cloud service providers",
-      "Enterprise IT managers and storage architects",
-      "OEMs integrating storage into servers, PCs, and mobile devices",
-      "Gamers and PC enthusiasts seeking high-speed SSDs"
+      "Enterprise IT managers and data center operators",
+      "Cloud service providers and hyperscalers",
+      "PC and laptop OEMs",
+      "Consumer electronics manufacturers",
+      "Gamers and PC enthusiasts"
     ],
     "buying_committee": [
       "Chief Technology Officer (CTO)",
       "VP of Engineering",
-      "IT Director / Storage Manager",
-      "Procurement Manager",
-      "System Architect"
+      "IT Procurement Manager",
+      "Data Center Architect",
+      "Product Manager (OEM)"
     ],
     "core_offerings": [
-      "NAND flash memory chips (BiCS FLASH™)",
-      "Client SSDs (SATA, NVMe)",
-      "Enterprise and data center SSDs",
-      "Embedded storage solutions (eMMC, UFS)",
-      "Memory cards and USB drives (retail)"
+      "NAND flash memory chips",
+      "Consumer SSDs (e.g., Exceria series)",
+      "Enterprise SSDs (e.g., CD6, CM6 series)",
+      "Data center storage solutions",
+      "Embedded storage for mobile and automotive"
     ],
     "must_own_topics": [
-      "NAND flash technology leadership (e.g., 3D NAND, BiCS FLASH)",
-      "SSD performance, endurance, and reliability",
-      "Data center storage optimization",
-      "Storage for AI and machine learning workloads",
-      "PCIe Gen4/Gen5 SSD innovation"
+      "NAND flash technology and innovation (e.g., BiCS FLASH 3D)",
+      "SSD performance benchmarks and reliability",
+      "Enterprise storage scalability and efficiency",
+      "Data center storage trends (NVMe, PCIe Gen4/5)",
+      "Storage for AI and machine learning workloads"
     ],
     "competitor_candidates": [
       {
         "name": "Samsung Semiconductor",
-        "reason": "Dominant player in NAND flash and SSDs across consumer and enterprise segments.",
-        "confidence": 90
+        "reason": "Direct competitor in NAND flash and SSDs across consumer and enterprise segments.",
+        "confidence": 9
       },
       {
-        "name": "Western Digital / SanDisk",
-        "reason": "Direct competitor in NAND flash and SSDs, with similar product lines and joint venture history.",
-        "confidence": 85
+        "name": "Western Digital (WD)",
+        "reason": "Major NAND flash and SSD player; Kioxia was formerly a joint venture with WD.",
+        "confidence": 9
       },
       {
         "name": "Micron Technology",
-        "reason": "Major NAND flash and SSD manufacturer, competing in enterprise and client markets.",
-        "confidence": 80
+        "reason": "Competes in NAND flash and SSDs, especially in enterprise and OEM markets.",
+        "confidence": 8
       },
       {
-        "name": "SK hynix / Solidigm",
-        "reason": "Strong in NAND flash and enterprise SSDs, especially after Intel's NAND business acquisition.",
-        "confidence": 75
+        "name": "SK Hynix",
+        "reason": "Significant NAND flash and SSD competitor, including enterprise and consumer.",
+        "confidence": 8
       },
       {
-        "name": "Seagate Technology",
-        "reason": "Competes in enterprise storage with HDDs and SSDs, though primarily HDD-focused.",
-        "confidence": 60
+        "name": "Intel (Solidigm)",
+        "reason": "Intel's NAND business (now Solidigm) competes in enterprise SSDs.",
+        "confidence": 7
       }
     ],
     "uncertainties": [
-      "Exact market share breakdown by segment (client vs. enterprise)",
-      "Specific retail product lineup and branding (e.g., EXCERIA series)",
-      "Recent financial performance and R&D investment details"
+      "Exact market share breakdown by segment (consumer vs enterprise)",
+      "Specific product pricing and availability details",
+      "Recent financial performance and strategic partnerships"
     ],
-    "confidence": 85
+    "confidence": 8
   },
   "keywords": {
     "term_buckets": {
@@ -90,264 +91,283 @@
         "Kioxia",
         "Kioxia SSD",
         "Kioxia NAND",
+        "Kioxia Exceria",
         "Kioxia BiCS FLASH",
-        "Kioxia EXCERIA",
-        "Kioxia data center SSD"
+        "Kioxia enterprise SSD",
+        "Kioxia data center",
+        "Kioxia vs Samsung",
+        "Kioxia vs Western Digital"
       ],
       "competitor_terms": [
         "Samsung SSD",
         "Samsung NAND",
         "Western Digital SSD",
-        "SanDisk SSD",
+        "WD NAND",
         "Micron SSD",
         "Micron NAND",
-        "SK hynix SSD",
+        "SK Hynix SSD",
+        "SK Hynix NAND",
         "Solidigm SSD",
-        "Seagate SSD",
         "Intel SSD"
       ],
       "industry_terms": [
         "NAND flash memory",
         "3D NAND",
+        "BiCS FLASH",
         "SSD",
-        "solid state drive",
         "NVMe",
         "PCIe Gen4",
         "PCIe Gen5",
-        "data center storage",
         "enterprise storage",
-        "cloud storage"
+        "data center storage",
+        "cloud storage",
+        "AI storage",
+        "machine learning storage",
+        "storage performance",
+        "IOPS",
+        "latency",
+        "endurance",
+        "TLC",
+        "QLC",
+        "PLC"
       ],
       "category_terms": [
-        "client SSD",
+        "consumer SSD",
         "enterprise SSD",
         "data center SSD",
         "embedded storage",
-        "eMMC",
-        "UFS",
-        "memory card",
-        "USB drive",
-        "flash storage",
-        "storage solution"
+        "automotive storage",
+        "mobile storage",
+        "client SSD",
+        "NVMe SSD",
+        "SATA SSD",
+        "U.2 SSD",
+        "E1.S SSD",
+        "E3.S SSD"
       ],
       "problem_terms": [
-        "storage performance",
-        "storage endurance",
+        "storage bottleneck",
         "data center latency",
-        "AI storage bottleneck",
+        "storage scalability",
+        "storage cost per TB",
+        "storage power consumption",
         "storage reliability",
-        "storage capacity",
-        "storage cost",
-        "data center power consumption"
+        "data integrity",
+        "storage endurance",
+        "storage performance optimization",
+        "storage for AI workloads"
       ],
       "trust_terms": [
-        "reliable storage",
-        "high endurance SSD",
-        "enterprise-grade",
-        "data integrity",
-        "proven technology",
-        "industry leader",
-        "innovation in storage",
-        "quality NAND"
+        "Kioxia reliability",
+        "Kioxia warranty",
+        "Kioxia support",
+        "Kioxia quality",
+        "Kioxia innovation",
+        "Kioxia market share",
+        "Kioxia partnerships",
+        "Kioxia certifications",
+        "Kioxia reviews",
+        "Kioxia benchmarks"
       ]
     },
     "topic_cloud": [
       {
         "term": "NAND flash memory",
-        "weight": 95,
+        "weight": 10,
         "bucket": "industry_terms"
       },
       {
         "term": "SSD",
-        "weight": 90,
-        "bucket": "industry_terms"
-      },
-      {
-        "term": "Kioxia",
-        "weight": 100,
-        "bucket": "brand_terms"
-      },
-      {
-        "term": "data center storage",
-        "weight": 85,
-        "bucket": "industry_terms"
-      },
-      {
-        "term": "3D NAND",
-        "weight": 80,
-        "bucket": "industry_terms"
-      },
-      {
-        "term": "NVMe",
-        "weight": 75,
+        "weight": 9,
         "bucket": "industry_terms"
       },
       {
         "term": "enterprise SSD",
-        "weight": 70,
+        "weight": 8,
         "bucket": "category_terms"
       },
       {
-        "term": "PCIe Gen4",
-        "weight": 65,
-        "bucket": "industry_terms"
+        "term": "Kioxia",
+        "weight": 10,
+        "bucket": "brand_terms"
       },
       {
         "term": "Samsung SSD",
-        "weight": 60,
+        "weight": 7,
         "bucket": "competitor_terms"
       },
       {
-        "term": "Western Digital SSD",
-        "weight": 55,
-        "bucket": "competitor_terms"
+        "term": "NVMe",
+        "weight": 8,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "data center storage",
+        "weight": 7,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "BiCS FLASH",
+        "weight": 6,
+        "bucket": "brand_terms"
       },
       {
         "term": "storage performance",
-        "weight": 50,
+        "weight": 6,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "3D NAND",
+        "weight": 7,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "PCIe Gen4",
+        "weight": 6,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "Western Digital SSD",
+        "weight": 6,
+        "bucket": "competitor_terms"
+      },
+      {
+        "term": "cloud storage",
+        "weight": 5,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "AI storage",
+        "weight": 5,
+        "bucket": "industry_terms"
+      },
+      {
+        "term": "storage bottleneck",
+        "weight": 4,
         "bucket": "problem_terms"
       },
       {
-        "term": "reliable storage",
-        "weight": 45,
+        "term": "Kioxia reliability",
+        "weight": 5,
         "bucket": "trust_terms"
       },
       {
-        "term": "client SSD",
-        "weight": 40,
+        "term": "consumer SSD",
+        "weight": 5,
         "bucket": "category_terms"
-      },
-      {
-        "term": "embedded storage",
-        "weight": 35,
-        "bucket": "category_terms"
-      },
-      {
-        "term": "AI storage bottleneck",
-        "weight": 30,
-        "bucket": "problem_terms"
-      },
-      {
-        "term": "high endurance SSD",
-        "weight": 25,
-        "bucket": "trust_terms"
       },
       {
         "term": "Micron SSD",
-        "weight": 20,
-        "bucket": "competitor_terms"
-      },
-      {
-        "term": "SK hynix SSD",
-        "weight": 15,
-        "bucket": "competitor_terms"
-      },
-      {
-        "term": "storage capacity",
-        "weight": 10,
-        "bucket": "problem_terms"
-      },
-      {
-        "term": "data integrity",
         "weight": 5,
-        "bucket": "trust_terms"
+        "bucket": "competitor_terms"
+      },
+      {
+        "term": "SK Hynix SSD",
+        "weight": 4,
+        "bucket": "competitor_terms"
+      },
+      {
+        "term": "storage scalability",
+        "weight": 4,
+        "bucket": "problem_terms"
       }
     ],
     "semantic_clusters": [
       {
-        "cluster": "NAND Flash Technology",
+        "cluster": "NAND flash technology",
         "terms": [
           "NAND flash memory",
           "3D NAND",
           "BiCS FLASH",
-          "Kioxia NAND",
-          "Samsung NAND",
-          "Micron NAND"
+          "TLC",
+          "QLC",
+          "PLC"
         ],
-        "geo_value": 90,
-        "competitive_intensity": 95
+        "geo_value": 9,
+        "competitive_intensity": 8
       },
       {
-        "cluster": "SSD Performance",
+        "cluster": "SSD performance and interface",
         "terms": [
           "SSD",
           "NVMe",
           "PCIe Gen4",
           "PCIe Gen5",
-          "storage performance",
-          "storage endurance",
-          "high endurance SSD"
+          "IOPS",
+          "latency",
+          "endurance"
         ],
-        "geo_value": 85,
-        "competitive_intensity": 90
+        "geo_value": 8,
+        "competitive_intensity": 9
       },
       {
-        "cluster": "Data Center Storage",
+        "cluster": "Enterprise and data center storage",
         "terms": [
-          "data center storage",
-          "enterprise storage",
-          "cloud storage",
-          "data center SSD",
           "enterprise SSD",
-          "data center latency",
-          "data center power consumption"
+          "data center storage",
+          "cloud storage",
+          "U.2 SSD",
+          "E1.S SSD",
+          "E3.S SSD"
         ],
-        "geo_value": 80,
-        "competitive_intensity": 85
+        "geo_value": 9,
+        "competitive_intensity": 8
       },
       {
-        "cluster": "Competitor Landscape",
+        "cluster": "Competitor brands",
         "terms": [
           "Samsung SSD",
           "Western Digital SSD",
-          "SanDisk SSD",
           "Micron SSD",
-          "SK hynix SSD",
-          "Solidigm SSD",
-          "Seagate SSD",
-          "Intel SSD"
+          "SK Hynix SSD",
+          "Solidigm SSD"
         ],
-        "geo_value": 70,
-        "competitive_intensity": 100
+        "geo_value": 7,
+        "competitive_intensity": 10
       },
       {
-        "cluster": "Storage Solutions",
+        "cluster": "Storage for AI and ML",
         "terms": [
-          "client SSD",
-          "embedded storage",
-          "eMMC",
-          "UFS",
-          "memory card",
-          "USB drive",
-          "flash storage",
-          "storage solution"
+          "AI storage",
+          "machine learning storage",
+          "storage for AI workloads"
         ],
-        "geo_value": 60,
-        "competitive_intensity": 70
+        "geo_value": 8,
+        "competitive_intensity": 6
       },
       {
-        "cluster": "Trust & Reliability",
+        "cluster": "Storage challenges and solutions",
         "terms": [
-          "reliable storage",
-          "enterprise-grade",
-          "data integrity",
-          "proven technology",
-          "industry leader",
-          "innovation in storage",
-          "quality NAND"
+          "storage bottleneck",
+          "storage scalability",
+          "storage cost per TB",
+          "storage power consumption",
+          "storage reliability"
         ],
-        "geo_value": 50,
-        "competitive_intensity": 40
+        "geo_value": 7,
+        "competitive_intensity": 5
+      },
+      {
+        "cluster": "Brand trust and authority",
+        "terms": [
+          "Kioxia reliability",
+          "Kioxia warranty",
+          "Kioxia support",
+          "Kioxia reviews",
+          "Kioxia benchmarks"
+        ],
+        "geo_value": 6,
+        "competitive_intensity": 4
       }
     ],
-    "taxonomy_summary": "This taxonomy covers Kioxia's core brand and product terms, key competitors, industry and category terminology, problem areas (performance, endurance, capacity), and trust signals. The semantic clusters highlight NAND technology, SSD performance, data center storage, competitive landscape, storage solutions, and reliability. High-weight terms like 'NAND flash memory', 'SSD', and 'Kioxia' are essential for GEO queries, while competitor terms enable competitive analysis. The clusters with high competitive intensity (e.g., NAND Flash Technology, SSD Performance) are critical for differentiation."
+    "taxonomy_summary": "This taxonomy covers Kioxia's core brand and product terms, key competitors, industry technology (NAND, SSD, NVMe), storage categories (consumer, enterprise, data center), common storage problems, and trust-building terms. The semantic clusters group related terms for GEO query design, with high geo-value clusters around NAND technology, enterprise storage, and competitor comparisons. Competitive intensity is highest in SSD performance and competitor brand clusters."
   },
   "questions": {
     "query_panel": [
       {
         "type": "brand",
         "query": "Kioxia SSD review",
-        "intent": "Product evaluation",
+        "intent": "Evaluate Kioxia SSD performance and reliability",
         "funnel_stage": "Consider",
         "importance": 9,
         "risk_level": "medium"
@@ -355,23 +375,15 @@
       {
         "type": "brand",
         "query": "Kioxia BiCS FLASH technology",
-        "intent": "Technology deep dive",
+        "intent": "Understand Kioxia's NAND technology",
         "funnel_stage": "Awareness",
         "importance": 8,
         "risk_level": "low"
       },
       {
         "type": "brand",
-        "query": "Kioxia EXCERIA series",
-        "intent": "Product lineup",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia data center SSD",
-        "intent": "Enterprise solution",
+        "query": "Kioxia enterprise SSD CD6",
+        "intent": "Research Kioxia enterprise product specs",
         "funnel_stage": "Consider",
         "importance": 8,
         "risk_level": "medium"
@@ -379,1005 +391,721 @@
       {
         "type": "brand",
         "query": "Kioxia vs Samsung SSD",
-        "intent": "Comparison",
+        "intent": "Compare Kioxia with top competitor",
         "funnel_stage": "Decision",
-        "importance": 9,
+        "importance": 10,
         "risk_level": "high"
+      },
+      {
+        "type": "brand",
+        "query": "Kioxia Exceria series",
+        "intent": "Explore Kioxia consumer SSD lineup",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "low"
+      },
+      {
+        "type": "brand",
+        "query": "Kioxia data center storage solutions",
+        "intent": "Learn about Kioxia's data center offerings",
+        "funnel_stage": "Consider",
+        "importance": 9,
+        "risk_level": "medium"
+      },
+      {
+        "type": "brand",
+        "query": "Kioxia NAND flash market share",
+        "intent": "Assess Kioxia's market position",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "brand",
+        "query": "Kioxia SSD warranty",
+        "intent": "Check Kioxia warranty terms",
+        "funnel_stage": "Decision",
+        "importance": 6,
+        "risk_level": "low"
       },
       {
         "type": "brand",
         "query": "Kioxia vs Western Digital SSD",
-        "intent": "Comparison",
+        "intent": "Compare Kioxia with WD",
         "funnel_stage": "Decision",
-        "importance": 8,
-        "risk_level": "high"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia vs Micron SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 7,
-        "risk_level": "high"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia vs SK hynix SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 7,
-        "risk_level": "high"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia vs Seagate SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia vs Solidigm SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia NAND flash reliability",
-        "intent": "Trust signal",
-        "funnel_stage": "Consider",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia enterprise SSD endurance",
-        "intent": "Trust signal",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia SSD for AI workloads",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia SSD for data center",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia SSD for gaming",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia embedded storage solutions",
-        "intent": "Product category",
-        "funnel_stage": "Awareness",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia memory cards",
-        "intent": "Product category",
-        "funnel_stage": "Awareness",
-        "importance": 5,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia USB drives",
-        "intent": "Product category",
-        "funnel_stage": "Awareness",
-        "importance": 4,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia PCIe Gen4 SSD",
-        "intent": "Technology feature",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia PCIe Gen5 SSD",
-        "intent": "Technology feature",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia NVMe SSD",
-        "intent": "Technology feature",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia SATA SSD",
-        "intent": "Technology feature",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia 3D NAND",
-        "intent": "Technology deep dive",
-        "funnel_stage": "Awareness",
-        "importance": 8,
-        "risk_level": "low"
-      },
-      {
-        "type": "brand",
-        "query": "Kioxia storage solutions",
-        "intent": "General brand",
-        "funnel_stage": "Awareness",
         "importance": 9,
-        "risk_level": "low"
+        "risk_level": "high"
       },
       {
-        "type": "competitor",
-        "query": "Samsung SSD review",
-        "intent": "Competitive intelligence",
+        "type": "brand",
+        "query": "Kioxia SSD benchmarks",
+        "intent": "Find performance benchmarks for Kioxia SSDs",
         "funnel_stage": "Consider",
         "importance": 8,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Samsung NAND flash technology",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "low"
+        "query": "Samsung SSD 990 Pro review",
+        "intent": "Evaluate Samsung's flagship consumer SSD",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Western Digital SSD review",
-        "intent": "Competitive intelligence",
+        "query": "Western Digital SN850X review",
+        "intent": "Evaluate WD's high-end consumer SSD",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "competitor",
+        "query": "Micron 7450 SSD specs",
+        "intent": "Research Micron enterprise SSD",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "SanDisk SSD review",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Micron SSD review",
-        "intent": "Competitive intelligence",
+        "query": "SK Hynix Platinum P41 review",
+        "intent": "Evaluate SK Hynix consumer SSD",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Micron NAND flash",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Awareness",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "competitor",
-        "query": "SK hynix SSD review",
-        "intent": "Competitive intelligence",
+        "query": "Solidigm D7-P5810 specs",
+        "intent": "Research Solidigm enterprise SSD",
         "funnel_stage": "Consider",
         "importance": 6,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Solidigm SSD review",
-        "intent": "Competitive intelligence",
+        "query": "Samsung enterprise SSD PM9A3",
+        "intent": "Research Samsung data center SSD",
         "funnel_stage": "Consider",
-        "importance": 5,
+        "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Seagate SSD review",
-        "intent": "Competitive intelligence",
+        "query": "Western Digital Ultrastar DC SN840",
+        "intent": "Research WD enterprise SSD",
         "funnel_stage": "Consider",
-        "importance": 5,
+        "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Intel SSD review",
-        "intent": "Competitive intelligence",
+        "query": "Micron 9300 SSD review",
+        "intent": "Evaluate Micron enterprise SSD",
         "funnel_stage": "Consider",
-        "importance": 5,
+        "importance": 6,
         "risk_level": "medium"
       },
       {
         "type": "competitor",
-        "query": "Samsung vs Western Digital SSD",
-        "intent": "Competitive comparison",
+        "query": "SK Hynix PE8110 specs",
+        "intent": "Research SK Hynix enterprise SSD",
+        "funnel_stage": "Consider",
+        "importance": 6,
+        "risk_level": "medium"
+      },
+      {
+        "type": "competitor",
+        "query": "Solidigm vs Kioxia enterprise SSD",
+        "intent": "Compare Solidigm and Kioxia enterprise SSDs",
         "funnel_stage": "Decision",
         "importance": 7,
         "risk_level": "high"
-      },
-      {
-        "type": "competitor",
-        "query": "Samsung vs Micron SSD",
-        "intent": "Competitive comparison",
-        "funnel_stage": "Decision",
-        "importance": 6,
-        "risk_level": "high"
-      },
-      {
-        "type": "competitor",
-        "query": "Western Digital vs Seagate SSD",
-        "intent": "Competitive comparison",
-        "funnel_stage": "Decision",
-        "importance": 5,
-        "risk_level": "high"
-      },
-      {
-        "type": "competitor",
-        "query": "SK hynix vs Solidigm SSD",
-        "intent": "Competitive comparison",
-        "funnel_stage": "Decision",
-        "importance": 4,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Samsung enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Western Digital enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Micron enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "SK hynix enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 5,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Solidigm enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 5,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Seagate enterprise SSD",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 4,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Samsung SSD for AI",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Western Digital SSD for data center",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "competitor",
-        "query": "Micron SSD for gaming",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 4,
-        "risk_level": "low"
-      },
-      {
-        "type": "competitor",
-        "query": "SK hynix SSD for AI",
-        "intent": "Competitive intelligence",
-        "funnel_stage": "Consider",
-        "importance": 5,
-        "risk_level": "medium"
       },
       {
         "type": "industry",
-        "query": "NAND flash memory market trends 2025",
-        "intent": "Market intelligence",
+        "query": "NAND flash memory price trends 2025",
+        "intent": "Understand NAND market pricing",
         "funnel_stage": "Awareness",
-        "importance": 8,
+        "importance": 7,
         "risk_level": "low"
       },
       {
         "type": "industry",
         "query": "3D NAND technology explained",
-        "intent": "Educational",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "low"
-      },
-      {
-        "type": "industry",
-        "query": "SSD vs HDD for data center",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "NVMe vs SATA SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "PCIe Gen4 vs Gen5 SSD",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "Data center storage solutions",
-        "intent": "Solution exploration",
-        "funnel_stage": "Consider",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "Enterprise storage trends",
-        "intent": "Market intelligence",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "low"
-      },
-      {
-        "type": "industry",
-        "query": "Cloud storage infrastructure",
-        "intent": "Solution exploration",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "AI storage requirements",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "Storage for machine learning",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "industry",
-        "query": "NAND flash vs DRAM",
-        "intent": "Comparison",
+        "intent": "Learn about 3D NAND basics",
         "funnel_stage": "Awareness",
         "importance": 6,
         "risk_level": "low"
       },
       {
         "type": "industry",
-        "query": "SSD endurance ratings",
-        "intent": "Educational",
+        "query": "NVMe vs SATA SSD performance",
+        "intent": "Compare NVMe and SATA interfaces",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "industry",
+        "query": "PCIe Gen5 SSD benefits",
+        "intent": "Understand PCIe Gen5 advantages",
+        "funnel_stage": "Awareness",
+        "importance": 7,
+        "risk_level": "low"
+      },
+      {
+        "type": "industry",
+        "query": "Enterprise SSD endurance ratings",
+        "intent": "Learn about SSD endurance metrics",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "industry",
-        "query": "Data center power consumption storage",
-        "intent": "Problem identification",
+        "query": "Data center storage trends 2025",
+        "intent": "Stay updated on data center storage",
+        "funnel_stage": "Awareness",
+        "importance": 8,
+        "risk_level": "low"
+      },
+      {
+        "type": "industry",
+        "query": "QLC vs TLC NAND for enterprise",
+        "intent": "Compare QLC and TLC for enterprise use",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "industry",
+        "query": "Storage for AI workloads best practices",
+        "intent": "Learn storage optimization for AI",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "industry",
+        "query": "NVMe over Fabrics (NVMe-oF) benefits",
+        "intent": "Understand NVMe-oF for data centers",
         "funnel_stage": "Awareness",
         "importance": 6,
         "risk_level": "low"
       },
       {
         "type": "industry",
-        "query": "Storage latency optimization",
-        "intent": "Problem identification",
+        "query": "SSD form factors U.2 vs E1.S vs E3.S",
+        "intent": "Compare enterprise SSD form factors",
         "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
+        "importance": 6,
+        "risk_level": "low"
       },
       {
         "type": "category",
-        "query": "Best client SSD 2025",
-        "intent": "Product discovery",
+        "query": "Best consumer SSD 2025",
+        "intent": "Find top consumer SSDs",
         "funnel_stage": "Consider",
-        "importance": 7,
+        "importance": 8,
         "risk_level": "medium"
       },
       {
         "type": "category",
         "query": "Best enterprise SSD 2025",
-        "intent": "Product discovery",
+        "intent": "Find top enterprise SSDs",
         "funnel_stage": "Consider",
-        "importance": 8,
+        "importance": 9,
         "risk_level": "medium"
       },
       {
         "type": "category",
-        "query": "Best data center SSD",
-        "intent": "Product discovery",
+        "query": "Data center SSD buying guide",
+        "intent": "Guide for purchasing data center SSDs",
         "funnel_stage": "Consider",
         "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "category",
-        "query": "Embedded storage solutions",
-        "intent": "Solution exploration",
-        "funnel_stage": "Awareness",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "category",
-        "query": "eMMC vs UFS",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 5,
-        "risk_level": "low"
-      },
-      {
-        "type": "category",
-        "query": "Flash storage vs HDD",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "category",
         "query": "NVMe SSD for gaming",
-        "intent": "Use case",
+        "intent": "Find NVMe SSDs for gaming",
         "funnel_stage": "Consider",
-        "importance": 6,
+        "importance": 7,
         "risk_level": "low"
       },
       {
         "type": "category",
-        "query": "SATA SSD for laptop",
-        "intent": "Use case",
+        "query": "Embedded storage for automotive",
+        "intent": "Research automotive storage solutions",
         "funnel_stage": "Consider",
         "importance": 5,
         "risk_level": "low"
       },
       {
         "type": "category",
-        "query": "Memory card speed classes",
-        "intent": "Educational",
-        "funnel_stage": "Awareness",
-        "importance": 4,
+        "query": "Client SSD vs enterprise SSD differences",
+        "intent": "Understand differences between client and enterprise SSDs",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "category",
+        "query": "SATA SSD vs NVMe SSD for laptops",
+        "intent": "Compare SATA and NVMe for laptops",
+        "funnel_stage": "Consider",
+        "importance": 6,
         "risk_level": "low"
       },
       {
         "type": "category",
-        "query": "USB drive for backup",
-        "intent": "Use case",
+        "query": "U.2 SSD compatibility",
+        "intent": "Check U.2 SSD compatibility",
         "funnel_stage": "Consider",
-        "importance": 3,
+        "importance": 5,
+        "risk_level": "low"
+      },
+      {
+        "type": "category",
+        "query": "E1.S SSD use cases",
+        "intent": "Understand E1.S SSD applications",
+        "funnel_stage": "Awareness",
+        "importance": 5,
+        "risk_level": "low"
+      },
+      {
+        "type": "category",
+        "query": "E3.S SSD advantages",
+        "intent": "Learn about E3.S SSD benefits",
+        "funnel_stage": "Awareness",
+        "importance": 5,
         "risk_level": "low"
       },
       {
         "type": "problem",
-        "query": "Storage performance bottleneck",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 8,
-        "risk_level": "medium"
-      },
-      {
-        "type": "problem",
-        "query": "SSD endurance issues",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "problem",
-        "query": "Data center latency problems",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "problem",
-        "query": "AI storage bottleneck solutions",
-        "intent": "Problem identification",
+        "query": "How to fix storage bottleneck in data center",
+        "intent": "Solve data center storage bottleneck",
         "funnel_stage": "Consider",
         "importance": 8,
         "risk_level": "medium"
       },
       {
         "type": "problem",
-        "query": "Storage reliability concerns",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
-        "importance": 7,
+        "query": "Reduce storage latency in enterprise",
+        "intent": "Find ways to reduce storage latency",
+        "funnel_stage": "Consider",
+        "importance": 8,
         "risk_level": "medium"
       },
       {
         "type": "problem",
-        "query": "Storage capacity planning",
-        "intent": "Problem identification",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "problem",
-        "query": "Data center storage cost optimization",
-        "intent": "Problem identification",
+        "query": "Improve storage scalability for cloud",
+        "intent": "Learn to scale storage for cloud",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "problem",
-        "query": "Power consumption in data center storage",
-        "intent": "Problem identification",
-        "funnel_stage": "Awareness",
+        "query": "Lower storage cost per TB",
+        "intent": "Find cost-effective storage solutions",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "Reduce storage power consumption",
+        "intent": "Find energy-efficient storage",
+        "funnel_stage": "Consider",
         "importance": 6,
-        "risk_level": "low"
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "Ensure data integrity in storage",
+        "intent": "Learn about data integrity features",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "Maximize SSD endurance for write-heavy workloads",
+        "intent": "Optimize SSD endurance",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "Optimize storage for AI training",
+        "intent": "Optimize storage for AI workloads",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "Solve storage performance issues in virtualized environments",
+        "intent": "Address storage performance in VMs",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "problem",
+        "query": "How to choose SSD for high-IOPS workloads",
+        "intent": "Select SSD for high IOPS",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "medium"
       },
       {
         "type": "comparison",
-        "query": "Kioxia vs Samsung SSD performance",
-        "intent": "Comparison",
+        "query": "Kioxia vs Samsung enterprise SSD",
+        "intent": "Compare Kioxia and Samsung enterprise SSDs",
+        "funnel_stage": "Decision",
+        "importance": 10,
+        "risk_level": "high"
+      },
+      {
+        "type": "comparison",
+        "query": "Kioxia vs Western Digital enterprise SSD",
+        "intent": "Compare Kioxia and WD enterprise SSDs",
         "funnel_stage": "Decision",
         "importance": 9,
         "risk_level": "high"
       },
       {
         "type": "comparison",
-        "query": "Kioxia vs Western Digital SSD endurance",
-        "intent": "Comparison",
+        "query": "Kioxia vs Micron enterprise SSD",
+        "intent": "Compare Kioxia and Micron enterprise SSDs",
         "funnel_stage": "Decision",
         "importance": 8,
         "risk_level": "high"
       },
       {
         "type": "comparison",
-        "query": "Kioxia vs Micron SSD price",
-        "intent": "Comparison",
+        "query": "Kioxia vs SK Hynix enterprise SSD",
+        "intent": "Compare Kioxia and SK Hynix enterprise SSDs",
+        "funnel_stage": "Decision",
+        "importance": 8,
+        "risk_level": "high"
+      },
+      {
+        "type": "comparison",
+        "query": "Kioxia vs Solidigm enterprise SSD",
+        "intent": "Compare Kioxia and Solidigm enterprise SSDs",
         "funnel_stage": "Decision",
         "importance": 7,
         "risk_level": "high"
       },
       {
         "type": "comparison",
-        "query": "Kioxia vs SK hynix SSD reliability",
-        "intent": "Comparison",
+        "query": "Kioxia Exceria vs Samsung 990 Pro",
+        "intent": "Compare Kioxia and Samsung consumer SSDs",
+        "funnel_stage": "Decision",
+        "importance": 8,
+        "risk_level": "high"
+      },
+      {
+        "type": "comparison",
+        "query": "Kioxia Exceria vs WD SN850X",
+        "intent": "Compare Kioxia and WD consumer SSDs",
+        "funnel_stage": "Decision",
+        "importance": 8,
+        "risk_level": "high"
+      },
+      {
+        "type": "comparison",
+        "query": "Kioxia vs Micron consumer SSD",
+        "intent": "Compare Kioxia and Micron consumer SSDs",
         "funnel_stage": "Decision",
         "importance": 7,
         "risk_level": "high"
       },
       {
         "type": "comparison",
-        "query": "Kioxia vs Seagate SSD for data center",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 6,
-        "risk_level": "high"
-      },
-      {
-        "type": "comparison",
-        "query": "Kioxia vs Solidigm SSD for AI",
-        "intent": "Comparison",
-        "funnel_stage": "Decision",
-        "importance": 6,
-        "risk_level": "high"
-      },
-      {
-        "type": "comparison",
-        "query": "Samsung vs Western Digital SSD for enterprise",
-        "intent": "Competitive comparison",
+        "query": "Kioxia vs SK Hynix consumer SSD",
+        "intent": "Compare Kioxia and SK Hynix consumer SSDs",
         "funnel_stage": "Decision",
         "importance": 7,
         "risk_level": "high"
       },
       {
         "type": "comparison",
-        "query": "Micron vs SK hynix SSD performance",
-        "intent": "Competitive comparison",
+        "query": "Kioxia vs Solidigm consumer SSD",
+        "intent": "Compare Kioxia and Solidigm consumer SSDs",
         "funnel_stage": "Decision",
         "importance": 6,
         "risk_level": "high"
-      },
-      {
-        "type": "comparison",
-        "query": "NVMe vs SATA SSD for gaming",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "medium"
-      },
-      {
-        "type": "comparison",
-        "query": "PCIe Gen4 vs Gen5 SSD for data center",
-        "intent": "Comparison",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
       },
       {
         "type": "use_case",
         "query": "Best SSD for AI training",
-        "intent": "Use case",
+        "intent": "Find SSD optimized for AI training",
         "funnel_stage": "Consider",
-        "importance": 8,
+        "importance": 9,
         "risk_level": "medium"
       },
       {
         "type": "use_case",
         "query": "Best SSD for data center virtualization",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "use_case",
-        "query": "Best SSD for gaming PC",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "use_case",
-        "query": "Best SSD for video editing",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "use_case",
-        "query": "Enterprise SSD for database workloads",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "use_case",
-        "query": "SSD for cloud storage infrastructure",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "use_case",
-        "query": "Embedded storage for IoT",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 5,
-        "risk_level": "low"
-      },
-      {
-        "type": "use_case",
-        "query": "Memory card for 4K video",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 4,
-        "risk_level": "low"
-      },
-      {
-        "type": "use_case",
-        "query": "USB drive for secure data transfer",
-        "intent": "Use case",
-        "funnel_stage": "Consider",
-        "importance": 3,
-        "risk_level": "low"
-      },
-      {
-        "type": "trust",
-        "query": "Most reliable SSD brand",
-        "intent": "Trust signal",
+        "intent": "Find SSD for virtualized environments",
         "funnel_stage": "Consider",
         "importance": 8,
         "risk_level": "medium"
       },
       {
-        "type": "trust",
-        "query": "High endurance SSD for enterprise",
-        "intent": "Trust signal",
+        "type": "use_case",
+        "query": "Best SSD for high-performance computing",
+        "intent": "Find SSD for HPC",
+        "funnel_stage": "Consider",
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for gaming PC",
+        "intent": "Find SSD for gaming",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "low"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for video editing",
+        "intent": "Find SSD for video editing",
+        "funnel_stage": "Consider",
+        "importance": 7,
+        "risk_level": "low"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for cloud storage",
+        "intent": "Find SSD for cloud storage",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
-        "type": "trust",
-        "query": "Enterprise-grade storage solutions",
-        "intent": "Trust signal",
+        "type": "use_case",
+        "query": "Best SSD for database workloads",
+        "intent": "Find SSD for databases",
         "funnel_stage": "Consider",
-        "importance": 7,
+        "importance": 8,
+        "risk_level": "medium"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for content delivery networks",
+        "intent": "Find SSD for CDN",
+        "funnel_stage": "Consider",
+        "importance": 6,
+        "risk_level": "medium"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for edge computing",
+        "intent": "Find SSD for edge computing",
+        "funnel_stage": "Consider",
+        "importance": 6,
+        "risk_level": "medium"
+      },
+      {
+        "type": "use_case",
+        "query": "Best SSD for automotive infotainment",
+        "intent": "Find SSD for automotive",
+        "funnel_stage": "Consider",
+        "importance": 5,
+        "risk_level": "low"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia SSD reliability review",
+        "intent": "Assess Kioxia SSD reliability",
+        "funnel_stage": "Decision",
+        "importance": 8,
         "risk_level": "medium"
       },
       {
         "type": "trust",
-        "query": "Data integrity in NAND flash",
-        "intent": "Trust signal",
-        "funnel_stage": "Consider",
+        "query": "Kioxia warranty policy",
+        "intent": "Understand Kioxia warranty",
+        "funnel_stage": "Decision",
         "importance": 7,
-        "risk_level": "medium"
-      },
-      {
-        "type": "trust",
-        "query": "Proven NAND flash technology",
-        "intent": "Trust signal",
-        "funnel_stage": "Awareness",
-        "importance": 6,
         "risk_level": "low"
       },
       {
         "type": "trust",
-        "query": "Industry leader in storage innovation",
-        "intent": "Trust signal",
-        "funnel_stage": "Awareness",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "trust",
-        "query": "Quality NAND flash memory",
-        "intent": "Trust signal",
-        "funnel_stage": "Awareness",
-        "importance": 6,
-        "risk_level": "low"
-      },
-      {
-        "type": "trust",
-        "query": "SSD warranty comparison",
-        "intent": "Trust signal",
+        "query": "Kioxia customer support reviews",
+        "intent": "Evaluate Kioxia support quality",
         "funnel_stage": "Decision",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "trust",
-        "query": "Storage brand reputation",
-        "intent": "Trust signal",
+        "query": "Kioxia quality certifications",
+        "intent": "Check Kioxia quality standards",
+        "funnel_stage": "Consider",
+        "importance": 6,
+        "risk_level": "low"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia innovation awards",
+        "intent": "Learn about Kioxia innovation recognition",
+        "funnel_stage": "Awareness",
+        "importance": 5,
+        "risk_level": "low"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia market share 2025",
+        "intent": "Assess Kioxia market position",
         "funnel_stage": "Consider",
         "importance": 7,
         "risk_level": "medium"
       },
       {
         "type": "trust",
-        "query": "NAND flash manufacturer ranking",
-        "intent": "Trust signal",
+        "query": "Kioxia partnerships and alliances",
+        "intent": "Understand Kioxia's partnerships",
+        "funnel_stage": "Consider",
+        "importance": 6,
+        "risk_level": "low"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia SSD benchmarks vs competitors",
+        "intent": "Compare Kioxia benchmarks with competitors",
+        "funnel_stage": "Decision",
+        "importance": 9,
+        "risk_level": "high"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia data integrity features",
+        "intent": "Learn about Kioxia data protection",
         "funnel_stage": "Consider",
         "importance": 7,
+        "risk_level": "medium"
+      },
+      {
+        "type": "trust",
+        "query": "Kioxia enterprise SSD customer reviews",
+        "intent": "Read reviews of Kioxia enterprise SSDs",
+        "funnel_stage": "Decision",
+        "importance": 8,
         "risk_level": "medium"
       }
     ],
     "question_families": [
       {
         "family": "Brand Awareness",
-        "purpose": "Capture top-of-funnel queries about Kioxia brand, technology, and product lines.",
-        "query_count": 24,
+        "purpose": "Increase visibility and recognition of Kioxia brand and products",
+        "query_count": 10,
         "representative_queries": [
-          "Kioxia SSD review",
           "Kioxia BiCS FLASH technology",
-          "Kioxia EXCERIA series",
-          "Kioxia data center SSD",
-          "Kioxia NAND flash reliability",
-          "Kioxia enterprise SSD endurance",
-          "Kioxia SSD for AI workloads",
-          "Kioxia SSD for data center",
-          "Kioxia SSD for gaming",
-          "Kioxia embedded storage solutions",
-          "Kioxia memory cards",
-          "Kioxia USB drives",
-          "Kioxia PCIe Gen4 SSD",
-          "Kioxia PCIe Gen5 SSD",
-          "Kioxia NVMe SSD",
-          "Kioxia SATA SSD",
-          "Kioxia 3D NAND",
-          "Kioxia storage solutions",
+          "Kioxia Exceria series",
+          "Kioxia data center storage solutions"
+        ],
+        "recommended_engine_runs": 2
+      },
+      {
+        "family": "Competitive Comparison",
+        "purpose": "Position Kioxia against key competitors in decision-making",
+        "query_count": 10,
+        "representative_queries": [
           "Kioxia vs Samsung SSD",
           "Kioxia vs Western Digital SSD",
-          "Kioxia vs Micron SSD",
-          "Kioxia vs SK hynix SSD",
-          "Kioxia vs Seagate SSD",
-          "Kioxia vs Solidigm SSD"
+          "Kioxia vs Micron enterprise SSD"
         ],
-        "recommended_engine_runs": 24
+        "recommended_engine_runs": 3
       },
       {
-        "family": "Competitive Intelligence",
-        "purpose": "Monitor competitor products, reviews, and comparisons to inform positioning.",
-        "query_count": 24,
+        "family": "Industry Education",
+        "purpose": "Establish thought leadership in NAND and SSD technology",
+        "query_count": 10,
         "representative_queries": [
-          "Samsung SSD review",
-          "Samsung NAND flash technology",
-          "Western Digital SSD review",
-          "SanDisk SSD review",
-          "Micron SSD review",
-          "Micron NAND flash",
-          "SK hynix SSD review",
-          "Solidigm SSD review",
-          "Seagate SSD review",
-          "Intel SSD review",
-          "Samsung vs Western Digital SSD",
-          "Samsung vs Micron SSD",
-          "Western Digital vs Seagate SSD",
-          "SK hynix vs Solidigm SSD",
-          "Samsung enterprise SSD",
-          "Western Digital enterprise SSD",
-          "Micron enterprise SSD",
-          "SK hynix enterprise SSD",
-          "Solidigm enterprise SSD",
-          "Seagate enterprise SSD",
-          "Samsung SSD for AI",
-          "Western Digital SSD for data center",
-          "Micron SSD for gaming",
-          "SK hynix SSD for AI"
+          "NVMe vs SATA SSD performance",
+          "PCIe Gen5 SSD benefits",
+          "Data center storage trends 2025"
         ],
-        "recommended_engine_runs": 24
+        "recommended_engine_runs": 2
       },
       {
-        "family": "Industry & Category Trends",
-        "purpose": "Understand market trends, technology comparisons, and category-specific queries.",
-        "query_count": 24,
+        "family": "Category Exploration",
+        "purpose": "Guide buyers through storage categories and form factors",
+        "query_count": 10,
         "representative_queries": [
-          "NAND flash memory market trends 2025",
-          "3D NAND technology explained",
-          "SSD vs HDD for data center",
-          "NVMe vs SATA SSD",
-          "PCIe Gen4 vs Gen5 SSD",
-          "Data center storage solutions",
-          "Enterprise storage trends",
-          "Cloud storage infrastructure",
-          "AI storage requirements",
-          "Storage for machine learning",
-          "NAND flash vs DRAM",
-          "SSD endurance ratings",
-          "Data center power consumption storage",
-          "Storage latency optimization",
-          "Best client SSD 2025",
           "Best enterprise SSD 2025",
-          "Best data center SSD",
-          "Embedded storage solutions",
-          "eMMC vs UFS",
-          "Flash storage vs HDD",
-          "NVMe SSD for gaming",
-          "SATA SSD for laptop",
-          "Memory card speed classes",
-          "USB drive for backup"
+          "Data center SSD buying guide",
+          "Client SSD vs enterprise SSD differences"
         ],
-        "recommended_engine_runs": 24
+        "recommended_engine_runs": 2
       },
       {
-        "family": "Problem & Use Case",
-        "purpose": "Identify pain points and specific use cases to tailor content and solutions.",
-        "query_count": 24,
+        "family": "Problem Solving",
+        "purpose": "Address common storage pain points and position Kioxia as solution",
+        "query_count": 10,
         "representative_queries": [
-          "Storage performance bottleneck",
-          "SSD endurance issues",
-          "Data center latency problems",
-          "AI storage bottleneck solutions",
-          "Storage reliability concerns",
-          "Storage capacity planning",
-          "Data center storage cost optimization",
-          "Power consumption in data center storage",
-          "Kioxia vs Samsung SSD performance",
-          "Kioxia vs Western Digital SSD endurance",
-          "Kioxia vs Micron SSD price",
-          "Kioxia vs SK hynix SSD reliability",
-          "Kioxia vs Seagate SSD for data center",
-          "Kioxia vs Solidigm SSD for AI",
-          "Samsung vs Western Digital SSD for enterprise",
-          "Micron vs SK hynix SSD performance",
-          "NVMe vs SATA SSD for gaming",
-          "PCIe Gen4 vs Gen5 SSD for data center",
+          "How to fix storage bottleneck in data center",
+          "Reduce storage latency in enterprise",
+          "Optimize storage for AI training"
+        ],
+        "recommended_engine_runs": 2
+      },
+      {
+        "family": "Use Case Specific",
+        "purpose": "Target specific workloads and applications",
+        "query_count": 10,
+        "representative_queries": [
           "Best SSD for AI training",
           "Best SSD for data center virtualization",
-          "Best SSD for gaming PC",
-          "Best SSD for video editing",
-          "Enterprise SSD for database workloads",
-          "SSD for cloud storage infrastructure"
+          "Best SSD for database workloads"
         ],
-        "recommended_engine_runs": 24
+        "recommended_engine_runs": 2
       },
       {
-        "family": "Trust & Reliability",
-        "purpose": "Build credibility by addressing trust signals and reliability concerns.",
-        "query_count": 12,
+        "family": "Trust Building",
+        "purpose": "Build credibility through reviews, benchmarks, and certifications",
+        "query_count": 10,
         "representative_queries": [
-          "Most reliable SSD brand",
-          "High endurance SSD for enterprise",
-          "Enterprise-grade storage solutions",
-          "Data integrity in NAND flash",
-          "Proven NAND flash technology",
-          "Industry leader in storage innovation",
-          "Quality NAND flash memory",
-          "SSD warranty comparison",
-          "Storage brand reputation",
-          "NAND flash manufacturer ranking",
-          "Embedded storage for IoT",
-          "Memory card for 4K video"
+          "Kioxia SSD reliability review",
+          "Kioxia SSD benchmarks vs competitors",
+          "Kioxia enterprise SSD customer reviews"
         ],
-        "recommended_engine_runs": 12
+        "recommended_engine_runs": 2
+      },
+      {
+        "family": "Competitor Deep Dive",
+        "purpose": "Monitor competitor products and positioning",
+        "query_count": 10,
+        "representative_queries": [
+          "Samsung SSD 990 Pro review",
+          "Western Digital SN850X review",
+          "Solidigm vs Kioxia enterprise SSD"
+        ],
+        "recommended_engine_runs": 2
       }
     ],
     "monitoring_design": {
-      "planned_query_count": 108,
-      "planned_deepseek_runs": 108,
-      "sampling_notes": "Each query is run once per monitoring period (e.g., weekly). Queries are distributed across brand, competitor, industry, category, problem, comparison, use_case, and trust types to ensure comprehensive coverage. High-importance queries (importance >= 8) should be prioritized for daily monitoring if resources allow. Risk levels indicate potential for negative content: high-risk queries (e.g., comparisons) require close attention."
+      "planned_query_count": 80,
+      "planned_deepseek_runs": 17,
+      "sampling_notes": "Queries are distributed across 8 families with 10 queries each. DeepSeek runs are allocated per family based on competitive intensity and importance. Brand and comparison families get higher runs due to high importance and risk. Sampling will be done weekly for high-importance queries and bi-weekly for lower importance. Adjust runs based on initial results and SERP volatility."
     }
   },
   "competitors": {
     "competitors": [
       {
         "name": "Samsung Semiconductor",
-        "why_in_set": "Dominant NAND flash and SSD player across consumer and enterprise segments; strong brand recognition and content presence.",
+        "why_in_set": "Dominant NAND flash and SSD player across consumer and enterprise segments; highest brand awareness and market share.",
         "geo_maturity_stage": "Active",
         "overall_score_estimate": 85,
         "dimension_scores": {
@@ -1387,23 +1115,26 @@
           "outcome": 85
         },
         "visible_strengths": [
-          "Extensive SEO-optimized product pages and comparison content",
-          "High volume of reviews and benchmarks on tech sites",
-          "Strong presence in AI/data center storage discussions"
+          "Extensive product portfolio (990 Pro, PM9A3, etc.)",
+          "Strong presence in tech media and review sites",
+          "High search volume for branded queries",
+          "Active content marketing (whitepapers, benchmarks)"
         ],
         "geo_moves_likely_underway": [
-          "Expanding content around PCIe Gen5 and AI storage",
-          "Targeting enterprise decision-makers with whitepapers and case studies"
+          "Expanding AI-focused storage content",
+          "Launching PCIe Gen5 SSDs with aggressive marketing",
+          "Investing in thought leadership around CXL and computational storage"
         ],
         "evidence_signals": [
-          "Top rankings for 'best SSD for data center' and 'NVMe SSD'",
-          "Frequent mentions in industry reports and analyst blogs"
+          "Samsung's 'Memory for AI' campaign",
+          "High-ranking articles on Tom's Hardware, AnandTech",
+          "Sponsored content on enterprise storage trends"
         ],
-        "confidence": 90
+        "confidence": 9
       },
       {
-        "name": "Western Digital / SanDisk",
-        "why_in_set": "Direct competitor with similar product lines and joint venture history; strong retail and enterprise presence.",
+        "name": "Western Digital",
+        "why_in_set": "Direct competitor with shared history (former joint venture); strong in both HDD and SSD markets.",
         "geo_maturity_stage": "Active",
         "overall_score_estimate": 75,
         "dimension_scores": {
@@ -1413,23 +1144,25 @@
           "outcome": 75
         },
         "visible_strengths": [
-          "Strong brand recall in consumer SSDs (SanDisk)",
-          "Comprehensive product comparison pages and buying guides",
-          "Active in gaming and enthusiast communities"
+          "Strong brand recognition in consumer SSDs (SN850X, SN770)",
+          "Enterprise portfolio (Ultrastar DC SN840, SN650)",
+          "Active in data center storage discussions"
         ],
         "geo_moves_likely_underway": [
-          "Pushing content on high-endurance enterprise SSDs",
-          "Leveraging joint venture with Kioxia for technology credibility"
+          "Promoting NVMe-oF and disaggregated storage",
+          "Content around Zoned Storage and SMR/CMR for HDDs",
+          "Partnerships with cloud providers"
         ],
         "evidence_signals": [
-          "High search volume for 'Western Digital SSD review' and 'SanDisk SSD'",
-          "Presence in top 10 for 'enterprise SSD' queries"
+          "Western Digital 'Data at the Edge' content series",
+          "High visibility in 'best SSD' roundups",
+          "Active presence at storage conferences (Flash Memory Summit)"
         ],
-        "confidence": 85
+        "confidence": 9
       },
       {
         "name": "Micron Technology",
-        "why_in_set": "Major NAND flash and SSD manufacturer; competes in enterprise and client markets with strong technology focus.",
+        "why_in_set": "Major NAND flash and SSD competitor with strong enterprise focus; known for innovation in 3D NAND.",
         "geo_maturity_stage": "Active",
         "overall_score_estimate": 70,
         "dimension_scores": {
@@ -1439,23 +1172,25 @@
           "outcome": 70
         },
         "visible_strengths": [
-          "Technical depth in NAND flash and 3D NAND content",
-          "Strong presence in enterprise storage discussions",
-          "Active in AI and machine learning storage topics"
+          "Strong in enterprise SSDs (9300, 9400 series)",
+          "Thought leadership in memory and storage",
+          "Active in AI/ML storage discussions"
         ],
         "geo_moves_likely_underway": [
-          "Increasing content around PCIe Gen5 and CXL memory",
-          "Targeting hyperscale data centers with case studies"
+          "Content around CXL memory and storage-class memory",
+          "Promoting 232-layer NAND technology",
+          "Benchmark comparisons with competitors"
         ],
         "evidence_signals": [
-          "Ranking for 'Micron SSD for AI' and 'Micron NAND flash'",
-          "Frequent citations in tech publications for innovation"
+          "Micron's 'Memory for AI' blog posts",
+          "High-ranking for 'enterprise SSD' queries",
+          "Sponsored content on StorageReview"
         ],
-        "confidence": 80
+        "confidence": 8
       },
       {
-        "name": "SK hynix / Solidigm",
-        "why_in_set": "Strong in NAND flash and enterprise SSDs, especially after Intel's NAND business acquisition; growing market share.",
+        "name": "SK Hynix",
+        "why_in_set": "Significant NAND flash and SSD competitor, especially in enterprise and OEM markets; growing consumer presence.",
         "geo_maturity_stage": "Active",
         "overall_score_estimate": 65,
         "dimension_scores": {
@@ -1465,136 +1200,136 @@
           "outcome": 65
         },
         "visible_strengths": [
-          "Solidigm brand leveraged for enterprise SSD credibility",
-          "Content around Intel heritage and technology",
-          "Active in data center and cloud storage forums"
+          "Strong in OEM SSD supply (e.g., for Apple, Dell)",
+          "Enterprise SSD lineup (PE8000 series)",
+          "Active in NAND flash technology announcements"
         ],
         "geo_moves_likely_underway": [
-          "Building content around Solidigm enterprise SSDs",
-          "Targeting former Intel SSD customers with migration guides"
+          "Expanding consumer SSD brand (Platinum P41)",
+          "Content around PCIe Gen5 and 300+ layer NAND",
+          "Partnerships with cloud providers"
         ],
         "evidence_signals": [
-          "Growing search volume for 'Solidigm SSD' and 'SK hynix enterprise SSD'",
-          "Presence in 'best data center SSD' comparisons"
+          "SK Hynix 'Gold P31' reviews on tech sites",
+          "Press releases on 238-layer NAND",
+          "Presence at industry events"
         ],
-        "confidence": 75
+        "confidence": 8
       },
       {
-        "name": "Seagate Technology",
-        "why_in_set": "Competes in enterprise storage with HDDs and SSDs; primarily HDD-focused but expanding SSD portfolio.",
+        "name": "Solidigm (formerly Intel NAND)",
+        "why_in_set": "Direct competitor in enterprise SSDs; inherits Intel's legacy and technology.",
         "geo_maturity_stage": "Active",
-        "overall_score_estimate": 55,
+        "overall_score_estimate": 60,
         "dimension_scores": {
-          "visibility": 60,
-          "inclusion": 55,
-          "cognition": 50,
-          "outcome": 55
+          "visibility": 65,
+          "inclusion": 60,
+          "cognition": 55,
+          "outcome": 60
         },
         "visible_strengths": [
-          "Strong brand in HDD storage, with some SSD content",
-          "Active in data center and cloud storage discussions",
-          "Content around storage capacity and cost optimization"
+          "Strong enterprise SSD portfolio (D7-P5510, D5-P5430)",
+          "Intel brand association (though transitioning)",
+          "Focus on data center and cloud storage"
         ],
         "geo_moves_likely_underway": [
-          "Increasing focus on SSD product lines (e.g., Nytro, FireCuda)",
-          "Pushing content on hybrid storage solutions"
+          "Rebranding and building Solidigm brand awareness",
+          "Content around QLC and high-capacity SSDs",
+          "Targeting AI and HPC storage workloads"
         ],
         "evidence_signals": [
-          "Ranking for 'Seagate SSD' and 'enterprise storage'",
-          "Mentions in 'HDD vs SSD' comparisons"
+          "Solidigm articles on StorageReview",
+          "Press releases on new product launches",
+          "Sponsored content on enterprise storage"
         ],
-        "confidence": 60
+        "confidence": 7
       }
     ],
     "market_pressure": {
       "peer_activation_index": 78,
-      "benchmark_percentile": 65,
-      "urgency_score": 72,
-      "gap_to_leading_peer": 15,
+      "benchmark_percentile": 60,
+      "urgency_score": 75,
+      "gap_to_leading_peer": 25,
       "narrative_disadvantage": 70
     },
-    "competitive_narrative": "Kioxia faces significant competitive pressure from Samsung, Western Digital, and Micron, which have stronger GEO visibility and content depth. Samsung leads with extensive SEO-optimized content and high search rankings for key terms like 'best SSD for data center' and 'NVMe SSD'. Western Digital leverages strong brand recall and comprehensive buying guides. Micron excels in technical depth around NAND flash. SK hynix/Solidigm is gaining traction with enterprise-focused content. Kioxia's urgency is high: it must rapidly expand its GEO footprint, particularly in enterprise and AI storage topics, to avoid being overshadowed. The gap to Samsung is 15 points, and narrative disadvantage is 70%, indicating Kioxia is not yet a top-of-mind brand in search results. Immediate action is needed to build content around PCIe Gen5, AI workloads, and data center optimization to close the gap."
+    "competitive_narrative": "Kioxia faces significant competitive pressure in GEO from Samsung, Western Digital, Micron, SK Hynix, and Solidigm, all of which are actively investing in content marketing, thought leadership, and search visibility. Samsung leads with a comprehensive GEO strategy, high visibility in tech media, and strong branded search volume. Western Digital and Micron are also well-positioned, with robust content around enterprise storage and AI. Kioxia's GEO maturity is estimated at 60th percentile, with a gap of 25 points to Samsung. The urgency to act is high: peers are capturing mindshare in key clusters like NAND technology, SSD performance, and enterprise storage. Kioxia must accelerate content creation, improve search visibility, and establish thought leadership to avoid being marginalized in critical buying conversations."
   },
   "final": {
     "geo_evaluation": {
       "visibility": {
         "score": 55,
         "metrics": {
-          "brand_search_volume_share": 20,
-          "organic_traffic_share": 25,
-          "keyword_ranking_top10_count": 30,
-          "backlink_domain_count": 40,
-          "social_media_mentions_volume": 15
+          "branded_search_volume_share": 0.12,
+          "non_branded_top10_rankings": 8,
+          "featured_snippet_presence": 2,
+          "media_mentions_per_month": 45
         },
-        "rationale": "Kioxia has moderate visibility but lags behind Samsung and Western Digital in search volume and organic traffic. Its backlink profile is decent but not industry-leading.",
-        "confidence": 80,
+        "rationale": "Kioxia has moderate visibility, with branded search volume lower than Samsung and Western Digital. Non-branded rankings are limited to a few high-volume terms. Featured snippets are rare. Media mentions are steady but not dominant.",
+        "confidence": 8,
         "priority_actions": [
-          "Increase content volume around high-traffic keywords like 'best SSD for data center' and 'NVMe SSD'.",
-          "Build backlinks from authoritative tech publications and industry blogs.",
-          "Boost social media presence on LinkedIn and Twitter with thought leadership content."
+          "Increase non-branded content targeting high-volume terms like 'enterprise SSD' and 'NVMe SSD'.",
+          "Optimize for featured snippets by structuring content with clear definitions and lists.",
+          "Boost media outreach to tech publications for product reviews and benchmarks."
         ]
       },
       "inclusion": {
         "score": 50,
         "metrics": {
-          "featured_snippet_presence": 10,
-          "knowledge_panel_completeness": 60,
-          "entity_reference_in_industry_content": 40,
-          "comparison_page_inclusion_rate": 30,
-          "recommendation_engine_presence": 20
+          "top10_ranking_share_by_cluster": 0.15,
+          "comparison_page_presence": 3,
+          "expert_roundup_inclusion": 1,
+          "industry_report_citations": 2
         },
-        "rationale": "Kioxia appears in some industry content and has a knowledge panel, but is rarely featured in snippets or comparison pages. Competitors dominate these areas.",
-        "confidence": 75,
+        "rationale": "Kioxia is included in some comparison pages and expert roundups, but less frequently than Samsung and Western Digital. Industry report citations are limited. Inclusion in top 10 rankings is low across key clusters.",
+        "confidence": 7,
         "priority_actions": [
-          "Optimize content for featured snippets by answering common questions concisely.",
-          "Create detailed comparison pages vs. Samsung and Western Digital.",
-          "Engage with tech reviewers to increase mentions in roundups and recommendations."
+          "Create comprehensive comparison pages vs. top competitors.",
+          "Engage with industry analysts to increase citations in reports.",
+          "Submit products for expert roundups and awards."
         ]
       },
       "cognition": {
         "score": 45,
         "metrics": {
-          "brand_recognition_survey_score": 40,
-          "top_of_mind_awareness_in_queries": 30,
-          "share_of_voice_in_industry_discussions": 35,
-          "content_engagement_rate": 50,
-          "sentiment_score": 60
+          "brand_awareness_survey_score": 0.3,
+          "search_volume_growth_rate": 0.05,
+          "social_media_mentions_growth": 0.02,
+          "thought_leadership_content_volume": 10
         },
-        "rationale": "Kioxia is recognized by industry insiders but has lower top-of-mind awareness compared to Samsung. Sentiment is positive but engagement rates are moderate.",
-        "confidence": 70,
+        "rationale": "Brand awareness is moderate but lower than Samsung. Search volume growth is slow. Social media mentions are flat. Thought leadership content is limited, with few whitepapers or technical deep dives.",
+        "confidence": 7,
         "priority_actions": [
-          "Launch educational content series on NAND flash technology and SSD performance.",
-          "Increase presence in industry events and webinars.",
-          "Leverage customer testimonials and case studies to build trust."
+          "Launch a thought leadership series on NAND innovation and enterprise storage trends.",
+          "Increase social media engagement with technical content and industry news.",
+          "Invest in brand awareness campaigns targeting IT decision-makers."
         ]
       },
       "outcome": {
         "score": 40,
         "metrics": {
-          "conversion_rate_from_search": 35,
-          "lead_generation_volume": 30,
-          "sales_inquiry_attribution": 25,
-          "customer_acquisition_cost_relative": 50,
-          "revenue_attribution_from_geo": 20
+          "estimated_traffic_share": 0.08,
+          "lead_generation_form_fills": 120,
+          "content_downloads_per_month": 300,
+          "demo_request_rate": 0.02
         },
-        "rationale": "Kioxia's GEO-driven conversions are low due to limited visibility and inclusion. Competitors capture more leads from search.",
-        "confidence": 65,
+        "rationale": "Traffic share is low compared to competitors. Lead generation and content downloads are modest. Demo request rate is below industry average, indicating weak conversion from content.",
+        "confidence": 6,
         "priority_actions": [
-          "Implement conversion tracking and attribution models for GEO channels.",
-          "Create targeted landing pages for high-intent keywords (e.g., 'enterprise SSD pricing').",
-          "Optimize call-to-action and lead capture forms on key pages."
+          "Improve content-to-lead conversion with stronger CTAs and gated assets.",
+          "Optimize landing pages for demo requests and whitepaper downloads.",
+          "Implement retargeting campaigns for engaged visitors."
         ]
       }
     },
     "evidence_map": {
-      "owned_surface_strength": 60,
-      "entity_clarity": 55,
+      "owned_surface_strength": 55,
+      "entity_clarity": 60,
       "content_modularity": 50,
       "trust_signal_density": 45,
-      "comparison_page_readiness": 30,
-      "faq_readiness": 40,
+      "comparison_page_readiness": 40,
+      "faq_readiness": 50,
       "documentation_readiness": 65,
-      "pricing_transparency": 20,
+      "pricing_transparency": 30,
       "schema_readiness": 35,
       "narrative_control": 50
     },
@@ -1604,88 +1339,89 @@
         "current_strength": 50,
         "competitor_pressure": 80,
         "opportunity": 30,
-        "notes": "Kioxia is not top-of-mind; competitors dominate search results. Opportunity to capture niche queries like 'high endurance SSD for AI'."
+        "notes": "Kioxia is underperforming in discoverability; competitors dominate top-of-funnel queries."
       },
       {
-        "stage": "Evaluate",
+        "stage": "Consider",
         "current_strength": 45,
         "competitor_pressure": 75,
         "opportunity": 35,
-        "notes": "Lack of comparison pages and detailed specs. Opportunity to create side-by-side comparisons with Samsung and WD."
+        "notes": "Comparison and evaluation content is lacking; need more detailed technical comparisons."
       },
       {
-        "stage": "Compare",
-        "current_strength": 30,
-        "competitor_pressure": 85,
-        "opportunity": 40,
-        "notes": "Rarely included in comparison articles. Opportunity to pitch reviewers and create own comparison content."
-      },
-      {
-        "stage": "Purchase",
-        "current_strength": 35,
+        "stage": "Prefer",
+        "current_strength": 40,
         "competitor_pressure": 70,
+        "opportunity": 40,
+        "notes": "Brand preference is low; thought leadership and trust signals are weak."
+      },
+      {
+        "stage": "Convert",
+        "current_strength": 35,
+        "competitor_pressure": 65,
         "opportunity": 45,
-        "notes": "Pricing transparency is low. Opportunity to publish clear pricing and availability information."
+        "notes": "Conversion paths are unclear; pricing and demo access need improvement."
       }
     ],
-    "executive_summary": "Kioxia's GEO maturity is in early stages, with moderate visibility and inclusion but weak cognition and outcome metrics. The brand is overshadowed by Samsung and Western Digital in search results and industry discussions. Urgent actions are needed to improve content depth, comparison readiness, and conversion tracking to close the gap with leading competitors.",
+    "executive_summary": "Kioxia's GEO maturity is estimated at 50 out of 100, placing it in the 'Developing' stage. The brand has moderate visibility and inclusion but lags in cognition and outcome. Key gaps include low non-branded search presence, weak thought leadership, and poor conversion rates. Competitors like Samsung and Western Digital are significantly ahead. Immediate priorities: boost non-branded content, create comparison pages, launch thought leadership, and optimize conversion paths. Without action, Kioxia risks losing mindshare in critical buying journeys.",
     "strengths": [
-      "Strong technical reputation in NAND flash innovation (BiCS FLASH).",
-      "Decent owned surface (website) with comprehensive product documentation.",
-      "Positive sentiment among existing customers and industry analysts."
+      "Strong product portfolio with innovative BiCS FLASH technology.",
+      "Good documentation and technical resources for enterprise customers.",
+      "Established brand recognition in NAND flash industry."
     ],
     "risks": [
-      "Low visibility in high-traffic keywords and featured snippets.",
-      "Lack of comparison pages and pricing transparency hindering evaluation stage.",
-      "Competitors aggressively expanding GEO content around AI and PCIe Gen5."
+      "Low visibility in non-branded search queries, limiting new customer acquisition.",
+      "Weak thought leadership presence compared to competitors.",
+      "Poor conversion metrics indicate content is not driving desired actions.",
+      "High competitive pressure from Samsung, Western Digital, and Micron."
     ],
-    "methodology_note": "Scores are estimated based on qualitative analysis of search presence, content audit, and competitive benchmarking. Confidence levels reflect data availability and analyst judgment."
+    "methodology_note": "Scores are based on estimated data from public sources, competitor benchmarking, and industry knowledge. Confidence levels reflect data reliability. Metrics are directional and should be validated with actual analytics."
   },
   "deepseek_runs": [
     {
       "stage": "01_profile_deep_dive",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:36:07 UTC",
+      "timestamp": "2026-05-06 02:34:58 UTC",
       "prompt_tokens": 263,
-      "completion_tokens": 648,
-      "total_tokens": 911,
-      "response_chars": 2573
+      "completion_tokens": 616,
+      "total_tokens": 879,
+      "response_chars": 2466
     },
     {
       "stage": "02_keyword_taxonomy",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:36:27 UTC",
-      "prompt_tokens": 897,
-      "completion_tokens": 1404,
-      "total_tokens": 2301,
-      "response_chars": 5052
+      "timestamp": "2026-05-06 02:35:25 UTC",
+      "prompt_tokens": 865,
+      "completion_tokens": 1643,
+      "total_tokens": 2508,
+      "response_chars": 5843
     },
     {
       "stage": "03_private_question_universe",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:12 UTC",
-      "prompt_tokens": 2509,
-      "completion_tokens": 7676,
-      "total_tokens": 10185,
-      "response_chars": 28155
+      "timestamp": "2026-05-06 02:37:02 UTC",
+      "prompt_tokens": 2593,
+      "completion_tokens": 5883,
+      "total_tokens": 8476,
+      "response_chars": 21448
     },
     {
       "stage": "04_competitive_benchmark",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:33 UTC",
-      "prompt_tokens": 2696,
-      "completion_tokens": 1466,
-      "total_tokens": 4162,
-      "response_chars": 6065
+      "timestamp": "2026-05-06 02:37:28 UTC",
+      "prompt_tokens": 2125,
+      "completion_tokens": 1515,
+      "total_tokens": 3640,
+      "response_chars": 6192
     },
     {
       "stage": "05_final_scorecard",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:53 UTC",
-      "prompt_tokens": 3438,
-      "completion_tokens": 1332,
-      "total_tokens": 4770,
-      "response_chars": 5633
+      "timestamp": "2026-05-06 02:37:51 UTC",
+      "prompt_tokens": 3417,
+      "completion_tokens": 1349,
+      "total_tokens": 4766,
+      "response_chars": 5764
     }
   ]
 }

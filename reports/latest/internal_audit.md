@@ -4,262 +4,220 @@
       "Kioxia",
       "Kioxia SSD",
       "Kioxia NAND",
+      "Kioxia Exceria",
       "Kioxia BiCS FLASH",
-      "Kioxia EXCERIA",
-      "Kioxia data center SSD"
+      "Kioxia enterprise SSD",
+      "Kioxia data center",
+      "Kioxia vs Samsung",
+      "Kioxia vs Western Digital"
     ],
     "competitor_terms": [
       "Samsung SSD",
       "Samsung NAND",
       "Western Digital SSD",
-      "SanDisk SSD",
+      "WD NAND",
       "Micron SSD",
       "Micron NAND",
-      "SK hynix SSD",
+      "SK Hynix SSD",
+      "SK Hynix NAND",
       "Solidigm SSD",
-      "Seagate SSD",
       "Intel SSD"
     ],
     "industry_terms": [
       "NAND flash memory",
       "3D NAND",
+      "BiCS FLASH",
       "SSD",
-      "solid state drive",
       "NVMe",
       "PCIe Gen4",
       "PCIe Gen5",
-      "data center storage",
       "enterprise storage",
-      "cloud storage"
+      "data center storage",
+      "cloud storage",
+      "AI storage",
+      "machine learning storage",
+      "storage performance",
+      "IOPS",
+      "latency",
+      "endurance",
+      "TLC",
+      "QLC",
+      "PLC"
     ],
     "category_terms": [
-      "client SSD",
+      "consumer SSD",
       "enterprise SSD",
       "data center SSD",
       "embedded storage",
-      "eMMC",
-      "UFS",
-      "memory card",
-      "USB drive",
-      "flash storage",
-      "storage solution"
+      "automotive storage",
+      "mobile storage",
+      "client SSD",
+      "NVMe SSD",
+      "SATA SSD",
+      "U.2 SSD",
+      "E1.S SSD",
+      "E3.S SSD"
     ],
     "problem_terms": [
-      "storage performance",
-      "storage endurance",
+      "storage bottleneck",
       "data center latency",
-      "AI storage bottleneck",
+      "storage scalability",
+      "storage cost per TB",
+      "storage power consumption",
       "storage reliability",
-      "storage capacity",
-      "storage cost",
-      "data center power consumption"
+      "data integrity",
+      "storage endurance",
+      "storage performance optimization",
+      "storage for AI workloads"
     ],
     "trust_terms": [
-      "reliable storage",
-      "high endurance SSD",
-      "enterprise-grade",
-      "data integrity",
-      "proven technology",
-      "industry leader",
-      "innovation in storage",
-      "quality NAND"
+      "Kioxia reliability",
+      "Kioxia warranty",
+      "Kioxia support",
+      "Kioxia quality",
+      "Kioxia innovation",
+      "Kioxia market share",
+      "Kioxia partnerships",
+      "Kioxia certifications",
+      "Kioxia reviews",
+      "Kioxia benchmarks"
     ]
   },
   "question_families": [
     {
       "family": "Brand Awareness",
-      "purpose": "Capture top-of-funnel queries about Kioxia brand, technology, and product lines.",
-      "query_count": 24,
+      "purpose": "Increase visibility and recognition of Kioxia brand and products",
+      "query_count": 10,
       "representative_queries": [
-        "Kioxia SSD review",
         "Kioxia BiCS FLASH technology",
-        "Kioxia EXCERIA series",
-        "Kioxia data center SSD",
-        "Kioxia NAND flash reliability",
-        "Kioxia enterprise SSD endurance",
-        "Kioxia SSD for AI workloads",
-        "Kioxia SSD for data center",
-        "Kioxia SSD for gaming",
-        "Kioxia embedded storage solutions",
-        "Kioxia memory cards",
-        "Kioxia USB drives",
-        "Kioxia PCIe Gen4 SSD",
-        "Kioxia PCIe Gen5 SSD",
-        "Kioxia NVMe SSD",
-        "Kioxia SATA SSD",
-        "Kioxia 3D NAND",
-        "Kioxia storage solutions",
+        "Kioxia Exceria series",
+        "Kioxia data center storage solutions"
+      ],
+      "recommended_engine_runs": 2
+    },
+    {
+      "family": "Competitive Comparison",
+      "purpose": "Position Kioxia against key competitors in decision-making",
+      "query_count": 10,
+      "representative_queries": [
         "Kioxia vs Samsung SSD",
         "Kioxia vs Western Digital SSD",
-        "Kioxia vs Micron SSD",
-        "Kioxia vs SK hynix SSD",
-        "Kioxia vs Seagate SSD",
-        "Kioxia vs Solidigm SSD"
+        "Kioxia vs Micron enterprise SSD"
       ],
-      "recommended_engine_runs": 24
+      "recommended_engine_runs": 3
     },
     {
-      "family": "Competitive Intelligence",
-      "purpose": "Monitor competitor products, reviews, and comparisons to inform positioning.",
-      "query_count": 24,
+      "family": "Industry Education",
+      "purpose": "Establish thought leadership in NAND and SSD technology",
+      "query_count": 10,
       "representative_queries": [
-        "Samsung SSD review",
-        "Samsung NAND flash technology",
-        "Western Digital SSD review",
-        "SanDisk SSD review",
-        "Micron SSD review",
-        "Micron NAND flash",
-        "SK hynix SSD review",
-        "Solidigm SSD review",
-        "Seagate SSD review",
-        "Intel SSD review",
-        "Samsung vs Western Digital SSD",
-        "Samsung vs Micron SSD",
-        "Western Digital vs Seagate SSD",
-        "SK hynix vs Solidigm SSD",
-        "Samsung enterprise SSD",
-        "Western Digital enterprise SSD",
-        "Micron enterprise SSD",
-        "SK hynix enterprise SSD",
-        "Solidigm enterprise SSD",
-        "Seagate enterprise SSD",
-        "Samsung SSD for AI",
-        "Western Digital SSD for data center",
-        "Micron SSD for gaming",
-        "SK hynix SSD for AI"
+        "NVMe vs SATA SSD performance",
+        "PCIe Gen5 SSD benefits",
+        "Data center storage trends 2025"
       ],
-      "recommended_engine_runs": 24
+      "recommended_engine_runs": 2
     },
     {
-      "family": "Industry & Category Trends",
-      "purpose": "Understand market trends, technology comparisons, and category-specific queries.",
-      "query_count": 24,
+      "family": "Category Exploration",
+      "purpose": "Guide buyers through storage categories and form factors",
+      "query_count": 10,
       "representative_queries": [
-        "NAND flash memory market trends 2025",
-        "3D NAND technology explained",
-        "SSD vs HDD for data center",
-        "NVMe vs SATA SSD",
-        "PCIe Gen4 vs Gen5 SSD",
-        "Data center storage solutions",
-        "Enterprise storage trends",
-        "Cloud storage infrastructure",
-        "AI storage requirements",
-        "Storage for machine learning",
-        "NAND flash vs DRAM",
-        "SSD endurance ratings",
-        "Data center power consumption storage",
-        "Storage latency optimization",
-        "Best client SSD 2025",
         "Best enterprise SSD 2025",
-        "Best data center SSD",
-        "Embedded storage solutions",
-        "eMMC vs UFS",
-        "Flash storage vs HDD",
-        "NVMe SSD for gaming",
-        "SATA SSD for laptop",
-        "Memory card speed classes",
-        "USB drive for backup"
+        "Data center SSD buying guide",
+        "Client SSD vs enterprise SSD differences"
       ],
-      "recommended_engine_runs": 24
+      "recommended_engine_runs": 2
     },
     {
-      "family": "Problem & Use Case",
-      "purpose": "Identify pain points and specific use cases to tailor content and solutions.",
-      "query_count": 24,
+      "family": "Problem Solving",
+      "purpose": "Address common storage pain points and position Kioxia as solution",
+      "query_count": 10,
       "representative_queries": [
-        "Storage performance bottleneck",
-        "SSD endurance issues",
-        "Data center latency problems",
-        "AI storage bottleneck solutions",
-        "Storage reliability concerns",
-        "Storage capacity planning",
-        "Data center storage cost optimization",
-        "Power consumption in data center storage",
-        "Kioxia vs Samsung SSD performance",
-        "Kioxia vs Western Digital SSD endurance",
-        "Kioxia vs Micron SSD price",
-        "Kioxia vs SK hynix SSD reliability",
-        "Kioxia vs Seagate SSD for data center",
-        "Kioxia vs Solidigm SSD for AI",
-        "Samsung vs Western Digital SSD for enterprise",
-        "Micron vs SK hynix SSD performance",
-        "NVMe vs SATA SSD for gaming",
-        "PCIe Gen4 vs Gen5 SSD for data center",
+        "How to fix storage bottleneck in data center",
+        "Reduce storage latency in enterprise",
+        "Optimize storage for AI training"
+      ],
+      "recommended_engine_runs": 2
+    },
+    {
+      "family": "Use Case Specific",
+      "purpose": "Target specific workloads and applications",
+      "query_count": 10,
+      "representative_queries": [
         "Best SSD for AI training",
         "Best SSD for data center virtualization",
-        "Best SSD for gaming PC",
-        "Best SSD for video editing",
-        "Enterprise SSD for database workloads",
-        "SSD for cloud storage infrastructure"
+        "Best SSD for database workloads"
       ],
-      "recommended_engine_runs": 24
+      "recommended_engine_runs": 2
     },
     {
-      "family": "Trust & Reliability",
-      "purpose": "Build credibility by addressing trust signals and reliability concerns.",
-      "query_count": 12,
+      "family": "Trust Building",
+      "purpose": "Build credibility through reviews, benchmarks, and certifications",
+      "query_count": 10,
       "representative_queries": [
-        "Most reliable SSD brand",
-        "High endurance SSD for enterprise",
-        "Enterprise-grade storage solutions",
-        "Data integrity in NAND flash",
-        "Proven NAND flash technology",
-        "Industry leader in storage innovation",
-        "Quality NAND flash memory",
-        "SSD warranty comparison",
-        "Storage brand reputation",
-        "NAND flash manufacturer ranking",
-        "Embedded storage for IoT",
-        "Memory card for 4K video"
+        "Kioxia SSD reliability review",
+        "Kioxia SSD benchmarks vs competitors",
+        "Kioxia enterprise SSD customer reviews"
       ],
-      "recommended_engine_runs": 12
+      "recommended_engine_runs": 2
+    },
+    {
+      "family": "Competitor Deep Dive",
+      "purpose": "Monitor competitor products and positioning",
+      "query_count": 10,
+      "representative_queries": [
+        "Samsung SSD 990 Pro review",
+        "Western Digital SN850X review",
+        "Solidigm vs Kioxia enterprise SSD"
+      ],
+      "recommended_engine_runs": 2
     }
   ],
   "deepseek_runs": [
     {
       "stage": "01_profile_deep_dive",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:36:07 UTC",
+      "timestamp": "2026-05-06 02:34:58 UTC",
       "prompt_tokens": 263,
-      "completion_tokens": 648,
-      "total_tokens": 911,
-      "response_chars": 2573
+      "completion_tokens": 616,
+      "total_tokens": 879,
+      "response_chars": 2466
     },
     {
       "stage": "02_keyword_taxonomy",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:36:27 UTC",
-      "prompt_tokens": 897,
-      "completion_tokens": 1404,
-      "total_tokens": 2301,
-      "response_chars": 5052
+      "timestamp": "2026-05-06 02:35:25 UTC",
+      "prompt_tokens": 865,
+      "completion_tokens": 1643,
+      "total_tokens": 2508,
+      "response_chars": 5843
     },
     {
       "stage": "03_private_question_universe",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:12 UTC",
-      "prompt_tokens": 2509,
-      "completion_tokens": 7676,
-      "total_tokens": 10185,
-      "response_chars": 28155
+      "timestamp": "2026-05-06 02:37:02 UTC",
+      "prompt_tokens": 2593,
+      "completion_tokens": 5883,
+      "total_tokens": 8476,
+      "response_chars": 21448
     },
     {
       "stage": "04_competitive_benchmark",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:33 UTC",
-      "prompt_tokens": 2696,
-      "completion_tokens": 1466,
-      "total_tokens": 4162,
-      "response_chars": 6065
+      "timestamp": "2026-05-06 02:37:28 UTC",
+      "prompt_tokens": 2125,
+      "completion_tokens": 1515,
+      "total_tokens": 3640,
+      "response_chars": 6192
     },
     {
       "stage": "05_final_scorecard",
       "model": "deepseek-chat",
-      "timestamp": "2026-05-05 11:38:53 UTC",
-      "prompt_tokens": 3438,
-      "completion_tokens": 1332,
-      "total_tokens": 4770,
-      "response_chars": 5633
+      "timestamp": "2026-05-06 02:37:51 UTC",
+      "prompt_tokens": 3417,
+      "completion_tokens": 1349,
+      "total_tokens": 4766,
+      "response_chars": 5764
     }
   ]
 }
