@@ -1,14 +1,14 @@
 {
-  "brand": "Kioxia",
-  "generated_at": "2026-05-06 06:03:31 UTC",
+  "brand": "佳农股份",
+  "generated_at": "2026-05-07 07:00:15 UTC",
   "total_deepseek_calls": 62,
   "monitoring_probes": 60,
-  "brand_mention_rate": 63.33,
-  "brand_recommendation_rate": 10.0,
+  "brand_mention_rate": 48.33,
+  "brand_recommendation_rate": 0.0,
   "dimension_scores": {
-    "visibility": 37.77,
-    "inclusion": 21.29,
-    "cognition": 20.03,
-    "outcome": 19.49
+    "visibility": 26.65,
+    "inclusion": 19.23,
+    "cognition": 27.21,
+    "outcome": 9.72
   }
 }

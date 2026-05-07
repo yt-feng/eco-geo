@@ -1,32 +1,32 @@
 {
-  "executive_summary": "Kioxia has moderate visibility (37.77%) in AI-generated search results but is often overshadowed by competitors like Samsung and Western Digital. Brand recommendation rate is low (10%), and Kioxia is rarely the top recommended brand. Competitor pressure is high, with Samsung and Western Digital dominating comparisons. Kioxia's narrative control is weak, as it is frequently compared but not preferred. Trust signals are mixed, with some positive mentions but also risk flags around warranty, support, and mixed reviews. Priority actions include improving brand recommendation through stronger value propositions, addressing trust gaps with first-party content, and increasing visibility in enterprise and consumer segments.",
+  "executive_summary": "佳农股份在B端果蔬配送领域有一定专业性，但C端品牌知名度低，线上可见度不足。竞争对手如每日优鲜、叮咚买菜等更侧重C端市场，品牌认知度更高。佳农股份在回答中常被客观描述，但缺乏推荐和突出优势，存在信息缺口和事实风险。",
   "dimension_scores": {
-    "visibility": 37.77,
-    "inclusion": 21.29,
-    "cognition": 20.03,
-    "outcome": 19.49
+    "visibility": 26.65,
+    "inclusion": 19.23,
+    "cognition": 27.21,
+    "outcome": 9.72
   },
   "evidence_map": {
-    "answer_visibility": 37.77,
-    "competitor_pressure": 63.33,
+    "answer_visibility": 48.33,
+    "competitor_pressure": 5,
     "first_party_citation_need": 26.67,
-    "narrative_control": 20.0,
-    "trust_signal_gap": 23.33,
-    "recommendation_strength": 10.0
+    "narrative_control": 0.0,
+    "trust_signal_gap": 8,
+    "recommendation_strength": 0.0
   },
   "top_findings": [
-    "Kioxia is mentioned in 63.33% of queries but recommended in only 10%.",
-    "Samsung and Western Digital are the dominant recommended brands, appearing in 22 and 19 recommendations respectively.",
-    "Kioxia's best answer owner share is 20%, but it is often compared unfavorably to competitors.",
-    "14 factual risk flags were identified, including warranty variability and mixed consumer feedback.",
-    "First-party source needed in 26.67% of queries, indicating reliance on third-party information."
+    "佳农股份品牌提及率48.33%，但推荐率为0%，说明品牌被提及但未被推荐。",
+    "竞争对手如每日优鲜、叮咚买菜等被频繁提及，且获得推荐，竞争压力大。",
+    "26.67%的回答需要第一方来源确认，信息缺口明显。",
+    "8个事实风险标志，主要涉及价格、配送范围等具体信息缺失。",
+    "C端认知度低，B端专业性未被充分传播。"
   ],
   "priority_actions": [
-    "Increase brand recommendation rate by highlighting unique advantages (e.g., BiCS FLASH technology, value pricing).",
-    "Develop and promote first-party content (e.g., detailed warranty pages, support guides) to reduce reliance on third-party sources.",
-    "Target enterprise SSD segment with case studies and performance benchmarks to compete with Samsung and Western Digital.",
-    "Address trust gaps by improving online presence for customer support and reliability data.",
-    "Monitor and mitigate negative sentiment and risk flags through proactive PR and customer engagement."
+    "加强线上品牌曝光，尤其是C端市场，提升品牌知名度。",
+    "优化官方信息渠道，提供更具体的配送范围、价格等细节，减少信息缺口。",
+    "在回答中突出B端供应链优势，与C端竞品形成差异化。",
+    "鼓励用户生成正面评价，提升推荐率。",
+    "监控并回应事实风险，确保信息准确性。"
   ],
-  "methodology_note": "Analysis based on 60 AI-generated responses from DeepSeek API, covering 10 query types across 6 categories. Sampling was weekly for high-importance queries (importance >=8) and monthly for others. Metrics include brand mention rate, recommendation rate, sentiment, citation likelihood, and competitor mentions. Dimension scores are normalized to 0-100 scale."
+  "methodology_note": "基于60次DeepSeek调用，覆盖品牌、竞品、行业等查询类型，分析品牌提及、推荐、情感、信息缺口等维度。"
 }
