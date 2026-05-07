@@ -5,79 +5,77 @@
   "monitoring_calls_failed": 0,
   "brand_mention_rate": 48.33,
   "brand_recommendation_rate": 0.0,
-  "first_party_source_needed_rate": 26.67,
-  "avg_citation_likelihood": 0.35,
-  "avg_answer_confidence": 3.52,
+  "first_party_source_needed_rate": 28.33,
+  "avg_citation_likelihood": 0.62,
+  "avg_answer_confidence": 1.85,
   "factual_risk_flag_count": 8,
   "query_type_distribution": {
     "brand": 20,
-    "competitor": 10,
-    "industry": 10,
-    "category": 6,
-    "problem": 5,
-    "comparison": 5,
+    "competitor": 20,
+    "industry": 8,
+    "category": 4,
+    "problem": 3,
+    "comparison": 2,
     "use_case": 2,
-    "trust": 2
+    "trust": 1
   },
   "funnel_stage_distribution": {
-    "Awareness": 14,
-    "Consider": 46
+    "Awareness": 13,
+    "Consider": 47
   },
   "competitor_mention_counts": {
-    "每日优鲜": 31,
-    "叮咚买菜": 31,
-    "盒马鲜生": 31,
-    "美团买菜": 29,
-    "朴朴超市": 29
+    "快驴进货": 36,
+    "美菜网": 35,
+    "蜀海供应链": 22,
+    "望家欢": 22,
+    "乐禾食品": 22
   },
   "recommended_brand_counts": {
-    "叮咚买菜": 15,
-    "每日优鲜": 14,
-    "盒马鲜生": 14,
-    "美团买菜": 12,
-    "朴朴超市": 11,
+    "美菜网": 10,
+    "快驴进货": 10,
+    "蜀海供应链": 6,
+    "望家欢": 6,
+    "乐禾食品": 6,
+    "顺丰冷运": 1,
+    "京东冷链": 1,
     "佳农股份": 1
   },
   "sentiment_distribution": {
     "neutral": 24,
-    "positive": 4,
     "not_mentioned": 31,
+    "positive": 4,
     "negative": 1
   },
   "best_answer_owner_distribution": {
-    "": 19,
-    "AI": 11,
-    "佳农股份": 7,
-    "general": 7,
-    "美团买菜": 2,
-    "盒马鲜生": 2,
-    "neutral": 1,
-    "综合信息": 1,
-    "general_knowledge": 1,
-    "general_public": 1,
-    "行业共识": 1,
-    "每日优鲜官方": 1,
+    "": 27,
+    "佳农股份": 10,
+    "美菜网": 6,
+    "AI": 3,
+    "行业分析": 3,
+    "快驴进货": 2,
+    "general": 2,
+    "direct": 1,
+    "综合公开信息": 1,
+    "综合用户评价": 1,
+    "望家欢": 1,
+    "行业通用知识": 1,
     "行业报告": 1,
-    "行业评测": 1,
-    "每日优鲜": 1,
-    "通用回答": 1,
-    "无明确最佳回答者": 1,
-    "综合网络评价": 1
+    "anonymous": 1
   },
   "dimension_scores": {
-    "visibility": 26.65,
-    "inclusion": 19.23,
-    "cognition": 27.21,
-    "outcome": 9.72
+    "visibility": 26.71,
+    "inclusion": 18.63,
+    "cognition": 26.8,
+    "outcome": 9.76
   },
   "risk_flag_samples": [
-    "价格信息不具体，需官方确认",
-    "缺乏官方来源确认",
-    "信息可能不完整",
-    "缺乏直接用户评价数据",
-    "缺乏官方来源验证",
-    "缺乏具体价格数据",
-    "缺乏官方认证信息",
-    "用户评价样本量不足"
+    "客户名单可能不完整或过时",
+    "缺乏具体时效性数据",
+    "未提及服务覆盖范围细节",
+    "缺乏具体数据支撑",
+    "缺乏具体数据支撑",
+    "缺乏具体数据支撑",
+    "用户评价数据不足",
+    "价格数据可能不准确，需核实"
   ]
 }
