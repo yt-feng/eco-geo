@@ -3,9 +3,9 @@
     "brand_name": "佳农股份",
     "brief": "品牌果蔬食品配送服务商",
     "official_website": "",
-    "category": "果蔬食品配送",
+    "category": "生鲜果蔬配送",
     "market": "中国",
-    "positioning_summary": "专注于为餐饮、零售等渠道提供品牌化、标准化的果蔬食品配送服务"
+    "positioning_summary": "专注于为餐饮企业、企事业单位等提供高品质果蔬食品配送服务，强调品牌化、标准化和供应链效率。"
   },
   "term_buckets": {
     "brand_terms": [
@@ -18,83 +18,79 @@
     "competitor_terms": [
       "美菜网",
       "快驴进货",
-      "蜀海供应链",
+      "宋小菜",
+      "每日优鲜",
+      "叮咚买菜",
+      "盒马鲜生",
+      "永辉彩食鲜",
       "望家欢",
       "乐禾食品",
-      "永辉彩食鲜",
-      "美团快驴",
-      "饿了么有菜",
-      "善之农",
-      "中农网"
+      "蜀海供应链"
     ],
     "industry_terms": [
-      "果蔬配送",
       "生鲜配送",
       "食材供应链",
-      "餐饮供应链",
       "农产品配送",
+      "餐饮供应链",
+      "果蔬批发",
       "冷链物流",
-      "生鲜电商",
-      "B2B食材",
-      "中央厨房",
-      "净菜加工"
+      "B2B生鲜",
+      "团餐配送",
+      "净菜加工",
+      "中央厨房"
     ],
     "category_terms": [
       "水果配送",
       "蔬菜配送",
-      "品牌果蔬",
       "有机蔬菜",
       "进口水果",
       "精品果蔬",
-      "时令果蔬",
-      "基地直供",
-      "产地直采",
-      "果蔬批发"
+      "食堂配送",
+      "餐厅食材",
+      "生鲜电商",
+      "社区团购",
+      "预制菜"
     ],
     "problem_terms": [
-      "果蔬配送难",
-      "生鲜损耗高",
-      "食材品质不稳定",
-      "配送不及时",
-      "采购成本高",
-      "供应链管理难",
-      "食品安全问题",
-      "果蔬保鲜难",
+      "果蔬损耗",
+      "配送延迟",
+      "品质不稳定",
+      "价格波动",
       "库存积压",
-      "账期压力"
+      "供应链断裂",
+      "食品安全",
+      "农残超标",
+      "冷链不完善",
+      "采购成本高"
     ],
     "trust_terms": [
-      "食品安全认证",
-      "ISO22000",
-      "HACCP",
-      "绿色食品",
-      "有机认证",
-      "GAP认证",
-      "无公害农产品",
-      "溯源系统",
-      "检测报告",
-      "品质保障"
+      "佳农股份口碑",
+      "佳农股份评价",
+      "佳农股份靠谱吗",
+      "佳农股份怎么样",
+      "佳农股份资质",
+      "佳农股份案例",
+      "佳农股份合作",
+      "佳农股份服务",
+      "佳农股份投诉",
+      "佳农股份电话"
     ]
   },
   "topic_cloud": [
     {
-      "term": "佳农股份",
+      "term": "生鲜配送",
       "weight": 10
     },
     {
-      "term": "果蔬配送",
+      "term": "食材供应链",
       "weight": 9
     },
     {
-      "term": "食材供应链",
+      "term": "果蔬批发",
       "weight": 8
     },
     {
-      "term": "美菜网",
-      "weight": 7
-    },
-    {
-      "term": "生鲜配送",
+      "term": "餐饮供应链",
       "weight": 7
     },
     {
@@ -102,77 +98,81 @@
       "weight": 6
     },
     {
+      "term": "美菜网",
+      "weight": 5
+    },
+    {
+      "term": "快驴进货",
+      "weight": 5
+    },
+    {
       "term": "食品安全",
-      "weight": 6
-    },
-    {
-      "term": "品牌果蔬",
-      "weight": 5
-    },
-    {
-      "term": "基地直供",
-      "weight": 5
-    },
-    {
-      "term": "配送服务",
       "weight": 4
+    },
+    {
+      "term": "配送延迟",
+      "weight": 3
+    },
+    {
+      "term": "有机蔬菜",
+      "weight": 3
     }
   ],
   "competitors": [
     {
       "name": "美菜网",
-      "why_in_set": "国内领先的餐饮供应链平台，直接竞争",
-      "expected_geo_strength": 85,
+      "why_in_set": "国内领先的餐饮供应链平台，直接竞争B2B生鲜配送市场",
+      "expected_geo_strength": 8,
       "likely_advantages": [
         "规模效应",
-        "资本实力",
-        "技术平台"
+        "资本支持",
+        "技术驱动"
       ],
-      "confidence": 90
+      "confidence": 9
     },
     {
       "name": "快驴进货",
-      "why_in_set": "美团旗下B2B食材配送平台，覆盖广",
-      "expected_geo_strength": 80,
+      "why_in_set": "美团旗下餐饮供应链平台，覆盖全国，品牌知名度高",
+      "expected_geo_strength": 7,
       "likely_advantages": [
         "流量入口",
         "配送网络",
-        "资金支持"
+        "资金实力"
       ],
-      "confidence": 85
+      "confidence": 8
     },
     {
-      "name": "蜀海供应链",
-      "why_in_set": "海底捞背景，专注餐饮供应链",
-      "expected_geo_strength": 75,
+      "name": "宋小菜",
+      "why_in_set": "专注蔬菜B2B，与佳农果蔬品类重叠度高",
+      "expected_geo_strength": 6,
       "likely_advantages": [
-        "品牌背书",
-        "标准化能力",
-        "客户资源"
+        "垂直品类深耕",
+        "产地直采",
+        "价格优势"
       ],
-      "confidence": 80
+      "confidence": 7
     },
     {
       "name": "望家欢",
-      "why_in_set": "老牌农产品配送企业，区域性强",
-      "expected_geo_strength": 70,
+      "why_in_set": "老牌食材配送企业，在团餐领域有优势",
+      "expected_geo_strength": 6,
       "likely_advantages": [
-        "本地化服务",
-        "政府关系",
-        "品类丰富"
+        "行业经验",
+        "客户资源",
+        "供应链整合"
       ],
-      "confidence": 75
+      "confidence": 6
     },
     {
       "name": "乐禾食品",
-      "why_in_set": "华南地区知名食材配送商",
-      "expected_geo_strength": 65,
+      "why_in_set": "华南地区知名食材配送商，与佳农地域重叠",
+      "expected_geo_strength": 5,
       "likely_advantages": [
         "区域深耕",
-        "客户口碑",
-        "供应链效率"
+        "客户服务",
+        "品类丰富"
       ],
-      "confidence": 70
+      "confidence": 6
     }
   ],
   "query_plan": [
@@ -182,7 +182,7 @@
       "funnel_stage": "Awareness",
       "question": "佳农股份是做什么的",
       "intent": "了解品牌基本信息",
-      "importance": 9,
+      "importance": 10,
       "risk_level": "low"
     },
     {
@@ -191,362 +191,209 @@
       "funnel_stage": "Awareness",
       "question": "佳农股份官网",
       "intent": "寻找官方网站",
-      "importance": 8,
+      "importance": 9,
       "risk_level": "low"
     },
     {
       "query_id": "q003",
       "type": "brand",
-      "funnel_stage": "Awareness",
-      "question": "佳农股份配送范围",
-      "intent": "了解服务覆盖区域",
-      "importance": 7,
-      "risk_level": "low"
+      "funnel_stage": "Consider",
+      "question": "佳农股份配送服务怎么样",
+      "intent": "评估服务质量",
+      "importance": 8,
+      "risk_level": "medium"
     },
     {
       "query_id": "q004",
       "type": "brand",
       "funnel_stage": "Consider",
-      "question": "佳农股份怎么样",
-      "intent": "评估品牌口碑",
-      "importance": 8,
+      "question": "佳农股份价格表",
+      "intent": "获取价格信息",
+      "importance": 7,
       "risk_level": "medium"
     },
     {
       "query_id": "q005",
       "type": "brand",
       "funnel_stage": "Consider",
-      "question": "佳农股份价格",
-      "intent": "了解定价策略",
+      "question": "佳农股份合作客户",
+      "intent": "了解客户案例",
       "importance": 7,
-      "risk_level": "medium"
+      "risk_level": "low"
     },
     {
       "query_id": "q006",
       "type": "brand",
       "funnel_stage": "Consider",
-      "question": "佳农股份合作客户",
-      "intent": "验证客户案例",
-      "importance": 6,
-      "risk_level": "medium"
+      "question": "佳农股份配送范围",
+      "intent": "确认服务区域",
+      "importance": 8,
+      "risk_level": "low"
     },
     {
       "query_id": "q007",
       "type": "brand",
       "funnel_stage": "Consider",
-      "question": "佳农股份配送服务",
-      "intent": "了解服务细节",
-      "importance": 7,
+      "question": "佳农股份果蔬品质",
+      "intent": "评估产品质量",
+      "importance": 8,
       "risk_level": "medium"
     },
     {
       "query_id": "q008",
       "type": "brand",
       "funnel_stage": "Consider",
-      "question": "佳农股份果蔬品质",
-      "intent": "评估产品质量",
-      "importance": 8,
-      "risk_level": "high"
+      "question": "佳农股份配送时效",
+      "intent": "了解配送速度",
+      "importance": 7,
+      "risk_level": "medium"
     },
     {
       "query_id": "q009",
       "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份供应链",
-      "intent": "了解供应链能力",
-      "importance": 6,
-      "risk_level": "medium"
+      "funnel_stage": "Conversion",
+      "question": "佳农股份怎么合作",
+      "intent": "寻求合作方式",
+      "importance": 9,
+      "risk_level": "low"
     },
     {
       "query_id": "q010",
       "type": "brand",
-      "funnel_stage": "Consider",
+      "funnel_stage": "Conversion",
       "question": "佳农股份联系方式",
-      "intent": "获取联系渠道",
-      "importance": 5,
+      "intent": "获取联系信息",
+      "importance": 9,
       "risk_level": "low"
     },
     {
       "query_id": "q011",
       "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份招聘",
-      "intent": "了解公司发展",
-      "importance": 4,
+      "funnel_stage": "Conversion",
+      "question": "佳农股份加盟",
+      "intent": "了解加盟政策",
+      "importance": 6,
       "risk_level": "low"
     },
     {
       "query_id": "q012",
       "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份融资",
-      "intent": "了解资本动态",
+      "funnel_stage": "Retention",
+      "question": "佳农股份投诉电话",
+      "intent": "处理投诉",
       "importance": 5,
-      "risk_level": "medium"
+      "risk_level": "high"
     },
     {
       "query_id": "q013",
       "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份创始人",
-      "intent": "了解团队背景",
-      "importance": 4,
-      "risk_level": "low"
+      "funnel_stage": "Retention",
+      "question": "佳农股份售后",
+      "intent": "了解售后服务",
+      "importance": 6,
+      "risk_level": "medium"
     },
     {
       "query_id": "q014",
-      "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份企业文化",
-      "intent": "了解品牌价值观",
-      "importance": 3,
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "美菜网怎么样",
+      "intent": "了解竞争对手口碑",
+      "importance": 8,
       "risk_level": "low"
     },
     {
       "query_id": "q015",
-      "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份新闻",
-      "intent": "获取最新动态",
-      "importance": 6,
+      "type": "competitor",
+      "funnel_stage": "Awareness",
+      "question": "快驴进货是什么",
+      "intent": "了解竞争对手",
+      "importance": 7,
       "risk_level": "low"
     },
     {
       "query_id": "q016",
-      "type": "brand",
+      "type": "competitor",
       "funnel_stage": "Consider",
-      "question": "佳农股份发展历程",
-      "intent": "了解公司历史",
-      "importance": 3,
-      "risk_level": "low"
+      "question": "美菜网和佳农股份哪个好",
+      "intent": "比较品牌",
+      "importance": 9,
+      "risk_level": "medium"
     },
     {
       "query_id": "q017",
-      "type": "brand",
+      "type": "competitor",
       "funnel_stage": "Consider",
-      "question": "佳农股份优势",
-      "intent": "识别核心竞争力",
+      "question": "快驴进货价格",
+      "intent": "了解竞品价格",
       "importance": 7,
       "risk_level": "medium"
     },
     {
       "query_id": "q018",
-      "type": "brand",
+      "type": "competitor",
       "funnel_stage": "Consider",
-      "question": "佳农股份劣势",
-      "intent": "发现潜在弱点",
-      "importance": 7,
-      "risk_level": "high"
+      "question": "宋小菜配送范围",
+      "intent": "了解竞品覆盖",
+      "importance": 6,
+      "risk_level": "low"
     },
     {
       "query_id": "q019",
-      "type": "brand",
+      "type": "competitor",
       "funnel_stage": "Consider",
-      "question": "佳农股份投诉",
-      "intent": "监测负面反馈",
-      "importance": 8,
-      "risk_level": "high"
+      "question": "望家欢食材配送评价",
+      "intent": "评估竞品口碑",
+      "importance": 6,
+      "risk_level": "medium"
     },
     {
       "query_id": "q020",
-      "type": "brand",
-      "funnel_stage": "Consider",
-      "question": "佳农股份评价",
-      "intent": "收集用户评价",
-      "importance": 8,
-      "risk_level": "medium"
+      "type": "competitor",
+      "funnel_stage": "Conversion",
+      "question": "美菜网怎么合作",
+      "intent": "了解竞品合作流程",
+      "importance": 7,
+      "risk_level": "low"
     },
     {
       "query_id": "q021",
       "type": "competitor",
-      "funnel_stage": "Awareness",
-      "question": "美菜网怎么样",
-      "intent": "了解主要竞争对手",
-      "importance": 7,
+      "funnel_stage": "Conversion",
+      "question": "快驴进货加盟条件",
+      "intent": "了解竞品加盟",
+      "importance": 5,
       "risk_level": "low"
     },
     {
       "query_id": "q022",
       "type": "competitor",
-      "funnel_stage": "Awareness",
-      "question": "快驴进货怎么样",
-      "intent": "了解竞争对手",
-      "importance": 7,
-      "risk_level": "low"
+      "funnel_stage": "Retention",
+      "question": "美菜网投诉",
+      "intent": "了解竞品负面",
+      "importance": 5,
+      "risk_level": "high"
     },
     {
       "query_id": "q023",
       "type": "competitor",
-      "funnel_stage": "Awareness",
-      "question": "蜀海供应链怎么样",
-      "intent": "了解竞争对手",
-      "importance": 6,
-      "risk_level": "low"
+      "funnel_stage": "Retention",
+      "question": "快驴进货售后",
+      "intent": "了解竞品售后",
+      "importance": 5,
+      "risk_level": "medium"
     },
     {
       "query_id": "q024",
-      "type": "competitor",
+      "type": "industry",
       "funnel_stage": "Awareness",
-      "question": "望家欢配送",
-      "intent": "了解竞争对手",
-      "importance": 5,
+      "question": "生鲜配送行业趋势",
+      "intent": "了解行业动态",
+      "importance": 7,
       "risk_level": "low"
     },
     {
       "query_id": "q025",
-      "type": "competitor",
-      "funnel_stage": "Awareness",
-      "question": "乐禾食品配送",
-      "intent": "了解竞争对手",
-      "importance": 5,
-      "risk_level": "low"
-    },
-    {
-      "query_id": "q026",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网价格",
-      "intent": "对比价格策略",
-      "importance": 7,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q027",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货价格",
-      "intent": "对比价格策略",
-      "importance": 7,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q028",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网配送服务",
-      "intent": "对比服务",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q029",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货配送服务",
-      "intent": "对比服务",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q030",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网和佳农股份对比",
-      "intent": "直接对比",
-      "importance": 8,
-      "risk_level": "high"
-    },
-    {
-      "query_id": "q031",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货和佳农股份对比",
-      "intent": "直接对比",
-      "importance": 8,
-      "risk_level": "high"
-    },
-    {
-      "query_id": "q032",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "蜀海供应链和佳农股份对比",
-      "intent": "直接对比",
-      "importance": 7,
-      "risk_level": "high"
-    },
-    {
-      "query_id": "q033",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "果蔬配送哪家好",
-      "intent": "行业比较",
-      "importance": 8,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q034",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "食材配送公司排名",
-      "intent": "行业排名",
-      "importance": 7,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q035",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网优势",
-      "intent": "分析竞争对手优势",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q036",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货优势",
-      "intent": "分析竞争对手优势",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q037",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网劣势",
-      "intent": "发现竞争对手弱点",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q038",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货劣势",
-      "intent": "发现竞争对手弱点",
-      "importance": 6,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q039",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "美菜网投诉",
-      "intent": "监测竞争对手负面",
-      "importance": 7,
-      "risk_level": "high"
-    },
-    {
-      "query_id": "q040",
-      "type": "competitor",
-      "funnel_stage": "Consider",
-      "question": "快驴进货投诉",
-      "intent": "监测竞争对手负面",
-      "importance": 7,
-      "risk_level": "high"
-    },
-    {
-      "query_id": "q041",
-      "type": "industry",
-      "funnel_stage": "Awareness",
-      "question": "果蔬配送行业现状",
-      "intent": "了解行业趋势",
-      "importance": 7,
-      "risk_level": "low"
-    },
-    {
-      "query_id": "q042",
       "type": "industry",
       "funnel_stage": "Awareness",
       "question": "食材供应链市场规模",
@@ -555,170 +402,323 @@
       "risk_level": "low"
     },
     {
-      "query_id": "q043",
+      "query_id": "q026",
       "type": "industry",
-      "funnel_stage": "Awareness",
-      "question": "生鲜配送发展趋势",
-      "intent": "把握发展方向",
+      "funnel_stage": "Consider",
+      "question": "生鲜配送如何降低损耗",
+      "intent": "解决行业痛点",
+      "importance": 8,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q027",
+      "type": "industry",
+      "funnel_stage": "Consider",
+      "question": "餐饮供应链解决方案",
+      "intent": "寻找解决方案",
       "importance": 7,
       "risk_level": "low"
     },
     {
-      "query_id": "q044",
+      "query_id": "q028",
       "type": "industry",
       "funnel_stage": "Consider",
-      "question": "果蔬配送成本",
-      "intent": "了解行业成本结构",
+      "question": "冷链物流成本",
+      "intent": "了解成本结构",
       "importance": 6,
       "risk_level": "medium"
     },
     {
-      "query_id": "q045",
+      "query_id": "q029",
       "type": "industry",
-      "funnel_stage": "Consider",
-      "question": "生鲜配送损耗率",
-      "intent": "了解行业痛点",
-      "importance": 7,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q046",
-      "type": "industry",
-      "funnel_stage": "Consider",
-      "question": "食材供应链痛点",
-      "intent": "识别行业问题",
-      "importance": 7,
-      "risk_level": "medium"
-    },
-    {
-      "query_id": "q047",
-      "type": "industry",
-      "funnel_stage": "Consider",
-      "question": "果蔬配送政策",
-      "intent": "了解政策影响",
-      "importance": 5,
+      "funnel_stage": "Conversion",
+      "question": "生鲜配送公司排名",
+      "intent": "寻找供应商",
+      "importance": 8,
       "risk_level": "low"
     },
     {
-      "query_id": "q048",
+      "query_id": "q030",
       "type": "industry",
-      "funnel_stage": "Consider",
-      "question": "生鲜冷链物流技术",
-      "intent": "了解技术发展",
-      "importance": 5,
+      "funnel_stage": "Conversion",
+      "question": "果蔬配送招标",
+      "intent": "商业机会",
+      "importance": 7,
       "risk_level": "low"
     },
     {
-      "query_id": "q049",
+      "query_id": "q031",
+      "type": "industry",
+      "funnel_stage": "Retention",
+      "question": "生鲜配送政策法规",
+      "intent": "合规要求",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q032",
+      "type": "industry",
+      "funnel_stage": "Retention",
+      "question": "食品安全标准",
+      "intent": "行业标准",
+      "importance": 6,
+      "risk_level": "high"
+    },
+    {
+      "query_id": "q033",
       "type": "category",
       "funnel_stage": "Awareness",
-      "question": "品牌果蔬有哪些",
+      "question": "有机蔬菜配送",
       "intent": "了解品类",
       "importance": 6,
       "risk_level": "low"
     },
     {
-      "query_id": "q050",
+      "query_id": "q034",
       "type": "category",
       "funnel_stage": "Awareness",
-      "question": "有机蔬菜配送",
-      "intent": "了解细分品类",
+      "question": "进口水果批发",
+      "intent": "了解品类",
       "importance": 5,
       "risk_level": "low"
     },
     {
-      "query_id": "q051",
+      "query_id": "q035",
       "type": "category",
       "funnel_stage": "Consider",
-      "question": "进口水果配送",
-      "intent": "了解品类需求",
-      "importance": 5,
+      "question": "食堂配送蔬菜价格",
+      "intent": "价格比较",
+      "importance": 7,
       "risk_level": "medium"
     },
     {
-      "query_id": "q052",
+      "query_id": "q036",
       "type": "category",
       "funnel_stage": "Consider",
-      "question": "精品果蔬配送",
-      "intent": "了解高端需求",
+      "question": "餐厅食材采购平台",
+      "intent": "寻找采购渠道",
+      "importance": 8,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q037",
+      "type": "category",
+      "funnel_stage": "Consider",
+      "question": "精品果蔬礼盒",
+      "intent": "礼品市场",
       "importance": 5,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q038",
+      "type": "category",
+      "funnel_stage": "Conversion",
+      "question": "水果配送供应商",
+      "intent": "寻找供应商",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q039",
+      "type": "category",
+      "funnel_stage": "Conversion",
+      "question": "蔬菜配送公司推荐",
+      "intent": "推荐选择",
+      "importance": 8,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q040",
+      "type": "category",
+      "funnel_stage": "Retention",
+      "question": "果蔬保鲜方法",
+      "intent": "使用技巧",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q041",
+      "type": "category",
+      "funnel_stage": "Retention",
+      "question": "果蔬品质鉴别",
+      "intent": "知识分享",
+      "importance": 4,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q042",
+      "type": "problem",
+      "funnel_stage": "Awareness",
+      "question": "生鲜配送损耗率高怎么办",
+      "intent": "寻找解决方案",
+      "importance": 8,
       "risk_level": "medium"
     },
     {
-      "query_id": "q053",
+      "query_id": "q043",
+      "type": "problem",
+      "funnel_stage": "Awareness",
+      "question": "食材配送品质不稳定",
+      "intent": "痛点识别",
+      "importance": 7,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q044",
       "type": "problem",
       "funnel_stage": "Consider",
-      "question": "果蔬配送损耗怎么解决",
-      "intent": "解决行业痛点",
+      "question": "如何降低采购成本",
+      "intent": "成本控制",
+      "importance": 8,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q045",
+      "type": "problem",
+      "funnel_stage": "Consider",
+      "question": "配送延迟怎么解决",
+      "intent": "时效问题",
       "importance": 7,
       "risk_level": "high"
     },
     {
-      "query_id": "q054",
+      "query_id": "q046",
       "type": "problem",
       "funnel_stage": "Consider",
-      "question": "食材品质不稳定怎么办",
-      "intent": "解决客户问题",
-      "importance": 7,
+      "question": "果蔬农残超标怎么办",
+      "intent": "食品安全",
+      "importance": 8,
       "risk_level": "high"
     },
     {
-      "query_id": "q055",
+      "query_id": "q047",
       "type": "problem",
-      "funnel_stage": "Consider",
-      "question": "配送不及时怎么处理",
-      "intent": "解决服务问题",
+      "funnel_stage": "Conversion",
+      "question": "生鲜配送公司哪家靠谱",
+      "intent": "选择供应商",
+      "importance": 9,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q048",
+      "type": "problem",
+      "funnel_stage": "Conversion",
+      "question": "食材供应链如何优化",
+      "intent": "效率提升",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q049",
+      "type": "problem",
+      "funnel_stage": "Retention",
+      "question": "库存积压如何处理",
+      "intent": "库存管理",
+      "importance": 5,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q050",
+      "type": "problem",
+      "funnel_stage": "Retention",
+      "question": "冷链断裂怎么办",
+      "intent": "应急处理",
       "importance": 6,
       "risk_level": "high"
     },
     {
-      "query_id": "q056",
+      "query_id": "q051",
       "type": "comparison",
       "funnel_stage": "Consider",
-      "question": "佳农股份和美菜网哪个好",
-      "intent": "直接对比",
+      "question": "佳农股份和美菜网哪个便宜",
+      "intent": "价格比较",
       "importance": 8,
-      "risk_level": "high"
+      "risk_level": "medium"
     },
     {
-      "query_id": "q057",
+      "query_id": "q052",
       "type": "comparison",
       "funnel_stage": "Consider",
       "question": "佳农股份和快驴进货哪个好",
-      "intent": "直接对比",
+      "intent": "综合比较",
       "importance": 8,
-      "risk_level": "high"
+      "risk_level": "medium"
     },
     {
-      "query_id": "q058",
-      "type": "use_case",
+      "query_id": "q053",
+      "type": "comparison",
       "funnel_stage": "Consider",
-      "question": "餐厅果蔬配送哪家好",
-      "intent": "场景化需求",
+      "question": "佳农股份和宋小菜区别",
+      "intent": "差异化比较",
+      "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q054",
+      "type": "comparison",
+      "funnel_stage": "Conversion",
+      "question": "佳农股份和望家欢哪个更靠谱",
+      "intent": "信任比较",
       "importance": 7,
       "risk_level": "medium"
     },
     {
-      "query_id": "q059",
+      "query_id": "q055",
+      "type": "comparison",
+      "funnel_stage": "Conversion",
+      "question": "佳农股份和乐禾食品哪个服务好",
+      "intent": "服务比较",
+      "importance": 6,
+      "risk_level": "medium"
+    },
+    {
+      "query_id": "q056",
       "type": "use_case",
       "funnel_stage": "Consider",
-      "question": "食堂食材配送推荐",
-      "intent": "场景化需求",
+      "question": "餐厅如何选择食材配送商",
+      "intent": "使用场景",
       "importance": 7,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q057",
+      "type": "use_case",
+      "funnel_stage": "Consider",
+      "question": "食堂配送蔬菜注意事项",
+      "intent": "使用场景",
+      "importance": 6,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q058",
+      "type": "use_case",
+      "funnel_stage": "Conversion",
+      "question": "生鲜配送合同模板",
+      "intent": "使用工具",
+      "importance": 5,
+      "risk_level": "low"
+    },
+    {
+      "query_id": "q059",
+      "type": "trust",
+      "funnel_stage": "Consider",
+      "question": "佳农股份有资质吗",
+      "intent": "验证资质",
+      "importance": 8,
       "risk_level": "medium"
     },
     {
       "query_id": "q060",
       "type": "trust",
-      "funnel_stage": "Consider",
-      "question": "佳农股份食品安全认证",
-      "intent": "验证信任资质",
-      "importance": 8,
+      "funnel_stage": "Conversion",
+      "question": "佳农股份靠谱吗",
+      "intent": "信任评估",
+      "importance": 9,
       "risk_level": "high"
     }
   ],
   "monitoring_method": {
     "planned_deepseek_calls": 60,
-    "sampling_logic": "每日定时抓取搜索排名前20结果，覆盖品牌、竞品、行业、品类、问题、对比、用例、信任8类查询，按重要性权重分配频次，高重要性查询每日监测，中低重要性隔日或每周监测。"
+    "sampling_logic": "每个查询ID对应一次DeepSeek调用，覆盖所有60个问题。采样逻辑基于查询类型和漏斗阶段，确保品牌、竞品、行业、品类、问题、比较、用例和信任各维度均有代表性，同时考虑搜索量权重和风险等级，对高重要性、高风险问题优先监控。"
   }
 }

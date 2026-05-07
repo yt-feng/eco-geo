@@ -2,15 +2,15 @@
 
 {
   "brand": "佳农股份",
-  "generated_at": "2026-05-07 10:17:23 UTC",
+  "generated_at": "2026-05-07 11:16:27 UTC",
   "total_deepseek_calls": 62,
   "monitoring_probes": 60,
-  "brand_mention_rate": 48.33,
-  "brand_recommendation_rate": 0.0,
+  "brand_mention_rate": 38.33,
+  "brand_recommendation_rate": 1.67,
   "dimension_scores": {
-    "visibility": 26.71,
-    "inclusion": 18.63,
-    "cognition": 26.8,
-    "outcome": 9.76
+    "visibility": 21.58,
+    "inclusion": 16.66,
+    "cognition": 15.92,
+    "outcome": 8.81
   }
 }
