@@ -73,6 +73,19 @@ jobs:
             --commit-message "chore: update safe full-detail GEO monitoring dashboard" \
             --commit-report
 
+      - name: Build consulting-grade PDF report
+        run: |
+          python scripts/build_consulting_pdf.py --report-dir dist/report
+          mkdir -p "${{ github.event.inputs.report_subdir }}"
+          cp dist/report/executive_report.pdf "${{ github.event.inputs.report_subdir }}/executive_report.pdf"
+          cp dist/report/executive_report.tex "${{ github.event.inputs.report_subdir }}/executive_report.tex"
+          git add "${{ github.event.inputs.report_subdir }}/executive_report.pdf" "${{ github.event.inputs.report_subdir }}/executive_report.tex"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: add consulting-grade GEO PDF report"
+          else
+            echo "No consulting PDF changes to commit."
+          fi
+
       - name: Push report commit
         run: |
           if [ -n "$(git log --oneline origin/${GITHUB_REF_NAME}..HEAD)" ]; then
@@ -88,6 +101,8 @@ jobs:
           if [ -f "${{ github.event.inputs.report_subdir }}/summary.json" ]; then
             cat "${{ github.event.inputs.report_subdir }}/summary.json" >> "$GITHUB_STEP_SUMMARY"
           fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Consulting-grade PDF: ${{ github.event.inputs.report_subdir }}/executive_report.pdf" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
